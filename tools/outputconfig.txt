@@ -1,0 +1,6 @@
+# xbld_sign output filename configuration
+# Output format: [PREFIX_PROJECT]_[BOARD_NAME]_hw[HW_VERSION]_fw[build]_[epoch].hex
+
+PREFIX_PROJECT=ISS
+BOARD_NAME=EXP
+HW_VERSION=10

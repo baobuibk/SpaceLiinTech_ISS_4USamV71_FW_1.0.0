@@ -1,0 +1,1074 @@
+1197 1782460054052 XXXX 1782460054052, Thread 1197: XXXX 1782460054052, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460054053 XXXX 1782460054053, Thread 1197: XXXX 1782460054053, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460054153 XXXX 1782460054153, Thread 1197: XXXX 1782460054153, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460054153 XXXX 1782460054153, Thread 1197: XXXX 1782460054153, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460054253 XXXX 1782460054253, Thread 1197: XXXX 1782460054253, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460054253 XXXX 1782460054253, Thread 1197: XXXX 1782460054253, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460054355 XXXX 1782460054355, Thread 1197: XXXX 1782460054355, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460054357 XXXX 1782460054357, Thread 1197: XXXX 1782460054357, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460054457 XXXX 1782460054457, Thread 1197: XXXX 1782460054457, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460054458 XXXX 1782460054458, Thread 1197: XXXX 1782460054458, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460054558 XXXX 1782460054558, Thread 1197: XXXX 1782460054558, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460054559 XXXX 1782460054559, Thread 1197: XXXX 1782460054559, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460054659 XXXX 1782460054659, Thread 1197: XXXX 1782460054659, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460054660 XXXX 1782460054660, Thread 1197: XXXX 1782460054660, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460054759 XXXX 1782460054759, Thread 1197: XXXX 1782460054759, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460054760 XXXX 1782460054760, Thread 1197: XXXX 1782460054760, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460054860 XXXX 1782460054860, Thread 1197: XXXX 1782460054860, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460054861 XXXX 1782460054861, Thread 1197: XXXX 1782460054861, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460054962 XXXX 1782460054962, Thread 1197: XXXX 1782460054962, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460054963 XXXX 1782460054963, Thread 1197: XXXX 1782460054963, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460055063 XXXX 1782460055063, Thread 1197: XXXX 1782460055063, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460055063 XXXX 1782460055063, Thread 1197: XXXX 1782460055063, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460055165 XXXX 1782460055165, Thread 1197: XXXX 1782460055165, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460055167 XXXX 1782460055167, Thread 1197: XXXX 1782460055167, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460055265 XXXX 1782460055265, Thread 1197: XXXX 1782460055265, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460055265 XXXX 1782460055265, Thread 1197: XXXX 1782460055265, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460055366 XXXX 1782460055366, Thread 1197: XXXX 1782460055366, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460055367 XXXX 1782460055367, Thread 1197: XXXX 1782460055367, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460055466 XXXX 1782460055466, Thread 1197: XXXX 1782460055466, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460055466 XXXX 1782460055466, Thread 1197: XXXX 1782460055466, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460055566 XXXX 1782460055566, Thread 1197: XXXX 1782460055566, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460055566 XXXX 1782460055566, Thread 1197: XXXX 1782460055566, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460055667 XXXX 1782460055667, Thread 1197: XXXX 1782460055667, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460055667 XXXX 1782460055667, Thread 1197: XXXX 1782460055667, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460055768 XXXX 1782460055768, Thread 1197: XXXX 1782460055768, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460055769 XXXX 1782460055769, Thread 1197: XXXX 1782460055769, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460055868 XXXX 1782460055868, Thread 1197: XXXX 1782460055868, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460055869 XXXX 1782460055869, Thread 1197: XXXX 1782460055869, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460055970 XXXX 1782460055970, Thread 1197: XXXX 1782460055970, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460055971 XXXX 1782460055971, Thread 1197: XXXX 1782460055971, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460056070 XXXX 1782460056070, Thread 1197: XXXX 1782460056070, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460056070 XXXX 1782460056070, Thread 1197: XXXX 1782460056070, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460056171 XXXX 1782460056171, Thread 1197: XXXX 1782460056171, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460056172 XXXX 1782460056172, Thread 1197: XXXX 1782460056172, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460056272 XXXX 1782460056272, Thread 1197: XXXX 1782460056272, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460056273 XXXX 1782460056273, Thread 1197: XXXX 1782460056273, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460056373 XXXX 1782460056373, Thread 1197: XXXX 1782460056373, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460056373 XXXX 1782460056373, Thread 1197: XXXX 1782460056373, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460056474 XXXX 1782460056474, Thread 1197: XXXX 1782460056474, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460056475 XXXX 1782460056475, Thread 1197: XXXX 1782460056475, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460056573 XXXX 1782460056573, Thread 1197: XXXX 1782460056573, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460056575 XXXX 1782460056575, Thread 1197: XXXX 1782460056575, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460056674 XXXX 1782460056674, Thread 1197: XXXX 1782460056674, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460056675 XXXX 1782460056675, Thread 1197: XXXX 1782460056675, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460056775 XXXX 1782460056775, Thread 1197: XXXX 1782460056775, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460056776 XXXX 1782460056776, Thread 1197: XXXX 1782460056776, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460056875 XXXX 1782460056875, Thread 1197: XXXX 1782460056875, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460056876 XXXX 1782460056876, Thread 1197: XXXX 1782460056876, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460056976 XXXX 1782460056976, Thread 1197: XXXX 1782460056976, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460056979 XXXX 1782460056979, Thread 1197: XXXX 1782460056979, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460057077 XXXX 1782460057077, Thread 1197: XXXX 1782460057077, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460057078 XXXX 1782460057078, Thread 1197: XXXX 1782460057078, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460057178 XXXX 1782460057178, Thread 1197: XXXX 1782460057178, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460057179 XXXX 1782460057179, Thread 1197: XXXX 1782460057179, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460057279 XXXX 1782460057279, Thread 1197: XXXX 1782460057279, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460057281 XXXX 1782460057281, Thread 1197: XXXX 1782460057281, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460057379 XXXX 1782460057379, Thread 1197: XXXX 1782460057379, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460057380 XXXX 1782460057380, Thread 1197: XXXX 1782460057380, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460057481 XXXX 1782460057481, Thread 1197: XXXX 1782460057481, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460057481 XXXX 1782460057481, Thread 1197: XXXX 1782460057481, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460057581 XXXX 1782460057581, Thread 1197: XXXX 1782460057581, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460057581 XXXX 1782460057581, Thread 1197: XXXX 1782460057581, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460057681 XXXX 1782460057681, Thread 1197: XXXX 1782460057681, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460057683 XXXX 1782460057683, Thread 1197: XXXX 1782460057683, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460057783 XXXX 1782460057783, Thread 1197: XXXX 1782460057783, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460057784 XXXX 1782460057784, Thread 1197: XXXX 1782460057784, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460057883 XXXX 1782460057883, Thread 1197: XXXX 1782460057883, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460057883 XXXX 1782460057883, Thread 1197: XXXX 1782460057883, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460057985 XXXX 1782460057985, Thread 1197: XXXX 1782460057985, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460057985 XXXX 1782460057985, Thread 1197: XXXX 1782460057985, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460058086 XXXX 1782460058086, Thread 1197: XXXX 1782460058086, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460058087 XXXX 1782460058087, Thread 1197: XXXX 1782460058087, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460058187 XXXX 1782460058187, Thread 1197: XXXX 1782460058187, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460058187 XXXX 1782460058187, Thread 1197: XXXX 1782460058187, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460058288 XXXX 1782460058288, Thread 1197: XXXX 1782460058288, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460058288 XXXX 1782460058288, Thread 1197: XXXX 1782460058288, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460058389 XXXX 1782460058389, Thread 1197: XXXX 1782460058389, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460058390 XXXX 1782460058390, Thread 1197: XXXX 1782460058390, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460058489 XXXX 1782460058489, Thread 1197: XXXX 1782460058489, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460058491 XXXX 1782460058491, Thread 1197: XXXX 1782460058491, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460058589 XXXX 1782460058589, Thread 1197: XXXX 1782460058589, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460058591 XXXX 1782460058591, Thread 1197: XXXX 1782460058591, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460058689 XXXX 1782460058689, Thread 1197: XXXX 1782460058689, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460058690 XXXX 1782460058690, Thread 1197: XXXX 1782460058690, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460058790 XXXX 1782460058790, Thread 1197: XXXX 1782460058790, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460058792 XXXX 1782460058792, Thread 1197: XXXX 1782460058792, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460058891 XXXX 1782460058891, Thread 1197: XXXX 1782460058891, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460058891 XXXX 1782460058891, Thread 1197: XXXX 1782460058891, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460058993 XXXX 1782460058993, Thread 1197: XXXX 1782460058993, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460058995 XXXX 1782460058995, Thread 1197: XXXX 1782460058995, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460059093 XXXX 1782460059093, Thread 1197: XXXX 1782460059093, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460059093 XXXX 1782460059093, Thread 1197: XXXX 1782460059093, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460059193 XXXX 1782460059193, Thread 1197: XXXX 1782460059193, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460059195 XXXX 1782460059195, Thread 1197: XXXX 1782460059195, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460059294 XXXX 1782460059294, Thread 1197: XXXX 1782460059294, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460059296 XXXX 1782460059296, Thread 1197: XXXX 1782460059296, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460059395 XXXX 1782460059395, Thread 1197: XXXX 1782460059395, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460059396 XXXX 1782460059396, Thread 1197: XXXX 1782460059396, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460059495 XXXX 1782460059495, Thread 1197: XXXX 1782460059495, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460059497 XXXX 1782460059497, Thread 1197: XXXX 1782460059497, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460059596 XXXX 1782460059596, Thread 1197: XXXX 1782460059596, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460059596 XXXX 1782460059596, Thread 1197: XXXX 1782460059596, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460059695 XXXX 1782460059695, Thread 1197: XXXX 1782460059695, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460059695 XXXX 1782460059695, Thread 1197: XXXX 1782460059695, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460059796 XXXX 1782460059796, Thread 1197: XXXX 1782460059796, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460059797 XXXX 1782460059797, Thread 1197: XXXX 1782460059797, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460059897 XXXX 1782460059897, Thread 1197: XXXX 1782460059897, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460059898 XXXX 1782460059898, Thread 1197: XXXX 1782460059898, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460059997 XXXX 1782460059997, Thread 1197: XXXX 1782460059997, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460059998 XXXX 1782460059998, Thread 1197: XXXX 1782460059998, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460060098 XXXX 1782460060098, Thread 1197: XXXX 1782460060098, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460060099 XXXX 1782460060099, Thread 1197: XXXX 1782460060099, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460060198 XXXX 1782460060198, Thread 1197: XXXX 1782460060198, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460060199 XXXX 1782460060199, Thread 1197: XXXX 1782460060199, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460060299 XXXX 1782460060299, Thread 1197: XXXX 1782460060299, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460060300 XXXX 1782460060300, Thread 1197: XXXX 1782460060300, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460060400 XXXX 1782460060400, Thread 1197: XXXX 1782460060400, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460060401 XXXX 1782460060401, Thread 1197: XXXX 1782460060401, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460060502 XXXX 1782460060502, Thread 1197: XXXX 1782460060502, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460060503 XXXX 1782460060503, Thread 1197: XXXX 1782460060503, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460060602 XXXX 1782460060602, Thread 1197: XXXX 1782460060602, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460060603 XXXX 1782460060603, Thread 1197: XXXX 1782460060603, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460060704 XXXX 1782460060704, Thread 1197: XXXX 1782460060704, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460060704 XXXX 1782460060704, Thread 1197: XXXX 1782460060704, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460060804 XXXX 1782460060804, Thread 1197: XXXX 1782460060804, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460060805 XXXX 1782460060805, Thread 1197: XXXX 1782460060805, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460060905 XXXX 1782460060905, Thread 1197: XXXX 1782460060905, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460060906 XXXX 1782460060906, Thread 1197: XXXX 1782460060906, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460061005 XXXX 1782460061005, Thread 1197: XXXX 1782460061005, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460061006 XXXX 1782460061006, Thread 1197: XXXX 1782460061006, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460061105 XXXX 1782460061105, Thread 1197: XXXX 1782460061105, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460061107 XXXX 1782460061107, Thread 1197: XXXX 1782460061107, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460061205 XXXX 1782460061205, Thread 1197: XXXX 1782460061205, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460061206 XXXX 1782460061206, Thread 1197: XXXX 1782460061206, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460061305 XXXX 1782460061305, Thread 1197: XXXX 1782460061305, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460061307 XXXX 1782460061307, Thread 1197: XXXX 1782460061307, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460061406 XXXX 1782460061406, Thread 1197: XXXX 1782460061406, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460061407 XXXX 1782460061407, Thread 1197: XXXX 1782460061407, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460061507 XXXX 1782460061507, Thread 1197: XXXX 1782460061507, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460061509 XXXX 1782460061509, Thread 1197: XXXX 1782460061509, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460061607 XXXX 1782460061607, Thread 1197: XXXX 1782460061607, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460061608 XXXX 1782460061608, Thread 1197: XXXX 1782460061608, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460061709 XXXX 1782460061709, Thread 1197: XXXX 1782460061709, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460061709 XXXX 1782460061709, Thread 1197: XXXX 1782460061709, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460061811 XXXX 1782460061811, Thread 1197: XXXX 1782460061811, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460061813 XXXX 1782460061813, Thread 1197: XXXX 1782460061813, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460061911 XXXX 1782460061911, Thread 1197: XXXX 1782460061911, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460061912 XXXX 1782460061912, Thread 1197: XXXX 1782460061912, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460062012 XXXX 1782460062012, Thread 1197: XXXX 1782460062012, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460062012 XXXX 1782460062012, Thread 1197: XXXX 1782460062012, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460062112 XXXX 1782460062112, Thread 1197: XXXX 1782460062112, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460062114 XXXX 1782460062114, Thread 1197: XXXX 1782460062114, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460062213 XXXX 1782460062213, Thread 1197: XXXX 1782460062213, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460062214 XXXX 1782460062214, Thread 1197: XXXX 1782460062214, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460062314 XXXX 1782460062314, Thread 1197: XXXX 1782460062314, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460062315 XXXX 1782460062315, Thread 1197: XXXX 1782460062315, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460062415 XXXX 1782460062415, Thread 1197: XXXX 1782460062415, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460062415 XXXX 1782460062415, Thread 1197: XXXX 1782460062415, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460062516 XXXX 1782460062516, Thread 1197: XXXX 1782460062516, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460062517 XXXX 1782460062517, Thread 1197: XXXX 1782460062517, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460062617 XXXX 1782460062617, Thread 1197: XXXX 1782460062617, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460062620 XXXX 1782460062620, Thread 1197: XXXX 1782460062620, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460062718 XXXX 1782460062718, Thread 1197: XXXX 1782460062718, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460062718 XXXX 1782460062718, Thread 1197: XXXX 1782460062718, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460062819 XXXX 1782460062819, Thread 1197: XXXX 1782460062819, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460062821 XXXX 1782460062821, Thread 1197: XXXX 1782460062821, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460062920 XXXX 1782460062920, Thread 1197: XXXX 1782460062920, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460062921 XXXX 1782460062921, Thread 1197: XXXX 1782460062921, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460063021 XXXX 1782460063021, Thread 1197: XXXX 1782460063021, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460063022 XXXX 1782460063022, Thread 1197: XXXX 1782460063022, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460063122 XXXX 1782460063122, Thread 1197: XXXX 1782460063122, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460063124 XXXX 1782460063124, Thread 1197: XXXX 1782460063124, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460063223 XXXX 1782460063223, Thread 1197: XXXX 1782460063223, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460063223 XXXX 1782460063223, Thread 1197: XXXX 1782460063223, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460063324 XXXX 1782460063324, Thread 1197: XXXX 1782460063324, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460063324 XXXX 1782460063324, Thread 1197: XXXX 1782460063324, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460063425 XXXX 1782460063425, Thread 1197: XXXX 1782460063425, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460063426 XXXX 1782460063426, Thread 1197: XXXX 1782460063426, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460063525 XXXX 1782460063525, Thread 1197: XXXX 1782460063525, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460063527 XXXX 1782460063527, Thread 1197: XXXX 1782460063527, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460063625 XXXX 1782460063625, Thread 1197: XXXX 1782460063625, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460063627 XXXX 1782460063627, Thread 1197: XXXX 1782460063627, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460063725 XXXX 1782460063725, Thread 1197: XXXX 1782460063725, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460063726 XXXX 1782460063726, Thread 1197: XXXX 1782460063726, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460063826 XXXX 1782460063826, Thread 1197: XXXX 1782460063826, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460063827 XXXX 1782460063827, Thread 1197: XXXX 1782460063827, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460063927 XXXX 1782460063927, Thread 1197: XXXX 1782460063927, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460063929 XXXX 1782460063929, Thread 1197: XXXX 1782460063929, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460064027 XXXX 1782460064027, Thread 1197: XXXX 1782460064027, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460064029 XXXX 1782460064029, Thread 1197: XXXX 1782460064029, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460064127 XXXX 1782460064127, Thread 1197: XXXX 1782460064127, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460064128 XXXX 1782460064128, Thread 1197: XXXX 1782460064128, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460064228 XXXX 1782460064228, Thread 1197: XXXX 1782460064228, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460064230 XXXX 1782460064230, Thread 1197: XXXX 1782460064230, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460064328 XXXX 1782460064328, Thread 1197: XXXX 1782460064328, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460064329 XXXX 1782460064329, Thread 1197: XXXX 1782460064329, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460064429 XXXX 1782460064429, Thread 1197: XXXX 1782460064429, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460064429 XXXX 1782460064429, Thread 1197: XXXX 1782460064429, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460064530 XXXX 1782460064530, Thread 1197: XXXX 1782460064530, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460064532 XXXX 1782460064532, Thread 1197: XXXX 1782460064532, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460064631 XXXX 1782460064631, Thread 1197: XXXX 1782460064631, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460064633 XXXX 1782460064633, Thread 1197: XXXX 1782460064633, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460064732 XXXX 1782460064732, Thread 1197: XXXX 1782460064732, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460064732 XXXX 1782460064732, Thread 1197: XXXX 1782460064732, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460064833 XXXX 1782460064833, Thread 1197: XXXX 1782460064833, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460064835 XXXX 1782460064835, Thread 1197: XXXX 1782460064835, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460064933 XXXX 1782460064933, Thread 1197: XXXX 1782460064933, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460064933 XXXX 1782460064933, Thread 1197: XXXX 1782460064933, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460065034 XXXX 1782460065034, Thread 1197: XXXX 1782460065034, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460065034 XXXX 1782460065034, Thread 1197: XXXX 1782460065034, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460065136 XXXX 1782460065136, Thread 1197: XXXX 1782460065136, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460065137 XXXX 1782460065137, Thread 1197: XXXX 1782460065137, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460065237 XXXX 1782460065237, Thread 1197: XXXX 1782460065237, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460065238 XXXX 1782460065238, Thread 1197: XXXX 1782460065238, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460065337 XXXX 1782460065337, Thread 1197: XXXX 1782460065337, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460065337 XXXX 1782460065337, Thread 1197: XXXX 1782460065337, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460065439 XXXX 1782460065439, Thread 1197: XXXX 1782460065439, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460065440 XXXX 1782460065440, Thread 1197: XXXX 1782460065440, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460065540 XXXX 1782460065540, Thread 1197: XXXX 1782460065540, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460065541 XXXX 1782460065541, Thread 1197: XXXX 1782460065541, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460065641 XXXX 1782460065641, Thread 1197: XXXX 1782460065641, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460065642 XXXX 1782460065642, Thread 1197: XXXX 1782460065642, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460065741 XXXX 1782460065741, Thread 1197: XXXX 1782460065741, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460065741 XXXX 1782460065741, Thread 1197: XXXX 1782460065741, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460065842 XXXX 1782460065842, Thread 1197: XXXX 1782460065842, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460065843 XXXX 1782460065843, Thread 1197: XXXX 1782460065843, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460065943 XXXX 1782460065943, Thread 1197: XXXX 1782460065943, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460065944 XXXX 1782460065944, Thread 1197: XXXX 1782460065944, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460066044 XXXX 1782460066044, Thread 1197: XXXX 1782460066044, Entering Thread 1197: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+1197 1782460066044 XXXX 1782460066044, Thread 1197: XXXX 1782460066044, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460066045 XXXX 1782460066045, Thread 1197: XXXX 1782460066045, Entering Thread 1197: Commands::runScriptWithUpload, script name = ReadEmu  
+1197 1782460066045 XXXX 1782460066045, Thread 1197: XXXX 1782460066045, Entering Thread 1197: ToolCommUsb::readTransfer, sideData is 0x24 bytes long, transferDataLength is 0x4 bytes long  
+1197 1782460066048 XXXX 1782460066048, Thread 1197: XXXX 1782460066048, Exiting Thread 1197: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1197 1782460066048 XXXX 1782460066048, Thread 1197: XXXX 1782460066048, Exiting Thread 1197: Commands::runScriptWithUpload  
+
+1197 1782460066051 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadTargetMemory
+1197 1782460066051 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1197 1782460066051 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Emulation
+1197 1782460066051 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0002000
+1197 1782460066051 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0002003
+1197 1782460066051 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1197 1782460066051 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1197 1782460066051 XXXX 1782460066051, Thread 1197: XXXX 1782460066051, Entering Thread 1197: Commands::runScriptWithUpload, script name = ReadEmu  
+1197 1782460066051 XXXX 1782460066051, Thread 1197: XXXX 1782460066051, Entering Thread 1197: ToolCommUsb::readTransfer, sideData is 0x24 bytes long, transferDataLength is 0x4 bytes long  
+1197 1782460066053 XXXX 1782460066053, Thread 1197: XXXX 1782460066053, Exiting Thread 1197: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1197 1782460066053 XXXX 1782460066053, Thread 1197: XXXX 1782460066053, Exiting Thread 1197: Commands::runScriptWithUpload  
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadTargetMemory
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadTargetMemory
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Emulation
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e000edfc
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e000edff
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1197 1782460066053 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1197 1782460066053 XXXX 1782460066053, Thread 1197: XXXX 1782460066053, Entering Thread 1197: Commands::runScriptWithUpload, script name = ReadEmu  
+1197 1782460066053 XXXX 1782460066053, Thread 1197: XXXX 1782460066053, Entering Thread 1197: ToolCommUsb::readTransfer, sideData is 0x24 bytes long, transferDataLength is 0x4 bytes long  
+1197 1782460066056 XXXX 1782460066056, Thread 1197: XXXX 1782460066056, Exiting Thread 1197: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1197 1782460066056 XXXX 1782460066056, Thread 1197: XXXX 1782460066056, Exiting Thread 1197: Commands::runScriptWithUpload  
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadTargetMemory
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugWriteTargetMemory
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Emulation
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e000edfc
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e000edff
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1197 1782460066056 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1197 1782460066056 XXXX 1782460066056, Thread 1197: XXXX 1782460066056, Entering Thread 1197: Commands::runScriptWithDownload, script name = WriteEmu  
+1197 1782460066058 XXXX 1782460066058, Thread 1197: XXXX 1782460066058, Exiting Thread 1197: Commands::runScriptWithDownload(WriteEmu)  
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugWriteTargetMemory
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugWriteTargetMemory
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Emulation
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0001000
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0001003
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1197 1782460066058 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1197 1782460066058 XXXX 1782460066058, Thread 1197: XXXX 1782460066058, Entering Thread 1197: Commands::runScriptWithDownload, script name = WriteEmu  
+1197 1782460066061 XXXX 1782460066061, Thread 1197: XXXX 1782460066061, Exiting Thread 1197: Commands::runScriptWithDownload(WriteEmu)  
+1197 1782460066061 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugWriteTargetMemory
+1197 1782460066061 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1197 1782460066061 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1197 1782460066061 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1197 1782460066062 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugWriteTargetMemory
+1197 1782460066062 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1197 1782460066062 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Emulation
+1197 1782460066062 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0001020
+1197 1782460066062 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e000102b
+1197 1782460066062 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 12
+1197 1782460066062 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1197 1782460066062 XXXX 1782460066062, Thread 1197: XXXX 1782460066062, Entering Thread 1197: Commands::runScriptWithDownload, script name = WriteEmu  
+1197 1782460066065 XXXX 1782460066065, Thread 1197: XXXX 1782460066065, Exiting Thread 1197: Commands::runScriptWithDownload(WriteEmu)  
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugWriteTargetMemory
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugWriteTargetMemory
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Emulation
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0001030
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e000103b
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 12
+1197 1782460066065 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1197 1782460066065 XXXX 1782460066065, Thread 1197: XXXX 1782460066065, Entering Thread 1197: Commands::runScriptWithDownload, script name = WriteEmu  
+1197 1782460066068 XXXX 1782460066068, Thread 1197: XXXX 1782460066068, Exiting Thread 1197: Commands::runScriptWithDownload(WriteEmu)  
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugWriteTargetMemory
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugWriteTargetMemory
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Emulation
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0002000
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0002003
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1197 1782460066068 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1197 1782460066068 XXXX 1782460066068, Thread 1197: XXXX 1782460066068, Entering Thread 1197: Commands::runScriptWithDownload, script name = WriteEmu  
+1197 1782460066070 XXXX 1782460066070, Thread 1197: XXXX 1782460066070, Exiting Thread 1197: Commands::runScriptWithDownload(WriteEmu)  
+1197 1782460066070 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugWriteTargetMemory
+1197 1782460066070 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1197 1782460066070 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1197 1782460066070 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1197 1782460066071 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugWriteTargetMemory
+1197 1782460066071 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1197 1782460066071 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Emulation
+1197 1782460066071 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0002008
+1197 1782460066071 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e000201f
+1197 1782460066071 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 24
+1197 1782460066071 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1197 1782460066071 XXXX 1782460066071, Thread 1197: XXXX 1782460066071, Entering Thread 1197: Commands::runScriptWithDownload, script name = WriteEmu  
+1197 1782460066073 XXXX 1782460066073, Thread 1197: XXXX 1782460066073, Exiting Thread 1197: Commands::runScriptWithDownload(WriteEmu)  
+1197 1782460066073 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugWriteTargetMemory
+1197 1782460066073 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1197 1782460066073 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1197 1782460066073 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1197 1782460066074 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:GetPC
+1197 1782460066074 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1197 1782460066074 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B null
+1197 1782460066074 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1197 1782460066074 XXXX 1782460066074, Thread 1197: XXXX 1782460066074, Entering Thread 1197: Commands::runScriptBasic, script name = GetPC, timeOut = -1 ms  
+1197 1782460066074 XXXX 1782460066074, Thread 1197: XXXX 1782460066074, Exiting Thread 1197: Commands::runScriptBasic  
+1197 1782460066074 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:GetPC
+1197 1782460066074 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1197 1782460066074 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B 457f96
+1197 1782460066074 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066075 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066075 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066075 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B PC
+1125 1782460066075 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066075 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066075 XXXX 1782460066075, Thread 1125: XXXX 1782460066075, Entering Thread 1125: Commands::runScriptWithUpload, script name = GetCoreRegsRange  
+1125 1782460066075 XXXX 1782460066075, Thread 1125: XXXX 1782460066075, Entering Thread 1125: ToolCommUsb::readTransfer, sideData is 0x45 bytes long, transferDataLength is 0x4c bytes long  
+1125 1782460066079 XXXX 1782460066079, Thread 1125: XXXX 1782460066079, Exiting Thread 1125: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1125 1782460066079 XXXX 1782460066079, Thread 1125: XXXX 1782460066079, Exiting Thread 1125: Commands::runScriptWithUpload  
+1125 1782460066079 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066079 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066079 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066079 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R0
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R1
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R2
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R3
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R5
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R6
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R7
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R8
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R9
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R10
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R11
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B R12
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B SP
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B LR
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B PC
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B MSP
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B PSP
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B PSR
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B APSR
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B IPSR
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B EPSR
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B PRIMASK
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066081 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066081 XXXX 1782460066081, Thread 1125: XXXX 1782460066081, Entering Thread 1125: Commands::runScriptWithUpload, script name = GetCoreRegsRange  
+1125 1782460066081 XXXX 1782460066081, Thread 1125: XXXX 1782460066081, Entering Thread 1125: ToolCommUsb::readTransfer, sideData is 0x45 bytes long, transferDataLength is 0x4 bytes long  
+1125 1782460066083 XXXX 1782460066083, Thread 1125: XXXX 1782460066083, Exiting Thread 1125: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1125 1782460066083 XXXX 1782460066083, Thread 1125: XXXX 1782460066083, Exiting Thread 1125: Commands::runScriptWithUpload  
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B FAULTMASK
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B BASEPRI
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B CONTROL
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B FPSCR
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066083 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066083 XXXX 1782460066083, Thread 1125: XXXX 1782460066083, Entering Thread 1125: Commands::runScriptWithUpload, script name = GetCoreRegsRange  
+1125 1782460066083 XXXX 1782460066083, Thread 1125: XXXX 1782460066083, Entering Thread 1125: ToolCommUsb::readTransfer, sideData is 0x45 bytes long, transferDataLength is 0x4 bytes long  
+1125 1782460066085 XXXX 1782460066085, Thread 1125: XXXX 1782460066085, Exiting Thread 1125: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1125 1782460066085 XXXX 1782460066085, Thread 1125: XXXX 1782460066085, Exiting Thread 1125: Commands::runScriptWithUpload  
+1125 1782460066085 XXXX 1782460066085, Thread 1125: XXXX 1782460066085, Entering Thread 1125: Commands::runScriptWithUpload, script name = GetCoreRegsRange  
+1125 1782460066085 XXXX 1782460066085, Thread 1125: XXXX 1782460066085, Entering Thread 1125: ToolCommUsb::readTransfer, sideData is 0x45 bytes long, transferDataLength is 0x80 bytes long  
+1125 1782460066089 XXXX 1782460066089, Thread 1125: XXXX 1782460066089, Exiting Thread 1125: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1125 1782460066089 XXXX 1782460066089, Thread 1125: XXXX 1782460066089, Exiting Thread 1125: Commands::runScriptWithUpload  
+1125 1782460066089 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066089 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066089 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066089 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066089 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066089 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066089 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S0
+1125 1782460066089 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066089 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S1
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S2
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S3
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S5
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S6
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S7
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S8
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S9
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S10
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S11
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S12
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S13
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S14
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S15
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S16
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S17
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S18
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S19
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S20
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S21
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S22
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S23
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S24
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S25
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S26
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S27
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S28
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S29
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066090 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S30
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadNamedRegister
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B S31
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadNamedRegister
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066091 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066113 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadTargetMemory
+1125 1782460066113 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066113 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Periph
+1125 1782460066113 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0041004
+1125 1782460066113 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B e0041007
+1125 1782460066113 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066113 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066113 XXXX 1782460066113, Thread 1125: XXXX 1782460066113, Entering Thread 1125: Commands::runScriptWithUpload, script name = ReadEmu  
+1125 1782460066113 XXXX 1782460066113, Thread 1125: XXXX 1782460066113, Entering Thread 1125: ToolCommUsb::readTransfer, sideData is 0x24 bytes long, transferDataLength is 0x4 bytes long  
+1125 1782460066114 XXXX 1782460066114, Thread 1125: XXXX 1782460066114, Exiting Thread 1125: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1125 1782460066114 XXXX 1782460066114, Thread 1125: XXXX 1782460066114, Exiting Thread 1125: Commands::runScriptWithUpload  
+1125 1782460066114 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadTargetMemory
+1125 1782460066114 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066114 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066114 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066115 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadTargetMemory
+1125 1782460066115 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066115 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B FileRegs
+1125 1782460066115 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B 2040e6f0
+1125 1782460066115 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B 2040e70f
+1125 1782460066115 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 32
+1125 1782460066115 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066115 XXXX 1782460066115, Thread 1125: XXXX 1782460066115, Entering Thread 1125: Commands::runScriptWithUpload, script name = ReadEmu  
+1125 1782460066115 XXXX 1782460066115, Thread 1125: XXXX 1782460066115, Entering Thread 1125: ToolCommUsb::readTransfer, sideData is 0x24 bytes long, transferDataLength is 0x20 bytes long  
+1125 1782460066117 XXXX 1782460066117, Thread 1125: XXXX 1782460066117, Exiting Thread 1125: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1125 1782460066117 XXXX 1782460066117, Thread 1125: XXXX 1782460066117, Exiting Thread 1125: Commands::runScriptWithUpload  
+1125 1782460066117 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadTargetMemory
+1125 1782460066117 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066117 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066117 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066185 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadTargetMemory
+1125 1782460066185 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066185 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B FileRegs
+1125 1782460066185 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B 2040e710
+1125 1782460066185 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B 2040e713
+1125 1782460066185 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4
+1125 1782460066185 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066185 XXXX 1782460066185, Thread 1125: XXXX 1782460066185, Entering Thread 1125: Commands::runScriptWithUpload, script name = ReadEmu  
+1125 1782460066185 XXXX 1782460066185, Thread 1125: XXXX 1782460066185, Entering Thread 1125: ToolCommUsb::readTransfer, sideData is 0x24 bytes long, transferDataLength is 0x4 bytes long  
+1125 1782460066188 XXXX 1782460066188, Thread 1125: XXXX 1782460066188, Exiting Thread 1125: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1125 1782460066188 XXXX 1782460066188, Thread 1125: XXXX 1782460066188, Exiting Thread 1125: Commands::runScriptWithUpload  
+1125 1782460066188 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadTargetMemory
+1125 1782460066188 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066188 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066188 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+
+1125 1782460066214 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:DebugReadTargetMemory
+1125 1782460066214 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1125 1782460066214 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B FileRegs
+1125 1782460066214 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B 2040e6f0
+1125 1782460066214 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B 2040f6ef
+1125 1782460066214 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Length = 4096
+1125 1782460066214 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1125 1782460066214 XXXX 1782460066214, Thread 1125: XXXX 1782460066214, Entering Thread 1125: Commands::runScriptWithUpload, script name = ReadEmu  
+1125 1782460066214 XXXX 1782460066214, Thread 1125: XXXX 1782460066214, Entering Thread 1125: ToolCommUsb::readTransfer, sideData is 0x24 bytes long, transferDataLength is 0x1000 bytes long  
+1125 1782460066246 XXXX 1782460066246, Thread 1125: XXXX 1782460066246, Exiting Thread 1125: ToolCommUsb::readTransfer,  cr.status = 0x0  
+1125 1782460066246 XXXX 1782460066246, Thread 1125: XXXX 1782460066246, Exiting Thread 1125: Commands::runScriptWithUpload  
+1125 1782460066246 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Post:DebugReadTargetMemory
+1125 1782460066246 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return Value
+1125 1782460066246 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B true
+1125 1782460066246 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Return End
+163 1782460077170 GEN4_CONNECT_DIAGNOSTICS:Calling Update on plug and play observer com.microchip.mplab.mdbcore.RI4Tool.RI4ToolBase$RI4PlugNPlayObserver@50c8045f
+163 1782460077170 GEN4_CONNECT_DIAGNOSTICS:Entering plug and play Update(). Attached PID = 9012
+163 1782460077170 GEN4_CONNECT_DIAGNOSTICS:Entering MPLABCommEvent handler
+163 1782460077170 GEN4_CONNECT_DIAGNOSTICS:MPLABCommEvent.pid = 9012
+163 1782460077170 GEN4_CONNECT_DIAGNOSTICS:eventType = MPLABCOMM_TOOL_UNPLUGGED
+163 1782460077171 GEN4_CONNECT_DIAGNOSTICS:Exiting plug and play Update()
+1118 1782460078176 GEN4_CONNECT_DIAGNOSTICS:MPLABCommTool is null
+
+1118 1782460078176 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Pre:EndDebugSession
+1118 1782460078176 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload
+1118 1782460078176 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B null
+1118 1782460078176 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_ATSAMV71Q21B Payload End
+1118 1782460078176 XXXX 1782460078176, Thread 1118: XXXX 1782460078176, Entering Thread 1118: Commands::runScriptBasic, script name = ExitDebugMode, timeOut = -1 ms  
+1118 1782460078178 XXXX 1782460078178, Thread 1118: com.Send returned false 
+1118 1782460078178 XXXX 1782460078178, Thread 1118: transfer: exception after writeHeaderAndGetResult null 
+1118 1782460078178 XXXX 1782460078178, Thread 1118: XXXX 1782460078178, Entering Thread 1118: ToolCommUsb::recoverFromProtocolError, type = NO_SCRIPT  
+1118 1782460078178 XXXX 1782460078178, Thread 1118: Send Abort Script Engine Command 
+1118 1782460078178 XXXX 1782460078178, Thread 1118: XXXX 1782460078178, Entering Thread 1118: ToolCommUsb::killScriptEngine  
+1118 1782460078178 XXXX 1782460078178, Thread 1118: com.Send returned false 
+1118 1782460078178 XXXX 1782460078178, Thread 1118: Failed sending Abort Script Engine Command. Set nuclear option = true 
+1118 1782460078178 XXXX 1782460078178, Thread 1118: About to nuke 
+1118 1782460078178 XXXX 1782460078178, Thread 1118: XXXX 1782460078178, Entering Thread 1118: ToolCommUsb::nuclearOption  
+1118 1782460078179 XXXX 1782460078179, Thread 1118: com.Send returned false 

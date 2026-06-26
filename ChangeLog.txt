@@ -1,0 +1,9 @@
+# Ver 1.0.0
+
+# Ver 1.1.0 20/05/2026 00:00:00 --------------------------------------------------
+1. Add new configuration build for 'backup' & new signed tools
+2. Increase UART0 MPU baudrate to 250K
+3. Disable USB Ethernet for stability
+4. Change xTP to use software CRC instead of lookup table for stability
+5. Change build output method with new signed tools
+6. Add commands to check boot cause, boot count, change baud rate, turn on/off autocomplete

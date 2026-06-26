@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>01_ISS_PC2_V10_FW</name>
+            <name>03_FreeRTOS</name>
+            <creation-uuid>19e46ff3-c647-4c26-9052-fe94fd14cb39</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects>
+                <make-dep-project>../../SpaceLiin_Satellite_SamV71_Bootloader/07_BOOTLOADER.X</make-dep-project>
+                <make-dep-project>../../../../MainProject/07_BOOTLOADER/07_BOOTLOADER.X</make-dep-project>
+            </make-dep-projects>
+            <make-dep-projects>
+                <make-dep-project>../../SpaceLiin_Satellite_SamV71_Bootloader/07_BOOTLOADER.X</make-dep-project>
+                <make-dep-project>../../../../MainProject/07_BOOTLOADER/07_BOOTLOADER.X</make-dep-project>
+            </make-dep-projects>
+            <sourceRootList>
+                <sourceRootElem>../src</sourceRootElem>
+                <sourceRootElem>../docs</sourceRootElem>
+                <sourceRootElem>../../Project_1/Project_1.X</sourceRootElem>
+                <sourceRootElem>../../Project_1/src/config/default/peripheral/qspi</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>default</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>backup</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>
