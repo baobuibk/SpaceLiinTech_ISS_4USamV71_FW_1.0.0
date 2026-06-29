@@ -102,6 +102,9 @@ xTP_Return_t xTP_ARQ_Send(xTP_Instance_t *inst, xTP_ID_t id, uint8_t dst,
 int xTP_ARQ_OnReceive(xTP_Instance_t *inst, xTP_ID_t id,
                        const uint8_t *payload, uint16_t len);
 
+/** Send a NACK frame. */
+void xTP_ARQ_SendNack(xTP_Instance_t *inst, uint8_t seq_byte);                       
+
 /** Convenience: always returns 1 since there is no pending state machine. */
 static inline int xTP_ARQ_IsIdle(const xTP_Instance_t *inst)
 {
