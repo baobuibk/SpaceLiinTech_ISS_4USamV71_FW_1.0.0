@@ -1,8 +1,11 @@
-#include "cli_bme688.h"
-#include "stdio.h"
-#include "M1_SysApp/EmbeddedCLI/CLI_Setup/cli_setup.h"
 #include "stdlib.h"
 #include "string.h"
+#include "stdio.h"
+#include "samv71q21b.h"
+#include "define.h"
+#include "M1_SysApp/EmbeddedCLI/CLI_Setup/cli_setup.h"
+#include "M1_SysApp/EmbeddedCLI/CLI_Command/cli_command.h"
+#include "BSP_BME688/bsp_bme688.h"
 
 extern bme688_dev_t bme688_int;
 extern i2c_io_t i2c1;

@@ -1,11 +1,9 @@
-#include "cli_pump.h"
 #include "stdio.h"
 #include "M1_SysApp/EmbeddedCLI/CLI_Setup/cli_setup.h"
 #include "stdlib.h"
 #include "string.h"
 #include "os.h"
-
-#include "M3_Driver/devices/PUMP/pump.h"
+#include "M2_BSP/BSP_Pump/bsp_pump.h"
 
 void CMD_PUMP_Enable(EmbeddedCli *cli, char *args, void *context) {
     char buf[128];

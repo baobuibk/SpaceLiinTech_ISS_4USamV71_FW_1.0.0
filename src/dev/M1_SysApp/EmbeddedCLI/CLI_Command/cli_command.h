@@ -49,33 +49,18 @@ void CMD_Temp_log_toggle(EmbeddedCli *cli, char *args, void *context);
 void CMD_Temp_PID_set(EmbeddedCli *cli, char *args, void *context);
 void CMD_Temp_PID_get(EmbeddedCli *cli, char *args, void *context);
 
-//void CMD_PowerSOM_ON(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerSOM_OFF(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerSOM_Get(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerBuckPeri_ON(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerBuckPeri_OFF(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerBuckPeri_Get(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerTec_ON(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerTec_OFF(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerTec_Get(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerSLN_HD_ON(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerSLN_HD_OFF(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerSLN_HD_Get(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerSolenoid_ON(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerSolenoid_OFF(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerSolenoid_Get(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerLP_Heater_ON(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerLP_Heater_OFF(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerLP_Heater_Get(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerHeater_ON(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerHeater_OFF(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerHeater_Get(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerAll_ON(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerAll_OFF(EmbeddedCli *cli, char *args, void *context);
 void CMD_PowerAll_Get(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerAI_ON(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerAI_OFF(EmbeddedCli *cli, char *args, void *context);
-//void CMD_PowerAI_Get(EmbeddedCli *cli, char *args, void *context);
 
 void CMD_TEC_Init(EmbeddedCli *cli, char *args, void *context);
 void CMD_TEC_Set_Vol(EmbeddedCli *cli, char *args, void *context);
@@ -94,5 +79,43 @@ void CMD_SOL_MAX_Init(EmbeddedCli *cli, char *args, void *context);
 void CMD_SOL_MAX_Control(EmbeddedCli *cli, char *args, void *context);
 
 void CMD_PAC1934_Read(EmbeddedCli *cli, char *args, void *context);
+
+void CMD_BME688_Init (EmbeddedCli *cli, char *args, void *context);
+void CMD_BME688_Read_Temperature (EmbeddedCli *cli, char *args, void *context);
+void CMD_BME688_Read_Pressure (EmbeddedCli *cli, char *args, void *context);
+void CMD_BME688_Read_Humidity (EmbeddedCli *cli, char *args, void *context);
+void CMD_BME688_Read_All (EmbeddedCli *cli, char *args, void *context);
+
+void CMD_LSM6DSOX_Init (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Dis_Int (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Config_Accel (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Config_Gyro (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Config_Int (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Config_FF (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Config_WU (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Check (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Read_All (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Read_Accel (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Read_Gyro (EmbeddedCli *cli, char *args, void *context);
+void CMD_LSM6DSOX_Read_Temp (EmbeddedCli *cli, char *args, void *context);
+
+void CMD_PUMP_Enable(EmbeddedCli *cli, char *args, void *context);
+void CMD_PUMP_Disable(EmbeddedCli *cli, char *args, void *context);
+void CMD_PUMP_Init(EmbeddedCli *cli, char *args, void *context);
+void CMD_PUMP_Set_Volt(EmbeddedCli *cli, char *args, void *context);
+void CMD_PUMP_Set_Freq(EmbeddedCli *cli, char *args, void *context);
+void CMD_PUMP_Stat(EmbeddedCli *cli, char *args, void *context);
+
+void CMD_NTC_Read_All (EmbeddedCli *cli, char *args, void *context);
+void CMD_NTC_Read(EmbeddedCli *cli, char *args, void *context);
+void CMD_Check_NTC(EmbeddedCli *cli, char *args, void *context);
+
+void CMD_RTC_Read(EmbeddedCli *cli, char *args, void *context);
+void CMD_RTC_Set_Date(EmbeddedCli *cli, char *args, void *context);
+void CMD_RTC_Set_Time(EmbeddedCli *cli, char *args, void *context);
+void CMD_RTC_Ping(EmbeddedCli *cli, char *args, void *context);
+void CMD_RTC_Test(EmbeddedCli *cli, char *args, void *context);
+
+void CMD_CLI_Echo (EmbeddedCli *cli, char *args, void *context);
 
 #endif /* M2_SYSTEM_CLI_TERMINAL_CLI_COMMAND_CLI_COMMAND_H_ */

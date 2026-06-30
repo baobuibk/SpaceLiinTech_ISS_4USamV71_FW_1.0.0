@@ -10,13 +10,6 @@ pac1934_dev_t pac1934_hi = {
     .init_status  = false,
 };
 
-pac1934_dev_t pac1934_lo = {
-    .i2c_bus      = &i2c0,
-    .slaveAdd     = 0x10U,
-    .rsense_mohm  = PAC1934_RSENSE_MOHM,
-    .init_status  = false,
-};
-
 uint32_t bsp_pac1934_init(pac1934_dev_t *dev)
 {
     if (dev == NULL) return ERROR_INVALID_PARAM;
