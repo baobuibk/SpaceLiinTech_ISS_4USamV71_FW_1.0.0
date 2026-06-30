@@ -124,6 +124,13 @@ void xCLI_DoReboot(uint16_t delay_ms)
     while (1) { __NOP(); }
 }
 
+uint32_t xCLI_GetBoardIdent(void)
+{
+    // return (uint32_t)BOARD_IDENT_Get();  /* PD10: 0=BOARD1, 1=BOARD2 */
+    // return 0xFFFFFFFF;
+    return 0U;  
+}
+
 __attribute__((weak)) uint32_t xCLI_GetFreeHeap(void)  { return 0U; }
 __attribute__((weak)) uint32_t xCLI_GetTotalHeap(void) { return 0U; }
 
@@ -176,8 +183,9 @@ static void xcli_builtin_help(xCLI_ReqCtx_t *ctx, const char *args)
 static void xcli_builtin_ping(xCLI_ReqCtx_t *ctx, const char *args)
 {
     uint32_t ts = xcli_token_u32(args, 1U);
-    xCLI_Ser_PutU32(&ctx->ser, "echo", ts);
-    xCLI_Ser_PutStr(&ctx->ser, "mode", "app");
+    xCLI_Ser_PutU32(&ctx->ser, "echo",        ts);
+    xCLI_Ser_PutStr(&ctx->ser, "mode",        "app");
+    xCLI_Ser_PutU32(&ctx->ser, "board_ident", xCLI_GetBoardIdent());
 }
 
 /* ---- VERSION (0x03) ---------------------------------------------------- */

@@ -4,6 +4,8 @@
  * xTP_ARQ_Send() is blocking: send frame -> busy-wait xTP_Process() -> ACK/retry/fail.
  * xTP_ARQ_OnReceive() sends ACK immediately.
  * SEQ for debug
+ * V1.1.0
+ *    - Fix logic ARQ NAK send
  *                                                  C.H
  */
 
@@ -118,7 +120,7 @@ xTP_Return_t xTP_ARQ_Send(xTP_Instance_t *inst, xTP_ID_t id, uint8_t dst,
 
         /* Transmit (or retransmit). */
         arq_do_send(inst);
-        sent_at = inst->port.get_tick();
+        sent_at = (inst->port.get_tick != NULL) ? inst->port.get_tick() : 0U;
 
         if (retries > 0U) {
             xTP_Log("[ARQ] RETRANSMIT seq=%u retry=%u",
@@ -134,7 +136,7 @@ xTP_Return_t xTP_ARQ_Send(xTP_Instance_t *inst, xTP_ID_t id, uint8_t dst,
             /* ACK received? - success. */
             if (a->ack_received) {
                 xTP_Log("[ARQ] ACK received seq=%u", (unsigned)seq_byte);
-                XTP_STAT_INC(inst, arq_ack_rx);
+                // XTP_STAT_INC(inst, arq_ack_rx);
                 a->seq_tx = (uint8_t)((a->seq_tx + 1U) & XTP_SEQ_NUM_MASK);
                 if (a->on_ack) { a->on_ack(inst, seq_byte); }
                 return XTP_OK;
@@ -148,7 +150,7 @@ xTP_Return_t xTP_ARQ_Send(xTP_Instance_t *inst, xTP_ID_t id, uint8_t dst,
             }
 
             /* Timeout? break to retry. */
-            now = inst->port.get_tick();
+            now = (inst->port.get_tick != NULL) ? inst->port.get_tick() : 0U;
             if ((now - sent_at) >= (uint32_t)XTP_ARQ_TIMEOUT_MS) {
                 xTP_Log("[ARQ] TIMEOUT seq=%u", (unsigned)seq_byte);
                 XTP_STAT_INC(inst, arq_timeouts);
@@ -177,8 +179,7 @@ int xTP_ARQ_OnReceive(xTP_Instance_t *inst, xTP_ID_t id,
     /* --- ACK control frame ---------------------------------------------- */
     if (id == XTP_ARQ_ID_ACK) {
         if (len >= 1U) {
-            uint8_t acked = payload[0] & XTP_SEQ_NUM_MASK;
-            xTP_Log("[ARQ] RX ACK seq=%u", (unsigned)acked);
+            xTP_Log("[ARQ] RX ACK seq=%u", (unsigned)(payload[0] & XTP_SEQ_NUM_MASK));
             XTP_STAT_INC(inst, arq_ack_rx);
             a->ack_received = 1U;   /* Signal the blocking Send loop. */
         }
@@ -188,8 +189,7 @@ int xTP_ARQ_OnReceive(xTP_Instance_t *inst, xTP_ID_t id,
     /* --- NACK control frame --------------------------------------------- */
     if (id == XTP_ARQ_ID_NACK) {
         if (len >= 1U) {
-            uint8_t nacked = payload[0] & XTP_SEQ_NUM_MASK;
-            xTP_Log("[ARQ] RX NACK seq=%u", (unsigned)nacked);
+            xTP_Log("[ARQ] RX NACK seq=%u", (unsigned)(payload[0] & XTP_SEQ_NUM_MASK));
             XTP_STAT_INC(inst, arq_nack_rx);
             a->nack_received = 1U;  /* Signal the blocking Send loop. */
         }
@@ -232,6 +232,13 @@ int xTP_ARQ_OnReceive(xTP_Instance_t *inst, xTP_ID_t id,
 
         return 0;   /* deliver pure app payload to upper layer */
     }
+}
+
+void xTP_ARQ_SendNack(xTP_Instance_t *inst, uint8_t seq_byte)
+{
+    if (inst == NULL || inst->arq == NULL) { return; }
+    arq_send_ctrl(inst, XTP_ARQ_ID_NACK, seq_byte & XTP_SEQ_NUM_MASK);
+    XTP_STAT_INC(inst, arq_nack_tx);
 }
 
 #endif /* XTP_USE_ARQ */

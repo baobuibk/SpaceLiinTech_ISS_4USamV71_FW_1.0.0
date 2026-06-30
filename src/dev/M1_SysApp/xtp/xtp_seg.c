@@ -14,6 +14,9 @@
 
 #if XTP_USE_SEG
 
+static void (*s_seg_on_complete)(xTP_Instance_t *, uint8_t,
+                                  xTP_ID_t, const uint8_t *, uint32_t) = NULL;
+
 /* -------------------------------------------------------------------------
  * Stream slot helpers
  * -------------------------------------------------------------------------*/
@@ -44,7 +47,7 @@ static xTP_Seg_Stream_t *seg_alloc(xTP_Instance_t *inst, uint8_t src,
             s[i].next_expected_idx = 0U;
             s[i].bytes_received    = 0U;
             s[i].last_chunk_ms     = now;
-            s[i].on_complete       = NULL;
+            s[i].on_complete       = s_seg_on_complete;
             return &s[i];
         }
     }
@@ -103,6 +106,7 @@ void xTP_SEG_SetCallback(xTP_Instance_t *inst,
 {
     uint8_t i;
     if (inst == NULL || inst->seg_streams == NULL) { return; }
+    s_seg_on_complete = on_complete;
     for (i = 0U; i < XTP_SEG_MAX_STREAMS; i++) {
         inst->seg_streams[i].on_complete = on_complete;
     }
@@ -160,24 +164,25 @@ xTP_Return_t xTP_SEG_Send(xTP_Instance_t *inst, xTP_ID_t id, uint8_t dst,
         if (r != XTP_OK) { return r; }
 
 #if XTP_USE_ARQ
-        /* Spin until ACKed (bare-metal blocking). */
-        {
-            uint32_t deadline = inst->port.get_tick() +
-                       (uint32_t)(XTP_ARQ_TIMEOUT_MS * (XTP_ARQ_MAX_RETRIES + 2U) + 10U);
-            while (!xTP_ARQ_IsIdle(inst)) {
-                xTP_Process(inst);
-                xTP_ARQ_Poll(inst);
-                if (inst->arq && inst->arq->state == XTP_ARQ_FAILED) {
-                    xTP_Log("[SEG] ARQ failed chunk %lu/%lu",
-                            (unsigned long)chunk_idx, (unsigned long)(total_chunks-1U));
-                    return XTP_ERR;
-                }
-                if ((inst->port.get_tick() - deadline) < 0x80000000UL) {
-                    xTP_Log("[SEG] deadline exceeded");
-                    return XTP_ERR_TIMEOUT;
-                }
-            }
-        }
+        // No need spin-wait for ACK here; xTP_ARQ_Send() already does that. 
+        // /* Spin until ACKed (bare-metal blocking). */
+        // {
+        //     uint32_t deadline = inst->port.get_tick() +
+        //                (uint32_t)(XTP_ARQ_TIMEOUT_MS * (XTP_ARQ_MAX_RETRIES + 2U) + 10U);
+        //     while (!xTP_ARQ_IsIdle(inst)) {
+        //         xTP_Process(inst);
+        //         xTP_ARQ_Poll(inst);
+        //         if (inst->arq && inst->arq->state == XTP_ARQ_FAILED) {
+        //             xTP_Log("[SEG] ARQ failed chunk %lu/%lu",
+        //                     (unsigned long)chunk_idx, (unsigned long)(total_chunks-1U));
+        //             return XTP_ERR;
+        //         }
+        //         if ((inst->port.get_tick() - deadline) < 0x80000000UL) {
+        //             xTP_Log("[SEG] deadline exceeded");
+        //             return XTP_ERR_TIMEOUT;
+        //         }
+        //     }
+        // }
 #else
         /* No ARQ = no ACK-based flow control.
          * Pace chunks with a fixed inter-frame gap so the TX FIFO drains
@@ -229,8 +234,8 @@ void xTP_SEG_OnChunk(xTP_Instance_t *inst,
         if (stream == NULL) {
             stream = seg_alloc(inst, src, sid, 0U, now);
             if (stream == NULL) { return; }
-            if (XTP_SEG_MAX_STREAMS > 0U)
-                stream->on_complete = inst->seg_streams[0].on_complete;
+            // if (XTP_SEG_MAX_STREAMS > 0U)
+            //     stream->on_complete = inst->seg_streams[0].on_complete;
         }
         stream->last_chunk_ms = now;
         xTP_Log("[SEG] stream chunk idx=%lu  %u B (streaming)",
@@ -257,8 +262,8 @@ void xTP_SEG_OnChunk(xTP_Instance_t *inst,
         }
         stream = seg_alloc(inst, src, sid, total, now);
         if (stream == NULL) { return; }
-        if (XTP_SEG_MAX_STREAMS > 0U)
-            stream->on_complete = inst->seg_streams[0].on_complete;
+        // if (XTP_SEG_MAX_STREAMS > 0U)
+        //     stream->on_complete = inst->seg_streams[0].on_complete;
     }
 
     stream->last_chunk_ms = now;
