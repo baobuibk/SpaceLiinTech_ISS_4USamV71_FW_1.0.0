@@ -65,6 +65,7 @@ uint32_t xCLI_GetFreeHeap (void);
 uint32_t xCLI_GetTotalHeap(void);
 uint8_t  xCLI_GpioRead    (uint8_t pin);
 uint8_t  xCLI_GpioWrite   (uint8_t pin, uint8_t val);
+uint32_t xCLI_GetBoardIdent(void);
 
 #ifdef __cplusplus
 }
