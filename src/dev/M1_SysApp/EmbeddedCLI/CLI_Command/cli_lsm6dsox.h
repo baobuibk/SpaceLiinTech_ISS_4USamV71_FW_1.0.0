@@ -1,6 +1,5 @@
 #include "M1_SysApp/EmbeddedCLI/CLI_Command/cli_command.h"
-#include "BSP_LSM6DSOX/bsp_lsm6dsox.h"
-#include "samv71q21b.h"
+
 
 /*************************************************
  *                Command Define                 *

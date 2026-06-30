@@ -5,6 +5,7 @@
 #include "string.h"
 #include "os.h"
 #include "M5_Utils/DateTime/date_time.h"
+#include "M2_BSP/BSP_RTC/bsp_rtc.h"
 
 
 /* =============================================================================

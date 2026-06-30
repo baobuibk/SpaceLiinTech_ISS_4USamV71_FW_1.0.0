@@ -77,13 +77,6 @@ static void CMD_UART_BaudToggle(EmbeddedCli *cli, char *args, void *context);
 
 static void CMD_Reset(EmbeddedCli *cli, char *args, void *context);
 
-//static void CMD_FramReadID(EmbeddedCli *cli, char *args, void *context);
-//static void CMD_FramWrite(EmbeddedCli *cli, char *args, void *context);
-//static void CMD_FramRead(EmbeddedCli *cli, char *args, void *context);
-//static void CMD_FramWriteStr(EmbeddedCli *cli, char *args, void *context);
-//static void CMD_FramReadStr(EmbeddedCli *cli, char *args, void *context);
-//static void CMD_FramTest(EmbeddedCli *cli, char *args, void *context);
-
 static void CMD_CanSend(EmbeddedCli *cli, char *args, void *context);
 static void CMD_CspPing(EmbeddedCli *cli, char *args, void *context);
 static void CMD_CspSend(EmbeddedCli *cli, char *args, void *context);
@@ -95,11 +88,6 @@ static void CMD_ParamSet(EmbeddedCli *cli, char *args, void *context);
 static void CMD_LED_Set(EmbeddedCli *cli, char *args, void *context);
 static void CMD_LED_Reset(EmbeddedCli *cli, char *args, void *context);
 static void CMD_HEATER_SetDuty(EmbeddedCli *cli, char *args, void *context);
-
-//static void CMD_BMP390_Int_Read(EmbeddedCli *cli, char *args, void *context);
-//static void CMD_BMP390_Ext_Read(EmbeddedCli *cli, char *args, void *context);
-//static void CMD_IFP_power_ena(EmbeddedCli *cli, char *args, void *context);
-//static void CMD_IFP_power_dis(EmbeddedCli *cli, char *args, void *context);
 
 #include "M3_Driver/devices/MAX22200/max22200.h"
 extern struct max22200_desc * g_max22200_desc[5];
@@ -204,66 +192,33 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
     { "LED", "led_set", "Turn on a specific LED indicator", true, NULL, CMD_LED_Set},
     { "LED", "led_reset", "Turn off a specific LED indicator", true, NULL, CMD_LED_Reset},
 
-//#if (HW_VERSION == HW_VERSION_V100)
-//    { "SOL", "sol_single_on", "Activate single solenoid: sol_single_on <index>", true, NULL, CMD_SOL_Single_On},
-//    { "SOL", "sol_single_off", "Deactivate single solenoid: sol_single_off <index>", true, NULL, CMD_SOL_Single_Off},
-//    { "SOL", "sol_single_get", "Query status of single solenoid: sol_single_get <index>", true, NULL, CMD_SOL_Single_Get},
-//    { "SOL", "sol_dual_forward", "Set dual solenoid to forward position: sol_dual_forward <index>", true, NULL, CMD_SOL_Dual_Forward},
-//    { "SOL", "sol_dual_reverse", "Set dual solenoid to reverse position: sol_dual_reverse <index>", true, NULL, CMD_SOL_Dual_Reverse},
-//#elif (HW_VERSION == HW_VERSION_V110)
     { "SOL", "sln_hb_init", "Initialize MAX22200 Solenoid Driver", false, NULL, CMD_SOL_MAX_Init},
     { "SOL", "sln_ctl", "Check MAX22200 Solenoid Faults", true, NULL, CMD_SOL_MAX_Control},
-//#endif
 
     { "HTR", "heater_set", "Set heater duty cycle: heater_set <channel> <duty>", true, NULL, CMD_HEATER_SetDuty},
 
     { "POWER", "power_all_on", "Enable all power rails simultaneously", false, NULL, CMD_PowerAll_ON},
     { "POWER", "power_all_off", "Disable all power rails simultaneously", false, NULL, CMD_PowerAll_OFF},
     { "POWER", "power_all_get", "Get status of all power rails", false, NULL, CMD_PowerAll_Get},
-//    { "POWER", "power_som_on", "Enable eFuse to power ON the SoM", false, NULL, CMD_PowerSOM_ON},
-//    { "POWER", "power_som_off", "Disable eFuse to power OFF the SoM", false, NULL, CMD_PowerSOM_OFF},
-//    { "POWER", "power_som_get", "Get current power status of the SoM", false, NULL, CMD_PowerSOM_Get},
-//    { "POWER", "power_buck_peri_on", "Enable peripheral buck converter", false, NULL, CMD_PowerBuckPeri_ON},
-//    { "POWER", "power_buck_peri_off", "Disable peripheral buck converter", false, NULL, CMD_PowerBuckPeri_OFF},
-//    { "POWER", "power_buck_peri_get", "Get peripheral buck converter power status", false, NULL, CMD_PowerBuckPeri_Get},
     { "POWER", "power_tec_on", "Enable power to the TEC module", false, NULL, CMD_PowerTec_ON},
     { "POWER", "power_tec_off", "Disable power to the TEC module", false, NULL, CMD_PowerTec_OFF},
     { "POWER", "power_tec_get", "Get TEC module power status", false, NULL, CMD_PowerTec_Get},
     { "POWER", "power_sln_hd_on", "Enable power to HD4 interface", false, NULL, CMD_PowerSLN_HD_ON},
     { "POWER", "power_sln_hd_off", "Disable power to HD4 interface", false, NULL, CMD_PowerSLN_HD_OFF},
     { "POWER", "power_sln_hd_get", "Get HD4 interface power status", false, NULL, CMD_PowerSLN_HD_Get},
-//    { "POWER", "power_solenoid_on", "Enable power to the solenoid rail", false, NULL, CMD_PowerSolenoid_ON},
-//    { "POWER", "power_solenoid_off", "Disable power to the solenoid rail", false, NULL, CMD_PowerSolenoid_OFF},
-//    { "POWER", "power_solenoid_get", "Get solenoid rail power status", false, NULL, CMD_PowerSolenoid_Get},
     { "POWER", "power_lp_heater_on", "Enable power to the LP rail", false, NULL, CMD_PowerLP_Heater_ON},
     { "POWER", "power_lp_heater_off", "Disable power to the LP rail", false, NULL, CMD_PowerLP_Heater_OFF},
     { "POWER", "power_lp_heater_get", "Get LP rail power status", false, NULL, CMD_PowerLP_Heater_Get},
-//    { "POWER", "power_heater_on", "Enable power to the heater rail", false, NULL, CMD_PowerHeater_ON},
-//    { "POWER", "power_heater_off", "Disable power to the heater rail", false, NULL, CMD_PowerHeater_OFF},
-//    { "POWER", "power_heater_get", "Get heater rail power status", false, NULL, CMD_PowerHeater_Get},
-//#if (HW_VERSION == HW_VERSION_V110)
-//    { "POWER", "power_ai_on", "Enable power", false, NULL, CMD_PowerAI_ON},
-//    { "POWER", "power_ai_off", "Disable power", false, NULL, CMD_PowerAI_OFF},
-//    { "POWER", "power_ai_get", "Get heater status", false, NULL, CMD_PowerAI_Get},
-//#endif
-
-//#if (HW_VERSION == HW_VERSION_V100)
-//    { "BMP390", "bmp390_int_read", "Read pressure/temp from internal BMP390 sensor", false, NULL, CMD_BMP390_Int_Read},
-//    { "BMP390", "bmp390_ext_read", "Read pressure/temp from external BMP390 sensor", false, NULL, CMD_BMP390_Ext_Read},
-//#elif (HW_VERSION == HW_VERSION_V110)
+    
     { "BME688", "bme688_init", "Init BME688 sensor", false, NULL, CMD_BME688_Init},
     { "BME688", "bme688_read_temp", "Read temp from BME688 sensor", false, NULL, CMD_BME688_Read_Temperature},
     { "BME688", "bme688_read_pressure", "Read pressure from BME688 sensor", false, NULL, CMD_BME688_Read_Pressure},
     { "BME688", "bme688_read_humidity", "Read humidity from  BME688 sensor", false, NULL, CMD_BME688_Read_Humidity},
     { "BME688", "bme688_read_all", "Read pressure/temp/humidity from BME688 sensor", false, NULL, CMD_BME688_Read_All},
-//#endif
 
     { "PAC1934", "pac1934_read", "Read voltage and current from all PAC1934 channels", false, NULL, CMD_PAC1934_Read},
 
     { "TEST", "echo", "Echo input text back to console: echo <text>", true, NULL, CMD_CLI_Echo},
-    { "TEST", "expander_write", "Write value to GPIO expander: expander_write <val>", true, NULL, CMD_Expander_Write},
-    { "TEST", "expander_read", "Read current value from GPIO expander", false, NULL, CMD_Expander_Read},
-    { "TEST", "ntc_check", "Perform NTC sensor functionality test", true, NULL, CMD_Check_NTC},
 
     { "TEC", "tec_init", "Initialize TEC controller configurations", true, NULL, CMD_TEC_Init},
     { "TEC", "tec_vol", "Set target voltage for TEC module", true, NULL, CMD_TEC_Set_Vol},
@@ -281,6 +236,7 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
 
     { "NTC", "ntc_read", "Read temperature from specific NTC: ntc_read <index>", true, NULL, CMD_NTC_Read},
     { "NTC", "ntc_read_all", "Read temperatures from all NTC sensors", true, NULL, CMD_NTC_Read_All},
+    { "NTC", "ntc_check", "Perform NTC sensor functionality test", true, NULL, CMD_Check_NTC},
 
     { "RTC", "rtc_read", "Read current time and date from RTC hardware", true, NULL, CMD_RTC_Read},
     { "RTC", "rtc_set_date", "Set RTC date: rtc_set_date <DD> <MM> <YY> <WD>", true, NULL, CMD_RTC_Set_Date},
@@ -300,7 +256,6 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
     { "PUMP", "pump_set_freq", "Set operating frequency for the pump", true, NULL, CMD_PUMP_Set_Freq},
     { "PUMP", "pump_status", "Read status for the pump", true, NULL, CMD_PUMP_Stat},
 
-    // { "TEMP", "temp_wizard_set", "Set active temperature profile", true, NULL, CMD_Temp_wizard_set},
     { "TEMP", "temp_profile_cfg", "Display stored temperature profiles from database", true, NULL, CMD_Temp_profile_config},
     { "TEMP", "temp_profile_cfg_main_ntc", "Display stored temperature profiles from database", true, NULL, CMD_Temp_profile_config_main_ntc},
     { "TEMP", "temp_profile_cfg_sec_ntc", "Display stored temperature profiles from database", true, NULL, CMD_Temp_profile_config_sec_ntc},
@@ -339,16 +294,6 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
     { "LSM6", "lsm6d_read_gyro", "Read current Gyroscope data", true, NULL, CMD_LSM6DSOX_Read_Gyro},
     { "LSM6", "lsm6d_read_temp", "Read IMU internal temperature", true, NULL, CMD_LSM6DSOX_Read_Temp},
     { "LSM6", "lsm6d_read_all", "Read all IMU sensor data (Accel + Gyro + Temp)", true, NULL, CMD_LSM6DSOX_Read_All},
-
-    { "PWR MEAS", "get_i_pwr", "Measure power rail current: get_i_pwr <number>", true, NULL, CMD_Get_Current_Value_Power},
-    { "PWR MEAS", "get_v_tec", "Measure TEC voltage: get_v_tec <number>", true, NULL, CMD_Get_Voltage_Value},
-    { "PWR MEAS", "get_adc_raw", "Read raw ADC value: get_adc_raw <number>", true, NULL, CMD_Get_ADC_Value_Monitor},
-    { "PWR MEAS", "sw_on", "Turn ON specific ADC input switch: sw_on <number>", true, NULL, CMD_Switch_On_To_ADC},
-    { "PWR MEAS", "sw_off", "Turn OFF specific ADC input switch: sw_off <number>", true, NULL, CMD_Switch_Off_To_ADC},
-    { "PWR MEAS", "sw_status", "Query status of all ADC input switches", true, NULL, CMD_Get_All_Switch_Status},
-
-//    { "IFP", "if_ena", "Query status of all ADC input switches", true, NULL, CMD_IFP_power_ena},
-//    { "IFP", "if_dis", "Query status of all ADC input switches", true, NULL, CMD_IFP_power_dis},
 
     { NULL, "a", "Test command A", true, NULL, CMD_a},
     { NULL, "b", "Test command B", true, NULL, CMD_b},
@@ -1088,74 +1033,6 @@ static void CMD_HEATER_SetDuty(EmbeddedCli *cli, char *args, void *context) {
     embeddedCliPrint(cli, buf);
     embeddedCliPrint(cli, "");
 }
-
-//static void CMD_BMP390_Int_Read(EmbeddedCli *cli, char *args, void *context) {
-//    uint32_t status = ERROR_OK;
-//    bmp390_data_t data;
-//    if (bmp390_int.init_status == false) {
-//        status = bsp_bmp390_init(&bmp390_int);
-//        //wait for init complete
-//        os_delay_ms(5);
-//        if (status != ERROR_OK) {
-//            embeddedCliPrint(cli, "BMP390 init fail");
-//            return;
-//        }
-//    }
-//
-//    status = bsp_bmp390_read(&bmp390_int, &data);
-//    if (status != ERROR_OK) {
-//        embeddedCliPrint(cli, "BMP390 read fail");
-//        return;
-//    }
-//    embeddedCliPrint(cli, "Internal BMP390:");
-//    /* in k?t qu? */
-//    char msg[100];
-//    sprintf(msg, "Temp: %.2f C  Pressure: %.2f Pa", data.Temp, data.Pressure);
-//    embeddedCliPrint(cli, msg);
-//    embeddedCliPrint(cli, "");
-//}
-//
-///*
-//FUNCTION FOR BMP390 CONNECTOR
-// */
-//static void CMD_BMP390_Ext_Read(EmbeddedCli *cli, char *args, void *context) {
-//    uint32_t status;
-//    bmp390_data_t data;
-//
-//    bsp_bmp390_ena_switch();
-//    os_delay_ms(1);
-//
-//    if (bmp390_ext.init_status == false) {
-//        status = bsp_bmp390_init(&bmp390_ext);
-//        //wait for init complete
-//        os_delay_ms(5);
-//        if (status != ERROR_OK) {
-//            embeddedCliPrint(cli, "BMP390 init fail");
-//            return;
-//        }
-//    }
-//
-//    status = bsp_bmp390_read(&bmp390_ext, &data);
-//    bsp_bmp390_dis_switch();
-//
-//    if (status != ERROR_OK) {
-//        embeddedCliPrint(cli, "BMP390 read fail");
-//        return;
-//    }
-//    embeddedCliPrint(cli, "External BMP390:");
-//    char msg[100];
-//    sprintf(msg, "Temp: %.2f C  Pressure: %.2f Pa", data.Temp, data.Pressure);
-//    embeddedCliPrint(cli, msg);
-//    embeddedCliPrint(cli, "");
-//}
-
-//static void CMD_IFP_power_ena(EmbeddedCli *cli, char *args, void *context) {
-//    bsp_system_ifp_power_ena();
-//}
-//
-//static void CMD_IFP_power_dis(EmbeddedCli *cli, char *args, void *context) {
-//    bsp_system_ifp_power_dis();
-//}
 
 static void CMD_Reset(EmbeddedCli *cli, char *args, void *context) {
     NVIC_SystemReset();

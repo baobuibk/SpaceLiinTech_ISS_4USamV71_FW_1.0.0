@@ -325,17 +325,9 @@
               </logicalFolder>
               <logicalFolder name="CLI_Command" displayName="CLI_Command" projectFiles="true">
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_command.h</itemPath>
-                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_smoke_test.h</itemPath>
-                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_expander_test.h</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_laser.h</itemPath>
-                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_ntc.h</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_experiment.h</itemPath>
-                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_rtc.h</itemPath>
-                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_switch_to_adc.h</itemPath>
-                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_pump.h</itemPath>
-                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_lsm6dsox.h</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_temperature.h</itemPath>
-                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_bme688.h</itemPath>
               </logicalFolder>
               <logicalFolder name="CLI_Setup" displayName="CLI_Setup" projectFiles="true">
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Setup/cli_setup.h</itemPath>
@@ -1079,14 +1071,12 @@
               <logicalFolder name="CLI_Command" displayName="CLI_Command" projectFiles="true">
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_command.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_smoke_test.c</itemPath>
-                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_expander_test.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_laser.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_ntc.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_experiment.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_rtc.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_psram.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_fram.c</itemPath>
-                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_switch_to_adc.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_flow_sen.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_pump.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_temperature.c</itemPath>
@@ -1546,7 +1536,7 @@
         <targetDevice>ATSAMV71Q21B</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>5.00</languageToolchainVersion>
         <platform>3</platform>

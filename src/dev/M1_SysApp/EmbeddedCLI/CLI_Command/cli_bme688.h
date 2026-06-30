@@ -1,5 +1,5 @@
 #include "M1_SysApp/EmbeddedCLI/CLI_Command/cli_command.h"
-#include "BSP_BME688/bsp_bme688.h"
+
 #include "samv71q21b.h"
 #include "define.h"
 

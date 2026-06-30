@@ -1,10 +1,7 @@
-#include "cli_lsm6dsox.h"
 #include "stdio.h"
 #include "stdlib.h"
 #include "string.h"
-
 #include "M1_SysApp/EmbeddedCLI/CLI_Setup/cli_setup.h"
-
 #include "BSP_LSM6DSOX/bsp_lsm6dsox.h"
 
 extern lsm6d_dev_t lsm6dsox;
