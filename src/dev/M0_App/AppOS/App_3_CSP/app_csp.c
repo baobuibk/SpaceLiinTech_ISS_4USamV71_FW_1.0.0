@@ -23,14 +23,20 @@
 #include <param/internal/types.h>
 
 #include "rgosh_server.h"
+#include "M1_SysApp/xcli/xcli_commands.h"
 /* ---- Port definitions ---- */
 #define CSP_PORT_APP    10
 
 /* ================================================================
  *  RPARAM Service
- * ================================================================ */ 
-gs_param_table_instance_t g_tables[2];
+ * ================================================================ */
+gs_param_table_instance_t g_tables[5];
 static rparam_server_t g_rparam;
+
+static uint8_t CSP_ResolveAddress(void)
+{
+    return (xCLI_GetBoardIdent() == 0U) ? CSP_ADDR_EXP1 : CSP_ADDR_EXP2;
+}
 
 /* ================================================================
  *  Raw CAN send CLI Test
@@ -154,8 +160,8 @@ void App_CSPTask(void *param)
 
     /* Step 3: Init RPARAM server */
     rparam_server_config_t rparam_cfg = {
-        .tables      = { &g_tables[0], &g_tables[1] },
-        .table_count = 2,
+        .tables      = { &g_tables[0], &g_tables[1], NULL, NULL, &g_tables[4] },
+        .table_count = 5,
     };
 
     if (rparam_server_init(&g_rparam, &rparam_cfg) != GS_OK) {
@@ -165,9 +171,11 @@ void App_CSPTask(void *param)
     }
 
     /* Step 4: Init CSP */
+    uint8_t my_address = CSP_ResolveAddress();
+
     csp_conf_t conf;
     csp_conf_get_defaults(&conf);
-    conf.address          = CSP_MY_ADDRESS;
+    conf.address          = my_address;
     conf.buffer_data_size = 1024;
     conf.buffers          = 32;
     conf.fifo_length      = 32;
@@ -200,7 +208,7 @@ void App_CSPTask(void *param)
     csp_route_start_task(500, configMAX_PRIORITIES - 3);
     Dmesg_Write("CSP: routing started");
 
-    snprintf(buf, sizeof(buf), "CSP: node %d ready", CSP_MY_ADDRESS);
+    snprintf(buf, sizeof(buf), "CSP: node %u ready", my_address);
     Dmesg_Write(buf);
 
     /* Step 8: Server (blocking) */

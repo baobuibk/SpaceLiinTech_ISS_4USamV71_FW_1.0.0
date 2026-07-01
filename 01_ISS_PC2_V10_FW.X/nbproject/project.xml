@@ -9,11 +9,11 @@
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects>
-                <make-dep-project>../../../08_BOOTLOADER_ISS/08_BOOTLOADER_ISS.X</make-dep-project>
+                <make-dep-project>../../SpaceLiin_Satellite_SamV71_Bootloader/07_BOOTLOADER.X</make-dep-project>
                 <make-dep-project>../../../../MainProject/07_BOOTLOADER/07_BOOTLOADER.X</make-dep-project>
             </make-dep-projects>
             <make-dep-projects>
-                <make-dep-project>../../SpaceLiin_Satellite_SamV71_Bootloader/07_BOOTLOADER.X</make-dep-project>
+                <make-dep-project>../../../08_BOOTLOADER_ISS/08_BOOTLOADER_ISS.X</make-dep-project>
                 <make-dep-project>../../../../MainProject/07_BOOTLOADER/07_BOOTLOADER.X</make-dep-project>
             </make-dep-projects>
             <sourceRootList>

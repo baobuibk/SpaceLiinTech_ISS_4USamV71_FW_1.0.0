@@ -212,7 +212,7 @@ static void handle_set(csp_conn_t *conn, gs_rparam_query_t *query,
         send_error(conn);
         return;
     }
-    
+
     Dmesg_Write("[RPARAM] SET: Accepted request");
 
     /* Echo back SET_OK with same payload */
@@ -249,7 +249,7 @@ static void handle_table(csp_conn_t *conn, gs_rparam_query_t *query,
         send_error(conn);
         return;
     }
-    
+
     Dmesg_Write("[RPARAM] TABLE: Accepted request");
 
     const size_t table_size = sizeof(*table->rows) * table->row_count;
@@ -270,10 +270,6 @@ gs_error_t rparam_server_init(rparam_server_t *server,
     if (config->table_count == 0 || config->table_count > RPARAM_MAX_TABLES) {
         return GS_ERROR_ARG;
     }
-    for (int i = 0; i < config->table_count; i++) {
-        if (!config->tables[i]) return GS_ERROR_ARG;
-    }
-
     memset(server, 0, sizeof(*server));
     memcpy(&server->config, config, sizeof(*config));
     server->initialized = true;

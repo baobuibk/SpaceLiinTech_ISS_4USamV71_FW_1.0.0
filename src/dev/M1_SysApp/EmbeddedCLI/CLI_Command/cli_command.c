@@ -55,10 +55,6 @@
 #include "config/default/peripheral/tc/plib_tc3.h"
 
 /*************************************************
- *                     Extern                    *
- *************************************************/
-extern gs_param_table_instance_t g_tables[2];
-/*************************************************
  *                     Variable                    *
  *************************************************/
 static char cli_buf[128];
@@ -746,7 +742,7 @@ static void CMD_CspInfo(EmbeddedCli *cli, char *args, void *context) {
 
     embeddedCliPrint(cli, "=== CSP Info ===");
 
-    snprintf(cli_buf, sizeof (cli_buf), "  My Address: %u", CSP_MY_ADDRESS);
+    snprintf(cli_buf, sizeof (cli_buf), "  My Address: %u", csp_get_address());
     embeddedCliPrint(cli, cli_buf);
 
     snprintf(cli_buf, sizeof (cli_buf), "  Free cli_bufs: %u", csp_buffer_remaining());
@@ -853,13 +849,13 @@ static void CMD_ParamShow(EmbeddedCli *cli, char *args, void *context) {
 
     if (tidStr == NULL) {
         embeddedCliPrint(cli, "Usage: param_show <table_id>");
-        embeddedCliPrint(cli, "  0=Board  1=Shell-tunnel");
+        embeddedCliPrint(cli, "  0=Board  1=Shell-tunnel  4=Telemetry");
         return;
     }
 
     uint8_t tid = (uint8_t) strtoul(tidStr, NULL, 0);
-    if (tid > 1) {
-        embeddedCliPrint(cli, "Error: table_id must be 0-1");
+    if (tid > 4 || tid == 2 || tid == 3) {
+        embeddedCliPrint(cli, "Error: table_id must be 0, 1 or 4");
         return;
     }
 
@@ -908,8 +904,8 @@ static void CMD_ParamSet(EmbeddedCli *cli, char *args, void *context) {
     uint8_t tid = (uint8_t) strtoul(tidStr, NULL, 0);
     uint16_t addr = (uint16_t) strtoul(addrStr, NULL, 0);
 
-    if (tid > 1) {
-        embeddedCliPrint(cli, "Error: table_id must be 0-1");
+    if (tid > 4 || tid == 2 || tid == 3) {
+        embeddedCliPrint(cli, "Error: table_id must be 0, 1 or 4");
         return;
     }
 
