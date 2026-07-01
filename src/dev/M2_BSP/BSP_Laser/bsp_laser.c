@@ -36,9 +36,14 @@ adg1414_dev_t laser_int_dev = {
     .num_of_sw = 3
 };
 
+//mcp4902_dev_t laser_dac_dev = {
+//    .cs = &laser_dac_cs,
+//    .latch = &laser_dac_latch,
+//};
+
 mcp4902_dev_t laser_dac_dev = {
-    .cs = &laser_dac_cs,
-    .latch = &laser_dac_latch,
+    .cs = &laser_ext_spi1_cs,
+    .latch = &laser_ext_dac_latch,
 };
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Prototype ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -56,8 +61,10 @@ uint8_t is_laser_tim_run = 0;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Public Function ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 void bsp_laser_init(void) {
     bsp_power_lp_heater_on();
-    adg1414_chain_qspi_init(&laser_int_dev, &qspi, laser_int_dev.cs, laser_int_dev.num_of_sw);
-    mcp4902_dev_qspi_init(&laser_dac_dev, &qspi, laser_dac_dev.cs, laser_dac_dev.latch);
+//    adg1414_chain_qspi_init(&laser_int_dev, &qspi, laser_int_dev.cs, laser_int_dev.num_of_sw);
+//    mcp4902_dev_qspi_init(&laser_dac_dev, &qspi, laser_dac_dev.cs, laser_dac_dev.latch);
+    adg1414_chain_spi_init(&laser_int_dev, &spi1, laser_int_dev.cs, laser_int_dev.num_of_sw);
+    mcp4902_dev_spi_init(&laser_dac_dev, &spi1, laser_dac_dev.cs, laser_dac_dev.latch);
 }
 
 void bsp_laser_int_set_dac(uint8_t code) {    

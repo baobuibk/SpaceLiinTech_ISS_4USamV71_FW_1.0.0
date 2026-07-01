@@ -227,7 +227,8 @@ void PIO_Initialize(void) {
     uint32_t PIOD_Output_mask = (1U << POWER_SLN_HD_PIN) | (1U << POWER_TEC_PIN) | (1U << POWER_LP_HEATER_PIN)
             | (1U << TEC_2_SW_PIN)
             | (1U << PHOTO_SW_CS_PIN) | (1U << PHOTO_ADC_CS_PIN)
-            | (1U << FRAM_CS_PIN) | (1U << MCU_MPU_GPIO_A_PIN) | (1U << MCU_MPU_GPIO_B_PIN);
+            | (1U << FRAM_CS_PIN) | (1U << MCU_MPU_GPIO_A_PIN);
+    uint32_t PIOD_Input_mask = (1U << MCU_MPU_GPIO_B_PIN);
 
     /* Select Peripheral B for PD15, PD16, PD17 */
     uint32_t PIOD_periph_B_mask = (1U << USART2_SPI_SCK_PIN) | (1U << USART2_SPI_MOSI_PIN) | (1U << USART2_SPI_MISO_PIN)
@@ -238,7 +239,7 @@ void PIO_Initialize(void) {
     uint32_t PIOD_periph_C_mask = (1U << UART2_RX_PIN) | (1U << UART2_TX_PIN) | (1U << I2C2_SDA_PIN) | (1U << I2C2_SCL_PIN);
     ((pio_registers_t*) PIO_PORT_D)->PIO_ABCDSR[0] &= ~PIOD_periph_C_mask;
     ((pio_registers_t*) PIO_PORT_D)->PIO_ABCDSR[1] |= PIOD_periph_C_mask;
-    ((pio_registers_t*) PIO_PORT_D)->PIO_PER = 0x0U;
+    ((pio_registers_t*) PIO_PORT_D)->PIO_PER = 0x0U | PIOD_Input_mask;
     /* PORTD PIO Enable and Peripheral Disable*/
     ((pio_registers_t*) PIO_PORT_D)->PIO_PER &= ~(PIOD_periph_B_mask | PIOD_periph_C_mask);
     /* PORTD PIO Disable and Peripheral Enable*/
@@ -252,7 +253,7 @@ void PIO_Initialize(void) {
     ((pio_registers_t*) PIO_PORT_D)->PIO_OWER = PIO_OWER_Msk;
     /* PORTD Output Direction Enable */
     ((pio_registers_t*) PIO_PORT_D)->PIO_OER = 0x0U;
-    ((pio_registers_t*) PIO_PORT_D)->PIO_ODR = 0xFFFFFFFFU;
+    ((pio_registers_t*) PIO_PORT_D)->PIO_ODR = 0xFFFFFFFFU | PIOD_Input_mask;
     ((pio_registers_t*) PIO_PORT_D)->PIO_OER |= PIOD_Output_mask;
     ((pio_registers_t*) PIO_PORT_D)->PIO_ODR &= ~PIOD_Output_mask;
     /* Initialize PORTD pin state */

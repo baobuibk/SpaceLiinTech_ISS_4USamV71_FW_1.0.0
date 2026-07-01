@@ -87,7 +87,7 @@ do_t laser_sw_ext_cs ={
 do_t laser_ext_spi1_cs ={
     .port = LASER_EXT_SPI1_nCS_PORT,
     .pin = LASER_EXT_SPI1_nCS_PIN,
-    .bStatus = true,
+    .bStatus = false,
 };
 
 do_t laser_ext_dac_cs ={
