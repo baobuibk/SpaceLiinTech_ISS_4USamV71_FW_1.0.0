@@ -87,10 +87,6 @@ extern do_t switch_spi_psram;
 extern do_t mcu_pmu_gpio_a;
 extern do_t mcu_pmu_gpio_b;
 
-//extern do_t ifp_enable;
-//
-//extern do_t power_ai;
-
 extern do_t sole_A_cmd;
 extern do_t sole_A_cs;
 extern do_t sole_B_cmd;

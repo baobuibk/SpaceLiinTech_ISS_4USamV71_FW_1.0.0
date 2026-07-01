@@ -110,6 +110,19 @@ void do_toggle(do_t *me)
     }
 }
 
+bool di_read(do_t *me)
+{
+    if (!me) return false;
+
+    pio_registers_t *port = gpio_ports[me->port];
+    uint32_t mask = (1u << me->pin);
+
+    bool bLevel = ((port->PIO_PDSR & mask) != 0u);
+    me->bStatus = bLevel;
+
+    return bLevel;
+}
+
 void PIOC_Handler(void)
 {
     uint32_t status = ((pio_registers_t*)PIO_PORT_C)->PIO_ISR;
