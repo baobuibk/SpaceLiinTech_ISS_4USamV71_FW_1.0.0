@@ -436,8 +436,15 @@
             <logicalFolder name="BSP_Heater" displayName="BSP_Heater" projectFiles="true">
               <itemPath>../src/dev/M2_BSP/BSP_Heater/bsp_heater.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="BSP_Laser" displayName="BSP_Laser" projectFiles="true">
-              <itemPath>../src/dev/M2_BSP/BSP_Laser/bsp_laser.h</itemPath>
+            <logicalFolder name="BSP_Laser_Ext"
+                           displayName="BSP_Laser_Ext"
+                           projectFiles="true">
+              <itemPath>../src/dev/M2_BSP/BSP_Laser_Ext/bsp_laser_ext.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="BSP_Laser_Int"
+                           displayName="BSP_Laser_Int"
+                           projectFiles="true">
+              <itemPath>../src/dev/M2_BSP/BSP_Laser_Int/bsp_laser.h</itemPath>
             </logicalFolder>
             <logicalFolder name="BSP_Led" displayName="BSP_Led" projectFiles="true">
               <itemPath>../src/dev/M2_BSP/BSP_Led/bsp_led.h</itemPath>
@@ -1087,6 +1094,7 @@
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_tec.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_bme688.c</itemPath>
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_pac1934.c</itemPath>
+                <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_laser_ext.c</itemPath>
               </logicalFolder>
               <logicalFolder name="CLI_Setup" displayName="CLI_Setup" projectFiles="true">
                 <itemPath>../src/dev/M1_SysApp/EmbeddedCLI/CLI_Setup/cli_setup.c</itemPath>
@@ -1173,8 +1181,15 @@
             <logicalFolder name="BSP_Heater" displayName="BSP_Heater" projectFiles="true">
               <itemPath>../src/dev/M2_BSP/BSP_Heater/bsp_heater.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="BSP_Laser" displayName="BSP_Laser" projectFiles="true">
-              <itemPath>../src/dev/M2_BSP/BSP_Laser/bsp_laser.c</itemPath>
+            <logicalFolder name="BSP_Laser_Ext"
+                           displayName="BSP_Laser_Ext"
+                           projectFiles="true">
+              <itemPath>../src/dev/M2_BSP/BSP_Laser_Ext/bsp_laser_ext.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="BSP_Laser_Int"
+                           displayName="BSP_Laser_Int"
+                           projectFiles="true">
+              <itemPath>../src/dev/M2_BSP/BSP_Laser_Int/bsp_laser.c</itemPath>
             </logicalFolder>
             <logicalFolder name="BSP_Led" displayName="BSP_Led" projectFiles="true">
               <itemPath>../src/dev/M2_BSP/BSP_Led/bsp_led.c</itemPath>
@@ -1536,7 +1551,7 @@
         <targetDevice>ATSAMV71Q21B</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>pk4hybrid</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>5.00</languageToolchainVersion>
         <platform>3</platform>
@@ -1555,20 +1570,20 @@
         <archiverTool>
         </archiverTool>
         <loading>
-          <makeArtifact PL="../../../08_BOOTLOADER_ISS/08_BOOTLOADER_ISS.X"
+          <makeArtifact PL="../../SpaceLiin_Satellite_SamV71_Bootloader/07_BOOTLOADER.X"
                         CT="1"
                         CN="default"
                         AC="true"
                         BL="true"
-                        WD="../../../08_BOOTLOADER_ISS/08_BOOTLOADER_ISS.X"
+                        WD="../../SpaceLiin_Satellite_SamV71_Bootloader/07_BOOTLOADER.X"
                         BC="${MAKE}  -f Makefile CONF=default"
                         DBC="${MAKE}  -f Makefile CONF=default TYPE_IMAGE=DEBUG_RUN"
                         CC="rm -rf &quot;build/default&quot; &quot;dist/default&quot;"
-                        OP="dist/default/production/08_BOOTLOADER_ISS.X.production.hex"
-                        DOP="dist/default/debug/08_BOOTLOADER_ISS.X.debug.elf"
-                        FL="dist/default/production/08_BOOTLOADER_ISS.X.production.hex"
-                        PD="dist/default/production/08_BOOTLOADER_ISS.X.production.elf"
-                        DD="dist/default/debug/08_BOOTLOADER_ISS.X.debug.elf">
+                        OP="dist/default/production/07_BOOTLOADER.X.production.hex"
+                        DOP="dist/default/debug/07_BOOTLOADER.X.debug.elf"
+                        FL="dist/default/production/07_BOOTLOADER.X.production.hex"
+                        PD="dist/default/production/07_BOOTLOADER.X.production.elf"
+                        DD="dist/default/debug/07_BOOTLOADER.X.debug.elf">
           </makeArtifact>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>

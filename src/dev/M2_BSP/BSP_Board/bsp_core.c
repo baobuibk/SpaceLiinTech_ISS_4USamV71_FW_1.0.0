@@ -60,34 +60,22 @@ mb85rs2mt_dev_t g_fram = {
 /* IO */
 ////////////////////////////////////////
 
-do_t laser_dac_cs ={
-    .port = LASER_DAC_CS_PORT,
-    .pin = LASER_DAC_CS_PIN,
-    .bStatus = false,
-};
-
-do_t laser_dac_latch ={
-    .port = LASER_DAC_LATCH_PORT,
-    .pin = LASER_DAC_LATCH_PIN,
-    .bStatus = false,
-};
-
-do_t laser_sw_int_cs ={
-    .port = LASER_SW_INT_CS_PORT,
-    .pin = LASER_SW_INT_CS_PIN,
+do_t laser_int_dac_cs ={
+    .port = LASER_INT_DAC_CS_PORT,
+    .pin = LASER_INT_DAC_CS_PIN,
     .bStatus = true,
 };
 
-do_t laser_sw_ext_cs ={
-    .port = LASER_SW_EXT_CS_PORT,
-    .pin = LASER_SW_EXT_CS_PIN,
-    .bStatus = true,
+do_t laser_int_dac_latch ={
+    .port = LASER_INT_DAC_LATCH_PORT,
+    .pin = LASER_INT_DAC_LATCH_PIN,
+    .bStatus = false,
 };
 
-do_t laser_ext_spi1_cs ={
-    .port = LASER_EXT_SPI1_nCS_PORT,
-    .pin = LASER_EXT_SPI1_nCS_PIN,
-    .bStatus = false,
+do_t laser_int_sw_cs ={
+    .port = LASER_INT_SW_CS_PORT,
+    .pin = LASER_INT_SW_CS_PIN,
+    .bStatus = true,
 };
 
 do_t laser_ext_dac_cs ={
@@ -100,6 +88,12 @@ do_t laser_ext_dac_latch ={
     .port = LASER_EXT_DAC_LATCH_PORT,
     .pin = LASER_EXT_DAC_LATCH_PIN,
     .bStatus = false,
+};
+
+do_t laser_ext_sw_cs ={
+    .port = LASER_EXT_SW_CS_PORT,
+    .pin = LASER_EXT_SW_CS_PIN,
+    .bStatus = true,
 };
 
 do_t photo_sw_cs ={

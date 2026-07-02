@@ -39,7 +39,8 @@
 #include "BSP_TEC/bsp_tec.h"
 #include "BSP_BMP390/bsp_bmp390.h"
 #include "BSP_PAC1934/bsp_pac1934.h"
-#include "BSP_Laser/bsp_laser.h"
+#include "BSP_Laser_Int/bsp_laser.h"
+#include "BSP_Laser_Ext/bsp_laser_ext.h"
 #include "BSP_FRAM/bsp_fram.h"
 #include "BSP_System/bsp_system.h"
 
@@ -231,6 +232,10 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
     { "LASER", "laser_int_sw_off", "Turn OFF specific internal laser channel", true, NULL, CMD_Laser_Int_Turn_Off_Channel},
     { "LASER", "laser_int_sw_off_all", "___", true, NULL, CMD_Laser_Int_Turn_Off_All},
     { "LASER", "laser_int_current", "Read current monitor value for internal laser", true, NULL, CMD_Laser_Int_Current_Monitor},
+    
+    { "LASER", "laser_ext_set_dac", "Set DAC value for external laser intensity", true, NULL, CMD_Laser_Ext_Set_DAC},
+    { "LASER", "laser_ext_sw_on", "Turn ON specific external laser channel", true, NULL, CMD_Laser_Ext_Turn_On_Channel},
+    { "LASER", "laser_ext_sw_off", "Turn OFF specific external laser channel", true, NULL, CMD_Laser_Ext_Turn_Off_All},
 
     { "PHOTO", "photo_sw_on", "___", true, NULL, CMD_Photo_Turn_On_Channel},
 

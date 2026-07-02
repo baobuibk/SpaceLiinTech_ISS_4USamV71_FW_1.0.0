@@ -12,7 +12,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
-#include "BSP_Laser/bsp_laser.h"
+#include "BSP_Laser_Int/bsp_laser.h"
 #include "BSP_Photo/bsp_photo.h"
 
 #define SPI0_COMMON_PRESCALE    120
