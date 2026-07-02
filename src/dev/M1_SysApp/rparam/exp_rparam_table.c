@@ -81,6 +81,44 @@ const gs_param_table_row_t data_table1_rows[] = {
 const size_t data_table1_row_count = sizeof(data_table1_rows) / sizeof(data_table1_rows[0]);
 
 /* ============================================================================
+ * Table 4: Telemetry
+ * ============================================================================ */
+
+typedef struct __attribute__((packed)) {
+    uint32_t sys_uptime;      // 0
+    uint8_t  sensor_stat;     // 4
+    int16_t  bme_temp;        // 5
+    uint32_t bme_press;       // 7
+    uint16_t bme_hum;         // 11
+    int16_t  lsm_accel[3];    // 13
+    int16_t  lsm_gyro[3];     // 19
+    int16_t  lsm_temp;        // 25
+    int16_t  ntc_temp[8];     // 27
+    int16_t  board_temp;      // 43
+    uint16_t pwr_volt[4];     // 45
+    uint16_t pwr_curr[4];     // 53
+} table_data_t4;
+
+static table_data_t4 g_data_t4 = {0};
+
+const gs_param_table_row_t data_table4_rows[] = {
+    {.addr = PARAM_T4_SYS_UPTIME, .type = GS_PARAM_UINT32, .size = sizeof(uint32_t), .array_size = 1, .flags = 0, .name = "sys_uptime"},
+    {.addr = PARAM_T4_SENSOR_STAT,.type = GS_PARAM_UINT8,  .size = sizeof(uint8_t),  .array_size = 1, .flags = 0, .name = "sensor_stat"},
+    {.addr = PARAM_T4_BME_TEMP,   .type = GS_PARAM_INT16,  .size = sizeof(int16_t),  .array_size = 1, .flags = 0, .name = "bme_temp"},
+    {.addr = PARAM_T4_BME_PRESS,  .type = GS_PARAM_UINT32, .size = sizeof(uint32_t), .array_size = 1, .flags = 0, .name = "bme_press"},
+    {.addr = PARAM_T4_BME_HUM,    .type = GS_PARAM_UINT16, .size = sizeof(uint16_t), .array_size = 1, .flags = 0, .name = "bme_hum"},
+    {.addr = PARAM_T4_LSM_ACCEL,  .type = GS_PARAM_INT16,  .size = sizeof(int16_t),  .array_size = 3, .flags = 0, .name = "lsm_accel"},
+    {.addr = PARAM_T4_LSM_GYRO,   .type = GS_PARAM_INT16,  .size = sizeof(int16_t),  .array_size = 3, .flags = 0, .name = "lsm_gyro"},
+    {.addr = PARAM_T4_LSM_TEMP,   .type = GS_PARAM_INT16,  .size = sizeof(int16_t),  .array_size = 1, .flags = 0, .name = "lsm_temp"},
+    {.addr = PARAM_T4_NTC_TEMP,   .type = GS_PARAM_INT16,  .size = sizeof(int16_t),  .array_size = 8, .flags = 0, .name = "ntc_temp"},
+    {.addr = PARAM_T4_BOARD_TEMP, .type = GS_PARAM_INT16,  .size = sizeof(int16_t),  .array_size = 1, .flags = 0, .name = "board_temp"},
+    {.addr = PARAM_T4_PWR_VOLT,   .type = GS_PARAM_UINT16, .size = sizeof(uint16_t), .array_size = 4, .flags = 0, .name = "pwr_volt"},
+    {.addr = PARAM_T4_PWR_CURR,   .type = GS_PARAM_UINT16, .size = sizeof(uint16_t), .array_size = 4, .flags = 0, .name = "pwr_curr"},
+};
+
+const size_t data_table4_row_count = sizeof(data_table4_rows) / sizeof(data_table4_rows[0]);
+
+/* ============================================================================
  * Init / free
  * ============================================================================ */
 
@@ -122,6 +160,25 @@ gs_error_t data_table1_init(gs_param_table_instance_t *table)
     return GS_OK;
 }
 
+gs_error_t data_table4_init(gs_param_table_instance_t *table)
+{
+    if (!table) return GS_ERROR_ARG;
+
+    memset(table, 0, sizeof(*table));
+    table->rows        = data_table4_rows;
+    table->row_count   = data_table4_row_count;
+    table->memory      = &g_data_t4;
+    table->memory_size = sizeof(g_data_t4);
+    table->flags       = 0;
+
+    gs_param_table_checksum_le(table);
+
+    printf("[TABLE 4] Telemetry: %u rows, %u bytes, checksum BE=0x%04X\n",
+           table->row_count, table->memory_size, table->checksum_be);
+
+    return GS_OK;
+}
+
 gs_error_t data_tables_init_all(gs_param_table_instance_t *tables)
 {
     if (!tables) return GS_ERROR_ARG;
@@ -134,7 +191,10 @@ gs_error_t data_tables_init_all(gs_param_table_instance_t *tables)
     err = data_table1_init(&tables[1]);
     if (err != GS_OK) return err;
 
-    printf("All 2 tables initialized successfully\n");
+    err = data_table4_init(&tables[4]);
+    if (err != GS_OK) return err;
+
+    printf("All 3 tables initialized successfully\n");
     return GS_OK;
 }
 
@@ -143,6 +203,7 @@ void data_tables_free_all(gs_param_table_instance_t *tables)
     if (tables) {
         gs_param_table_free(&tables[0]);
         gs_param_table_free(&tables[1]);
+        gs_param_table_free(&tables[4]);
     }
 }
 
@@ -151,6 +212,7 @@ const char *data_table_get_name(uint8_t table_id)
     switch (table_id) {
         case 0:  return "Board Parameter";
         case 1:  return "Shell-tunnel";
+        case 4:  return "Telemetry";
         default: return "Unknown";
     }
 }

@@ -1,7 +1,5 @@
 #include "pump.h"
 
-extern i2c_io_t i2c2;
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Function ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 Std_ReturnType _mp_i2c_write_block(pump_dev_t* dev, uint8_t reg, uint8_t val) {
     uint8_t frame[2] = {reg, val};
@@ -62,23 +60,16 @@ Std_ReturnType Highdriver_enable(pump_dev_t* dev, uint8_t is_enable) {
     return _mp_i2c_write_block(dev, I2C_POWERMODE, v); // writes [0x01, v]
 }
 
-Std_ReturnType Highdriver_setvoltage(pump_dev_t* dev, uint8_t channel, uint8_t _voltage) {
+Std_ReturnType Highdriver_setvoltage(pump_dev_t* dev, uint8_t _voltage) {
     float temp = _voltage;
     temp *= 31.0f;
     temp /= 250.0f;
     uint8_t PumpVoltage = constrain((int) temp, 0, 31);
 
     Std_ReturnType st;
-    uint8_t idx = channel - 1;
-
-    if (channel == 0) {
-        for (int i = 0; i < 4; i++) {
-            st = _mp_i2c_write_block(dev, I2C_P1VOLTAGE + i, PumpVoltage);
-        }
-    } else {
-        st = _mp_i2c_write_block(dev, I2C_P1VOLTAGE + idx, PumpVoltage);
-        if (st != ERROR_OK) return st;
-    }
+    
+    st = _mp_i2c_write_block(dev, I2C_PVOLTAGE, PumpVoltage);
+    if (st != ERROR_OK) return st;
 
     st = _mp_i2c_write_block(dev, I2C_UPDATEVOLTAGE, 0x01);
     if (st != ERROR_OK) return st;

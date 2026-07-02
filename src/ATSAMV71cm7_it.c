@@ -39,15 +39,7 @@ static void EX_TC3_CH0_Handler(TC_TIMER_STATUS status, uintptr_t context)
     if (tick >= 1000)
     {
         tick = 0;
-        if (toggleState)
-        {
-            
-            LED_PC9_Clear();
-        }
-        else
-        {
-            LED_PC9_Set();
-        }
+
         toggleState = 1 - toggleState;
 
         Utils_SoftTime_Update(); // FREERTOS

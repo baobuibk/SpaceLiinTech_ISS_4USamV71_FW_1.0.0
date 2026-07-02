@@ -44,27 +44,25 @@ void CMD_PUMP_Init(EmbeddedCli *cli, char *args, void *context) {
 void CMD_PUMP_Set_Volt(EmbeddedCli *cli, char *args, void *context) {
     char buf[128];
 
-    const char *ChannelStr = embeddedCliGetToken(args, 1);
-    const char *VoltStr = embeddedCliGetToken(args, 2);
+    const char *VoltStr = embeddedCliGetToken(args, 1);
 
-    if (VoltStr == NULL || ChannelStr == NULL) {
-        snprintf(buf, sizeof (buf), "Usage: pump_set_volt <ch> <Vpp>");
+    if (VoltStr == NULL) {
+        snprintf(buf, sizeof (buf), "Usage: pump_set_volt <Vpp>");
         embeddedCliPrint(cli, buf);
         return;
     }
 
     uint8_t volt = (uint8_t) strtoul(VoltStr, NULL, 0);
-    uint8_t channel = (uint8_t) strtoul(ChannelStr, NULL, 0);
 
     Std_ReturnType r;
 
-    r = bsp_pump_set_voltage(channel, volt);
+    r = bsp_pump_set_voltage(volt);
 
     if (r != ERROR_OK) {
         snprintf(buf, sizeof (buf), "Volt set Fail: %u", r);
         embeddedCliPrint(cli, buf);
     } else {
-        snprintf(buf, sizeof (buf), "Volt set channel %u: %u Vpp", channel, volt);
+        snprintf(buf, sizeof (buf), "Volt set channel %u: %u Vpp", volt);
         embeddedCliPrint(cli, buf);
     }
 }
@@ -104,12 +102,12 @@ void CMD_PUMP_Stat(EmbeddedCli *cli, char *args, void *context) {
         uint8_t reg;
         const char *name;
     } regs[] = {
-        { I2C_DEVICEID,  "DEVICEID    "},
+        { I2C_DEVICEID, "DEVICEID    "},
         { I2C_POWERMODE, "POWERMODE   "},
         { I2C_FREQUENCY, "FREQUENCY   "},
-        { I2C_SHAPE,     "SHAPE       "},
-        { I2C_BOOST,     "BOOST       "},
-        { I2C_AUDIO,     "AUDIO       "},
+        { I2C_SHAPE, "SHAPE       "},
+        { I2C_BOOST, "BOOST       "},
+        { I2C_AUDIO, "AUDIO       "},
         { I2C_P1VOLTAGE, "P1VOLTAGE   "},
         { I2C_P2VOLTAGE, "P2VOLTAGE   "},
         { I2C_P3VOLTAGE, "P3VOLTAGE   "},

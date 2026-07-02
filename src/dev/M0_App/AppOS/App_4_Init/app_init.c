@@ -25,7 +25,7 @@ void App_InitTask(void *param) {
 
     bsp_rtc_init();
     bsp_rtc_sync_to_soft();
-    bsp_flow_sen_init();
+//    bsp_flow_sen_init();
 //    bsp_pump_init();
 
     bsp_tec_init(p_tec[0]);

@@ -56,10 +56,6 @@
 #include "config/default/peripheral/tc/plib_tc3.h"
 
 /*************************************************
- *                     Extern                    *
- *************************************************/
-extern gs_param_table_instance_t g_tables[2];
-/*************************************************
  *                     Variable                    *
  *************************************************/
 static char cli_buf[128];
@@ -248,7 +244,8 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
     { "RTC", "rtc_set_time", "Set RTC time: rtc_set_time <h> <m> <s>", true, NULL, CMD_RTC_Set_Time},
     { "RTC", "rtc_ping", "Ping RTC hardware via I2C", true, NULL, CMD_RTC_Ping},
     { "RTC", "rtc_test", "Run comprehensive RTC hardware test suite", true, NULL, CMD_RTC_Test},
-
+    
+    { "FLOW", "flow_init", "Read data from all flow sensors", true, NULL, CMD_Flow_Sen_Init},
     { "FLOW", "flow_read_all", "Read data from all flow sensors", true, NULL, CMD_Flow_Sen_ReadAll},
 
     { "EXP", "dls_setup", "Configure experiment profile parameters", true, NULL, CMD_DLS_setup},
@@ -751,7 +748,7 @@ static void CMD_CspInfo(EmbeddedCli *cli, char *args, void *context) {
 
     embeddedCliPrint(cli, "=== CSP Info ===");
 
-    snprintf(cli_buf, sizeof (cli_buf), "  My Address: %u", CSP_MY_ADDRESS);
+    snprintf(cli_buf, sizeof (cli_buf), "  My Address: %u", csp_get_address());
     embeddedCliPrint(cli, cli_buf);
 
     snprintf(cli_buf, sizeof (cli_buf), "  Free cli_bufs: %u", csp_buffer_remaining());
@@ -858,13 +855,13 @@ static void CMD_ParamShow(EmbeddedCli *cli, char *args, void *context) {
 
     if (tidStr == NULL) {
         embeddedCliPrint(cli, "Usage: param_show <table_id>");
-        embeddedCliPrint(cli, "  0=Board  1=Shell-tunnel");
+        embeddedCliPrint(cli, "  0=Board  1=Shell-tunnel  4=Telemetry");
         return;
     }
 
     uint8_t tid = (uint8_t) strtoul(tidStr, NULL, 0);
-    if (tid > 1) {
-        embeddedCliPrint(cli, "Error: table_id must be 0-1");
+    if (tid > 4 || tid == 2 || tid == 3) {
+        embeddedCliPrint(cli, "Error: table_id must be 0, 1 or 4");
         return;
     }
 
@@ -913,8 +910,8 @@ static void CMD_ParamSet(EmbeddedCli *cli, char *args, void *context) {
     uint8_t tid = (uint8_t) strtoul(tidStr, NULL, 0);
     uint16_t addr = (uint16_t) strtoul(addrStr, NULL, 0);
 
-    if (tid > 1) {
-        embeddedCliPrint(cli, "Error: table_id must be 0-1");
+    if (tid > 4 || tid == 2 || tid == 3) {
+        embeddedCliPrint(cli, "Error: table_id must be 0, 1 or 4");
         return;
     }
 

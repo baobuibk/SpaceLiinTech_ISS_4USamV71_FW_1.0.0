@@ -29,8 +29,10 @@
 #include "peripheral/systick/plib_systick.h"
 #include "peripheral/xdmac/plib_xdmac.h"
 
-static void BootManager_SystemDeInit(void)
-{
+#include "M3_Driver/components/dio/do.h"
+#include "bsp_core.h"
+
+static void BootManager_SystemDeInit(void) {
     /* ---- 1. Stop all TC timers first (prevent spurious IRQs) ---- */
     TC3_CH0_TimerStop();
     TC0_CH0_CompareStop();
@@ -39,10 +41,10 @@ static void BootManager_SystemDeInit(void)
     TC2_CH0_CompareStop();
     TC2_CH1_CompareStop();
     SYSTICK_TimerStop();
-    SysTick->CTRL = 0U;       
-    SysTick->VAL  = 0U;  
-    SysTick->LOAD = 0U;       
-    SCB->ICSR = SCB_ICSR_PENDSTCLR_Msk; 
+    SysTick->CTRL = 0U;
+    SysTick->VAL = 0U;
+    SysTick->LOAD = 0U;
+    SCB->ICSR = SCB_ICSR_PENDSTCLR_Msk;
 
     /* ---- 2. Disable NVIC interrupts globally ---- */
     __disable_irq();
@@ -66,7 +68,7 @@ static void BootManager_SystemDeInit(void)
 
     /* Wait for USART0 SPI TX empty */
     while (!(USART0_REGS->US_CSR & US_CSR_SPI_TXEMPTY_Msk));
-    /* Wait for USART2 SPI TX empty */  
+    /* Wait for USART2 SPI TX empty */
     while (!(USART2_REGS->US_CSR & US_CSR_SPI_TXEMPTY_Msk));
 
     /* ---- 6. Disable TWI/I2C ---- */
@@ -83,8 +85,8 @@ static void BootManager_SystemDeInit(void)
 
     /* ---- 9. Clear all pending NVIC IRQs ---- */
     for (int i = 0; i < 8; i++) {
-        NVIC->ICER[i] = 0xFFFFFFFFU;  /* Disable all */
-        NVIC->ICPR[i] = 0xFFFFFFFFU;  /* Clear pending */
+        NVIC->ICER[i] = 0xFFFFFFFFU; /* Disable all */
+        NVIC->ICPR[i] = 0xFFFFFFFFU; /* Clear pending */
     }
 
     /* ---- 10. Final barriers ---- */
@@ -96,24 +98,25 @@ static void BootManager_SystemDeInit(void)
  * Platform hook weak stubs - override in application code
  * =========================================================================*/
 
-void xCLI_GetFwVersion(char *buf, uint8_t cap)
-{
-    if (buf != NULL && cap > 0U) { (void)snprintf(buf, (size_t)cap, "2.0.0"); }
+void xCLI_GetFwVersion(char *buf, uint8_t cap) {
+    if (buf != NULL && cap > 0U) {
+        (void) snprintf(buf, (size_t) cap, "2.0.0");
+    }
 }
 
-__attribute__((weak)) void xCLI_GetHwVersion(char *buf, uint8_t cap)
-{
-    if (buf != NULL && cap > 0U) { buf[0] = '\0'; }
-    (void)cap;
+__attribute__((weak)) void xCLI_GetHwVersion(char *buf, uint8_t cap) {
+    if (buf != NULL && cap > 0U) {
+        buf[0] = '\0';
+    }
+    (void) cap;
 }
 
-void xCLI_DoReboot(uint16_t delay_ms)
-{
+void xCLI_DoReboot(uint16_t delay_ms) {
     volatile uint32_t count;
 
     while (!(UART0_REGS->UART_SR & UART_SR_TXEMPTY_Msk));
 
-    for (count = 0; count < (uint32_t)delay_ms * 1000U; count++) {
+    for (count = 0; count < (uint32_t) delay_ms * 1000U; count++) {
         __NOP();
     }
 
@@ -121,27 +124,39 @@ void xCLI_DoReboot(uint16_t delay_ms)
 
     NVIC_SystemReset();
 
-    while (1) { __NOP(); }
+    while (1) {
+        __NOP();
+    }
 }
 
-uint32_t xCLI_GetBoardIdent(void)
+static uint8_t BOARD_IDENT_Get(void)
 {
-    // return (uint32_t)BOARD_IDENT_Get();  /* PD10: 0=BOARD1, 1=BOARD2 */
+    return (uint8_t) di_read(&mcu_pmu_gpio_b);
+}
+
+uint32_t xCLI_GetBoardIdent(void) {
+     return BOARD_IDENT_Get();  /* PD10: 0=BOARD1, 1=BOARD2 */
     // return 0xFFFFFFFF;
-    return 0U;  
+    //    return 0U;  
 }
 
-__attribute__((weak)) uint32_t xCLI_GetFreeHeap(void)  { return 0U; }
-__attribute__((weak)) uint32_t xCLI_GetTotalHeap(void) { return 0U; }
-
-__attribute__((weak)) uint8_t xCLI_GpioRead(uint8_t pin)
-{
-    (void)pin; return 0U;
+__attribute__((weak)) uint32_t xCLI_GetFreeHeap(void) {
+    return 0U;
 }
 
-__attribute__((weak)) uint8_t xCLI_GpioWrite(uint8_t pin, uint8_t val)
-{
-    (void)pin; (void)val; return 0U;
+__attribute__((weak)) uint32_t xCLI_GetTotalHeap(void) {
+    return 0U;
+}
+
+__attribute__((weak)) uint8_t xCLI_GpioRead(uint8_t pin) {
+    (void) pin;
+    return 0U;
+}
+
+__attribute__((weak)) uint8_t xCLI_GpioWrite(uint8_t pin, uint8_t val) {
+    (void) pin;
+    (void) val;
+    return 0U;
 }
 
 /* =========================================================================
@@ -151,89 +166,94 @@ __attribute__((weak)) uint8_t xCLI_GpioWrite(uint8_t pin, uint8_t val)
 #if XCLI_USE_BUILTIN_COMMANDS
 
 /* Helper: build indexed field key like "n_0", "n_12" */
-static void xcli_make_key(char *buf, char prefix, uint8_t idx)
-{
+static void xcli_make_key(char *buf, char prefix, uint8_t idx) {
     uint8_t pos = 0U;
     buf[pos++] = prefix;
     buf[pos++] = '_';
-    if (idx >= 100U) { buf[pos++] = (char)('0' + (idx / 100U)); }
-    if (idx >= 10U)  { buf[pos++] = (char)('0' + ((idx % 100U) / 10U)); }
-    buf[pos++] = (char)('0' + (idx % 10U));
-    buf[pos]   = '\0';
+    if (idx >= 100U) {
+        buf[pos++] = (char) ('0' + (idx / 100U));
+    }
+    if (idx >= 10U) {
+        buf[pos++] = (char) ('0' + ((idx % 100U) / 10U));
+    }
+    buf[pos++] = (char) ('0' + (idx % 10U));
+    buf[pos] = '\0';
 }
 
 /* ---- HELP (0x01) ------------------------------------------------------- */
-static void xcli_builtin_help(xCLI_ReqCtx_t *ctx, const char *args)
-{
+static void xcli_builtin_help(xCLI_ReqCtx_t *ctx, const char *args) {
     xCLI_Instance_t *xcli = ctx->xcli;
-    char  key[9];
+    char key[9];
     uint8_t i;
-    (void)args;
+    (void) args;
 
     xCLI_Ser_PutU8(&ctx->ser, "count", xcli->cmd_count);
     for (i = 0U; i < xcli->cmd_count; i++) {
-        xcli_make_key(key, 'i', i);  xCLI_Ser_PutU8 (&ctx->ser, key, xcli->cmds[i].cmd_id);
-        xcli_make_key(key, 'n', i);  xCLI_Ser_PutStr (&ctx->ser, key, xcli->cmds[i].name);
-        xcli_make_key(key, 'd', i);  xCLI_Ser_PutStr (&ctx->ser, key, xcli->cmds[i].help);
-        if (xCLI_Ser_Error(&ctx->ser)) { break; }
+        xcli_make_key(key, 'i', i);
+        xCLI_Ser_PutU8(&ctx->ser, key, xcli->cmds[i].cmd_id);
+        xcli_make_key(key, 'n', i);
+        xCLI_Ser_PutStr(&ctx->ser, key, xcli->cmds[i].name);
+        xcli_make_key(key, 'd', i);
+        xCLI_Ser_PutStr(&ctx->ser, key, xcli->cmds[i].help);
+        if (xCLI_Ser_Error(&ctx->ser)) {
+            break;
+        }
     }
 }
 
 /* ---- PING (0x02) ------------------------------------------------------- */
-static void xcli_builtin_ping(xCLI_ReqCtx_t *ctx, const char *args)
-{
+static void xcli_builtin_ping(xCLI_ReqCtx_t *ctx, const char *args) {
     uint32_t ts = xcli_token_u32(args, 1U);
-    xCLI_Ser_PutU32(&ctx->ser, "echo",        ts);
-    xCLI_Ser_PutStr(&ctx->ser, "mode",        "app");
+    xCLI_Ser_PutU32(&ctx->ser, "echo", ts);
+    xCLI_Ser_PutStr(&ctx->ser, "mode", "app");
     xCLI_Ser_PutU32(&ctx->ser, "board_ident", xCLI_GetBoardIdent());
 }
 
 /* ---- VERSION (0x03) ---------------------------------------------------- */
-static void xcli_builtin_version(xCLI_ReqCtx_t *ctx, const char *args)
-{
+static void xcli_builtin_version(xCLI_ReqCtx_t *ctx, const char *args) {
     char fw[XCLI_MAX_CMD_HELP];
     char hw[XCLI_MAX_CMD_HELP];
-    (void)args;
-    xCLI_GetFwVersion(fw, (uint8_t)sizeof(fw));
-    xCLI_GetHwVersion(hw, (uint8_t)sizeof(hw));
+    (void) args;
+    xCLI_GetFwVersion(fw, (uint8_t)sizeof (fw));
+    xCLI_GetHwVersion(hw, (uint8_t)sizeof (hw));
     xCLI_Ser_PutStr(&ctx->ser, "fw", fw);
     xCLI_Ser_PutStr(&ctx->ser, "hw", hw);
 }
 
 /* ---- REBOOT (0x04) ----------------------------------------------------- */
 
-static void xcli_builtin_reboot(xCLI_ReqCtx_t *ctx, const char *args)
-{
-    uint16_t delay_ms = (uint16_t)xcli_token_u32(args, 1U);
+static void xcli_builtin_reboot(xCLI_ReqCtx_t *ctx, const char *args) {
+    uint16_t delay_ms = (uint16_t) xcli_token_u32(args, 1U);
     xCLI_Ser_PutBool(&ctx->ser, "ack", 1U);
     xCLI_DoReboot(delay_ms);
 }
 
 /* ---- MEM (0x05) -------------------------------------------------------- */
-static void xcli_builtin_mem(xCLI_ReqCtx_t *ctx, const char *args)
-{
-    (void)args;
-    xCLI_Ser_PutU32(&ctx->ser, "free",  xCLI_GetFreeHeap());
+static void xcli_builtin_mem(xCLI_ReqCtx_t *ctx, const char *args) {
+    (void) args;
+    xCLI_Ser_PutU32(&ctx->ser, "free", xCLI_GetFreeHeap());
     xCLI_Ser_PutU32(&ctx->ser, "total", xCLI_GetTotalHeap());
 }
 
 /* ---- GPIO (0x10) ------------------------------------------------------- */
-static void xcli_builtin_gpio(xCLI_ReqCtx_t *ctx, const char *args)
-{
+static void xcli_builtin_gpio(xCLI_ReqCtx_t *ctx, const char *args) {
     const char *subcmd = embeddedCliGetToken(args, 1U);
-    uint8_t     pin;
+    uint8_t pin;
 
-    if (subcmd == NULL) { ctx->status = XCLI_STATUS_BAD_ARG; return; }
-    pin = (uint8_t)xcli_token_u32(args, 2U);
+    if (subcmd == NULL) {
+        ctx->status = XCLI_STATUS_BAD_ARG;
+        return;
+    }
+    pin = (uint8_t) xcli_token_u32(args, 2U);
 
     if (subcmd[0] == 'r' || subcmd[0] == 'R') {
-        xCLI_Ser_PutU8(&ctx->ser, "pin",   pin);
+        xCLI_Ser_PutU8(&ctx->ser, "pin", pin);
         xCLI_Ser_PutU8(&ctx->ser, "state", xCLI_GpioRead(pin));
     } else if (subcmd[0] == 'w' || subcmd[0] == 'W') {
-        uint8_t val = (uint8_t)xcli_token_u32(args, 3U);
-        xCLI_Ser_PutU8  (&ctx->ser, "pin",   pin);
-        xCLI_Ser_PutU8  (&ctx->ser, "state", xCLI_GpioWrite(pin, val));
-        xCLI_Ser_PutBool(&ctx->ser, "ok",    1U);
+        uint8_t val = (uint8_t) xcli_token_u32(args, 3U);
+        xCLI_Ser_PutU8(&ctx->ser, "pin", pin);
+        xCLI_Ser_PutU8(&ctx->ser, "state", xCLI_GpioWrite(pin, val));
+        xCLI_Ser_PutBool(&ctx->ser, "ok", 1U);
     } else {
         ctx->status = XCLI_STATUS_BAD_ARG;
     }
@@ -241,10 +261,13 @@ static void xcli_builtin_gpio(xCLI_ReqCtx_t *ctx, const char *args)
 
 /* ---- TEST (0x20) ------------------------------------------------------- */
 static uint8_t test_seq_v = 0U;
-static void test_handler(xCLI_ReqCtx_t *ctx, const char *args)
-{
-    uint8_t ch = (uint8_t)xcli_token_u32(args, 1U);
-    if (ch > 7U) { ctx->status = XCLI_STATUS_BAD_ARG; return; }
+
+static void test_handler(xCLI_ReqCtx_t *ctx, const char *args) {
+    uint8_t ch = (uint8_t) xcli_token_u32(args, 1U);
+    if (ch > 7U) {
+        ctx->status = XCLI_STATUS_BAD_ARG;
+        return;
+    }
     xCLI_Ser_PutU8(&ctx->ser, "test", ch);
     xCLI_Ser_PutU8(&ctx->ser, "data", test_seq_v++);
 }
@@ -252,80 +275,94 @@ static void test_handler(xCLI_ReqCtx_t *ctx, const char *args)
 /* ---- COUNTER (0x21) ---------------------------------------------------- */
 static uint32_t s_counter_value = 0U;
 static uint32_t s_counter_calls = 0U;
-static uint8_t  s_counter_max   = 0U;
+static uint8_t s_counter_max = 0U;
 
-static void counter_handler(xCLI_ReqCtx_t *ctx, const char *args)
-{
+static void counter_handler(xCLI_ReqCtx_t *ctx, const char *args) {
     const char *sub = embeddedCliGetToken(args, 1U);
     uint8_t did_reset = 0U;
     s_counter_calls++;
 
     if (sub != NULL && (sub[0] == 'r' || sub[0] == 'R')) {
-        s_counter_value = 0U; s_counter_max = 0U; did_reset = 1U;
+        s_counter_value = 0U;
+        s_counter_max = 0U;
+        did_reset = 1U;
     } else {
-        uint8_t step = (sub != NULL) ? (uint8_t)xcli_token_u32(args, 1U) : 1U;
-        if (step == 0U) { step = 1U; }
+        uint8_t step = (sub != NULL) ? (uint8_t) xcli_token_u32(args, 1U) : 1U;
+        if (step == 0U) {
+            step = 1U;
+        }
         s_counter_value += step;
-        if (step > s_counter_max) { s_counter_max = step; }
+        if (step > s_counter_max) {
+            s_counter_max = step;
+        }
     }
 
-    xCLI_Ser_PutU32 (&ctx->ser, "value",     s_counter_value);
-    xCLI_Ser_PutU32 (&ctx->ser, "calls",     s_counter_calls);
-    xCLI_Ser_PutU8  (&ctx->ser, "max_step",  s_counter_max);
+    xCLI_Ser_PutU32(&ctx->ser, "value", s_counter_value);
+    xCLI_Ser_PutU32(&ctx->ser, "calls", s_counter_calls);
+    xCLI_Ser_PutU8(&ctx->ser, "max_step", s_counter_max);
     xCLI_Ser_PutBool(&ctx->ser, "was_reset", did_reset);
 }
 
 /* ---- CALC (0x22) ------------------------------------------------------- */
-static void calc_handler(xCLI_ReqCtx_t *ctx, const char *args)
-{
+static void calc_handler(xCLI_ReqCtx_t *ctx, const char *args) {
     const char *tok_op = embeddedCliGetToken(args, 2U);
     uint32_t a, b, result = 0U;
-    char     op;
-    char     op_str[2];
+    char op;
+    char op_str[2];
 
     if (embeddedCliGetToken(args, 1U) == NULL ||
-        tok_op == NULL ||
-        embeddedCliGetToken(args, 3U) == NULL) {
-        ctx->status = XCLI_STATUS_BAD_ARG; return;
+            tok_op == NULL ||
+            embeddedCliGetToken(args, 3U) == NULL) {
+        ctx->status = XCLI_STATUS_BAD_ARG;
+        return;
     }
 
-    a  = xcli_token_u32(args, 1U);
+    a = xcli_token_u32(args, 1U);
     op = tok_op[0];
-    b  = xcli_token_u32(args, 3U);
-    op_str[0] = op; op_str[1] = '\0';
+    b = xcli_token_u32(args, 3U);
+    op_str[0] = op;
+    op_str[1] = '\0';
 
     switch (op) {
-        case '+': result = a + b; break;
-        case '-': result = a - b; break;
-        case '*': result = a * b; break;
+        case '+': result = a + b;
+            break;
+        case '-': result = a - b;
+            break;
+        case '*': result = a * b;
+            break;
         case '/': case '%':
-            if (b == 0U) { ctx->status = XCLI_STATUS_BAD_ARG; return; }
+            if (b == 0U) {
+                ctx->status = XCLI_STATUS_BAD_ARG;
+                return;
+            }
             result = (op == '/') ? (a / b) : (a % b);
             break;
-        default: ctx->status = XCLI_STATUS_BAD_ARG; return;
+        default: ctx->status = XCLI_STATUS_BAD_ARG;
+            return;
     }
 
-    xCLI_Ser_PutU32 (&ctx->ser, "result", result);
-    xCLI_Ser_PutStr (&ctx->ser, "op",     op_str);
-    xCLI_Ser_PutU32 (&ctx->ser, "a",      a);
-    xCLI_Ser_PutU32 (&ctx->ser, "b",      b);
-    xCLI_Ser_PutBool(&ctx->ser, "ok",     1U);
+    xCLI_Ser_PutU32(&ctx->ser, "result", result);
+    xCLI_Ser_PutStr(&ctx->ser, "op", op_str);
+    xCLI_Ser_PutU32(&ctx->ser, "a", a);
+    xCLI_Ser_PutU32(&ctx->ser, "b", b);
+    xCLI_Ser_PutBool(&ctx->ser, "ok", 1U);
 }
 
 /* ---- Registration ------------------------------------------------------ */
-void xCLI_RegisterBuiltins(xCLI_Instance_t *xcli)
-{
-    if (xcli == NULL) { return; }
-    (void)xCLI_RegisterCommand(xcli, XCLI_CMD_HELP,
-        "help",    "List all registered commands",          xcli_builtin_help);
-    (void)xCLI_RegisterCommand(xcli, XCLI_CMD_PING,
-        "ping",    "Echo a 32-bit timestamp",               xcli_builtin_ping);
-    (void)xCLI_RegisterCommand(xcli, XCLI_CMD_VERSION,
-        "version", "Report firmware/hardware version",      xcli_builtin_version);
-    (void)xCLI_RegisterCommand(xcli, XCLI_CMD_REBOOT,
-        "reboot",  "Reboot device [delay_ms]",              xcli_builtin_reboot);
-    (void)xCLI_RegisterCommand(xcli, XCLI_CMD_MEM,
-        "mem",     "Report heap statistics",                xcli_builtin_mem);
+void xCLI_RegisterBuiltins(xCLI_Instance_t *xcli) {
+    if (xcli == NULL) {
+        return;
+    }
+    (void) xCLI_RegisterCommand(xcli, XCLI_CMD_HELP,
+            "help", "List all registered commands", xcli_builtin_help);
+    (void) xCLI_RegisterCommand(xcli, XCLI_CMD_PING,
+            "ping", "Echo a 32-bit timestamp", xcli_builtin_ping);
+    (void) xCLI_RegisterCommand(xcli, XCLI_CMD_VERSION,
+            "version", "Report firmware/hardware version", xcli_builtin_version);
+    (void) xCLI_RegisterCommand(xcli, XCLI_CMD_REBOOT,
+            "reboot", "Reboot device [delay_ms]", xcli_builtin_reboot);
+    (void) xCLI_RegisterCommand(xcli, XCLI_CMD_MEM,
+            "mem", "Report heap statistics", xcli_builtin_mem);
 }
 
 #endif /* XCLI_USE_BUILTIN_COMMANDS */

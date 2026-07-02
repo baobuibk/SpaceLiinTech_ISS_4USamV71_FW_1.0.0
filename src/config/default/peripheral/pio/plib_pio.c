@@ -228,7 +228,8 @@ void PIO_Initialize(void) {
             | (1U << TEC_2_SW_PIN)
             | (1U << PHOTO_SW_CS_PIN) | (1U << PHOTO_ADC_CS_PIN)
             | (1U << FRAM_CS_PIN) | (1U << MCU_MPU_GPIO_A_PIN);
-    uint32_t PIOD_Input_mask = (1U << MCU_MPU_GPIO_B_PIN);
+    
+    uint32_t PIOD_Input_mask = (1U << MCU_SENSOR1_nIRQ_PIN) | (1U << MCU_MPU_GPIO_B_PIN);
 
     /* Select Peripheral B for PD15, PD16, PD17 */
     uint32_t PIOD_periph_B_mask = (1U << USART2_SPI_SCK_PIN) | (1U << USART2_SPI_MOSI_PIN) | (1U << USART2_SPI_MISO_PIN)
@@ -249,12 +250,15 @@ void PIO_Initialize(void) {
     ((pio_registers_t*) PIO_PORT_D)->PIO_PUDR = 0xFFFFFFFFU;
     /* PORTD Pull Down Enable/Disable as per MHC selection */
     ((pio_registers_t*) PIO_PORT_D)->PIO_PPDDR = 0xFFFFFFFFU;
+    ((pio_registers_t*) PIO_PORT_D)->PIO_PPDER |= (1U << MCU_MPU_GPIO_A_PIN);   //pull-down
     /* PORTD Output Write Enable */
     ((pio_registers_t*) PIO_PORT_D)->PIO_OWER = PIO_OWER_Msk;
     /* PORTD Output Direction Enable */
     ((pio_registers_t*) PIO_PORT_D)->PIO_OER = 0x0U;
-    ((pio_registers_t*) PIO_PORT_D)->PIO_ODR = 0xFFFFFFFFU | PIOD_Input_mask;
+    ((pio_registers_t*) PIO_PORT_D)->PIO_ODR = 0xFFFFFFFFU;
+    ((pio_registers_t*) PIO_PORT_D)->PIO_OER &= ~PIOD_Input_mask;
     ((pio_registers_t*) PIO_PORT_D)->PIO_OER |= PIOD_Output_mask;
+    ((pio_registers_t*) PIO_PORT_D)->PIO_ODR |= PIOD_Input_mask;
     ((pio_registers_t*) PIO_PORT_D)->PIO_ODR &= ~PIOD_Output_mask;
     /* Initialize PORTD pin state */
     ((pio_registers_t*) PIO_PORT_D)->PIO_ODSR = 0x0U;
