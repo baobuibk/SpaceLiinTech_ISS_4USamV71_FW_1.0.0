@@ -8,6 +8,9 @@
 #ifndef M2_SYSTEM_CLI_TERMINAL_CLI_COMMAND_CLI_COMMAND_H_
 #define M2_SYSTEM_CLI_TERMINAL_CLI_COMMAND_CLI_COMMAND_H_
 
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
 #include "../CLI_Src/embedded_cli.h"
 
 const CliCommandBinding *getCliStaticBindings(void);
@@ -24,6 +27,7 @@ void CMD_PSRAM_Read_ID(EmbeddedCli *cli, char *args, void *context);
 void CMD_PSRAM_Write_Byte(EmbeddedCli *cli, char *args, void *context);
 void CMD_PSRAM_Read_Byte(EmbeddedCli *cli, char *args, void *context);
 
+void CMD_Flow_Sen_Init(EmbeddedCli *cli, char *args, void *context);
 void CMD_Flow_Sen_ReadAll(EmbeddedCli *cli, char *args, void *context);
 
 void CMD_NTC_Read(EmbeddedCli *cli, char *args, void *context);

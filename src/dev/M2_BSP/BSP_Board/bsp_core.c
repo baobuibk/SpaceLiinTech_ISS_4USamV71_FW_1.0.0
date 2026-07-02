@@ -126,18 +126,6 @@ do_t photo_adc_eoc ={
     .bStatus = true,
 };
 
-//do_t power_som ={
-//    .port = POWER_SOM_PORT,
-//    .pin = POWER_SOM_PIN,
-//    .bStatus = true,
-//};
-
-//do_t power_buck_peri ={
-//    .port = POWER_PERI_PORT,
-//    .pin = POWER_PERI_PIN,
-//    .bStatus = false
-//};
-
 do_t power_tec ={
     .port = POWER_TEC_PORT,
     .pin = POWER_TEC_PIN,
@@ -150,36 +138,17 @@ do_t power_sln_hd ={
     .bStatus = false
 };
 
-//do_t power_solenoid ={
-//    .port = POWER_SLN_PORT,
-//    .pin = POWER_SLN_PIN,
-//    .bStatus = false
-//};
-
 do_t power_lp_heater ={
     .port = POWER_LP_HEATER_PORT,
     .pin = POWER_LP_HEATER_PIN,
     .bStatus = false
 };
 
-//do_t power_heater ={
-//    .port = POWER_HEATER_PORT,
-//    .pin = POWER_HEATER_PIN,
-//    .bStatus = false
-//};
-
-
 do_t status_led ={
     .port = STATUS_LED_PORT,
     .pin = STATUS_LED_PIN,
     .bStatus = false,
 };
-
-//do_t bmp390_ext_sensor5 ={
-//    .port = SENSOR5_EN_PORT,
-//    .pin = SENSOR5_EN_PIN,
-//    .bStatus = false,
-//};
 
 do_t tec_1_cs ={
     .port = TEC_1_CS_PORT,
@@ -205,30 +174,6 @@ do_t tec_2_sw ={
     .bStatus = false,
 };
 
-//do_t tec_3_cs ={
-//    .port = TEC_3_CS_PORT,
-//    .pin = TEC_3_CS_PIN,
-//    .bStatus = true,
-//};
-//
-//do_t tec_3_sw ={
-//    .port = TEC_3_SW_PORT,
-//    .pin = TEC_3_SW_PIN,
-//    .bStatus = false,
-//};
-//
-//do_t tec_4_cs ={
-//    .port = TEC_4_CS_PORT,
-//    .pin = TEC_4_CS_PIN,
-//    .bStatus = true,
-//};
-//
-//do_t tec_4_sw ={
-//    .port = TEC_4_SW_PORT,
-//    .pin = TEC_4_SW_PIN,
-//    .bStatus = false,
-//};
-
 do_t fram_cs = {
     .port = FRAM_CS_PORT,
     .pin = FRAM_CS_PIN,
@@ -246,9 +191,15 @@ do_t psram_cs = {
     .bStatus = true,
 };
 
-do_t flow1_en = {
+do_t flow_1_en = {
     .port = FLOW_1_EN_PORT,
     .pin = FLOW_1_EN_PIN,
+    .bStatus = false,
+};
+
+do_t flow_1_nIRQ = {
+    .port = MCU_SENSOR1_nIRQ_PORT,
+    .pin = MCU_SENSOR1_nIRQ_PIN,
     .bStatus = false,
 };
 
@@ -257,16 +208,6 @@ do_t ext_sen_en = {
     .pin = EXT_SEN_EN_PIN,
     .bStatus = false,
 };
-//do_t flow3_en = {
-//    .port = FLOW_3_EN_PORT,
-//    .pin = FLOW_3_EN_PIN,
-//    .bStatus = false,
-//};
-//do_t flow4_en = {
-//    .port = FLOW_4_EN_PORT,
-//    .pin = FLOW_4_EN_PIN,
-//    .bStatus = false,
-//};
 
 do_t lsm6_int1 = {
     .port = LSM6_INT1_PORT,

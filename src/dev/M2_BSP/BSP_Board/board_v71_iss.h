@@ -187,7 +187,7 @@
 #define SPI1_MISO_PIN         26
 
 /* ===================== FLOW_SENSOR ===================== */
-#define FLOW_1_EN_PORT        3   // PC9
+#define FLOW_1_EN_PORT        3   // PC09
 #define FLOW_1_EN_PIN         9
 
 #define EXT_SEN_EN_PORT        3   // PC10

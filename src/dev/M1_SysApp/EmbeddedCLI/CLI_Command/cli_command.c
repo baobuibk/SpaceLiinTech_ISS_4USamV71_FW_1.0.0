@@ -239,7 +239,8 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
     { "RTC", "rtc_set_time", "Set RTC time: rtc_set_time <h> <m> <s>", true, NULL, CMD_RTC_Set_Time},
     { "RTC", "rtc_ping", "Ping RTC hardware via I2C", true, NULL, CMD_RTC_Ping},
     { "RTC", "rtc_test", "Run comprehensive RTC hardware test suite", true, NULL, CMD_RTC_Test},
-
+    
+    { "FLOW", "flow_init", "Read data from all flow sensors", true, NULL, CMD_Flow_Sen_Init},
     { "FLOW", "flow_read_all", "Read data from all flow sensors", true, NULL, CMD_Flow_Sen_ReadAll},
 
     { "EXP", "dls_setup", "Configure experiment profile parameters", true, NULL, CMD_DLS_setup},

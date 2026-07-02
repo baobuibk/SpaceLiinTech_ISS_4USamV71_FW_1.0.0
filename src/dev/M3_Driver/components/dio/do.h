@@ -18,11 +18,18 @@ typedef struct
 	bool			bStatus;
 }do_t;
 
+typedef enum {
+    INPUT = 0,
+    INPUT_PULLUP,
+    INPUT_PULLDOWN,
+    OUTPUT
+} dio_mode_t;
 
 
 void do_set(do_t *me);
 void do_reset(do_t *me);
 void do_toggle(do_t *me);
+void dio_mode(do_t *me, dio_mode_t mode);
 
 bool di_read(do_t *me);
 

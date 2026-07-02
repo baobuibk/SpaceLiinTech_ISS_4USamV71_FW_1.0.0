@@ -1,49 +1,58 @@
 #include "bsp_flow_sen.h"
-#include "stdbool.h"
-#include "do.h"
 #include "bsp_board/bsp_core.h"
 #include "os_hal.h"
+#include "stdbool.h"
 
-flow_sensor_data_t s_flow_sen_data[1];
-
-//static do_t* const flow_en_pins[4] = {
-//    &flow1_en, &flow2_en, &flow3_en, &flow4_en
-//};
-
-static do_t* const flow_en_pins[1] = {
-    &flow1_en
+flow_dev_t flow_dev[FLOW_SENSOR_NUMBER] = {
+    {.i2c = &i2c0, .nIRQ_pin = &flow_1_nIRQ, .ena_pin = &flow_1_en, .init_state = INIT_NONE},
 };
 
-int bsp_flow_sen_init (void)
-{
-    int success_count = 0;
-    for (int i = 0; i < 1; i++) {
-        do_set(flow_en_pins[i]);
-        os_delay_ms(1);
-        if (slf3s_init(&i2c0, true) == SLF3S_OK) {
-            success_count++;
-        }
-        
-        do_reset(flow_en_pins[i]);
-    }
-    return (success_count > 0);
-}
+static uint8_t flow_address[4] = {0x0A, 0x0B, 0x0C, 0x0D};
 
-int bsp_flow_sen_read_all (void)
-{
-    bool any_success = false;
-    for (int i = 0; i < 1; i++) {
-        do_set(flow_en_pins[i]);
-        os_delay_ms(1);
-        
-        int32_t ret = slf3s_read_all(&i2c0, &s_flow_sen_data[i].slf3s_dat);
-        s_flow_sen_data[i].read_oke = (ret == SLF3S_OK);
-        
-        if (s_flow_sen_data[i].read_oke) {
-            any_success = true;
-        }
-        do_reset(flow_en_pins[i]);
+Std_ReturnType bsp_flow_sen_init(uint8_t index) {
+    if (index >= FLOW_SENSOR_NUMBER)
+        return ERROR_INVALID_PARAM;
+
+    if (flow_dev[index].i2c == NULL)
+        return ERROR_INVALID_PARAM;
+
+    /* Enable sensor */
+    do_set(flow_dev[index].ena_pin);
+    os_delay_ms(2);
+
+    /* Reset sensor (broadcast) */
+    slf3s_flow_soft_reset(flow_dev[index].i2c);
+
+    os_delay_ms(2);
+
+    /* Change I2C address */
+    if (slf3s_flow_change_address(flow_dev[index].i2c, flow_dev[index].nIRQ_pin, flow_address[index]) != SLF3S_OK) {
+        return ERROR_FAIL;
+    }
+
+    flow_dev[index].address = flow_address[index];
+    os_delay_ms(2);
+
+    /* Initialize measurement mode */
+    if (slf3s_flow_init(flow_dev[index].i2c, flow_dev[index].address, WATER_MODE) != SLF3S_OK) {
+        flow_dev[index].init_state = INIT_FAILED;
+        return ERROR_FAIL;
     }
     
-    return (int)any_success;
+    flow_dev[index].init_state = INIT_DONE;
+    os_delay_ms(2);
+
+    return ERROR_OK;
+}
+
+Std_ReturnType bsp_flow_sen_read_all(uint8_t index) {
+    if (flow_dev[index].init_state != INIT_DONE)
+        if (bsp_flow_sen_init(index) != ERROR_OK)
+            return ERROR_FAIL;
+    
+    int32_t ret1 = slf3s_flow_read_all(flow_dev[index].i2c, flow_dev[index].address, &flow_dev[index].data);
+    if (ret1 == SLF3S_OK)
+        return ERROR_OK;
+    else
+        return ERROR_FAIL;
 }
