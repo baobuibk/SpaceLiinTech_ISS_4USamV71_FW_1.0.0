@@ -14,7 +14,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Prototype ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 Std_ReturnType bsp_pump_init();
 Std_ReturnType bsp_pump_enable(bool is_enable);
-Std_ReturnType bsp_pump_set_voltage(uint8_t channel, uint8_t _voltage);
+Std_ReturnType bsp_pump_set_voltage(uint8_t _voltage);
 Std_ReturnType bsp_pump_set_freq(uint16_t freq);
 Std_ReturnType bsp_pump_read_reg(uint8_t reg ,uint8_t* val);
 
