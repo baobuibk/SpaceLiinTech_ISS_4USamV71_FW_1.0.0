@@ -42,6 +42,8 @@
 #include "plib_spi1_master.h"
 #include "interrupts.h"
 
+#include "M0_App/AppOS/App_Experiment/app_experiment.h"
+
 #define SPI_TDR_8BIT_REG      (*(volatile uint8_t* const)((SPI1_BASE_ADDRESS + SPI_TDR_REG_OFST)))
 
 #define SPI_TDR_9BIT_REG      (*(volatile uint16_t* const)((SPI1_BASE_ADDRESS + SPI_TDR_REG_OFST)))
@@ -60,14 +62,14 @@
 
 void SPI1_Initialize( void )
 {
-    /* Disable and Reset the SPI*/
+    /* Disable and Reset the SPI1*/
     SPI1_REGS->SPI_CR = SPI_CR_SPIDIS_Msk | SPI_CR_SWRST_Msk;
 
     /* Enable Master mode, select particular NPCS line for chip select and disable mode fault detection */
-    SPI1_REGS->SPI_MR = SPI_MR_MSTR_Msk | SPI_MR_DLYBCS(0) | SPI_MR_PCS_NPCS0  | SPI_MR_MODFDIS_Msk;
+    SPI1_REGS->SPI_MR = SPI_MR_MSTR_Msk | SPI_MR_DLYBCS(0) | SPI_MR_PCS_NPCS3 | SPI_MR_MODFDIS_Msk;
 
-    /* Set up clock Polarity, data phase, Communication Width, Baud Rate */
-    SPI1_REGS->SPI_CSR[0] = SPI_CSR_CPOL_IDLE_LOW | SPI_CSR_NCPHA_VALID_LEADING_EDGE | SPI_CSR_BITS_8_BIT | SPI_CSR_SCBR(2)| SPI_CSR_DLYBS(0) | SPI_CSR_DLYBCT(0)  | SPI_CSR_CSAAT(1) ;
+    /* Set up clock Polarity, data phase, Communication Width, Baud Rate */ /* MODE 1: (m?c th?p + c?nh sau) ?u tiên cho ADG1414 và ADS8329 */
+    SPI1_REGS->SPI_CSR[3] = SPI_CSR_CPOL_IDLE_LOW | SPI_CSR_NCPHA_VALID_TRAILING_EDGE | SPI_CSR_BITS_16_BIT | SPI_CSR_SCBR(PHOTO_ADC_PRESCALE) | SPI_CSR_DLYBS(0) | SPI_CSR_DLYBCT(0) | SPI_CSR_CSAAT(1);
 
     /* Enable SPI1 */
     SPI1_REGS->SPI_CR = SPI_CR_SPIEN_Msk;

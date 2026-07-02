@@ -69,9 +69,9 @@ void PIO_Initialize(void) {
     /* PORTA PIO: Default*/
     ((pio_registers_t*) PIO_PORT_A)->PIO_ABCDSR[0] = 0x0U;
     ((pio_registers_t*) PIO_PORT_A)->PIO_ABCDSR[1] = 0x0U;
-    uint32_t PIOA_Output_mask = ((1U << TEC_1_SW_PIN) | (1U << LASER_DAC_CS_PIN) | (1U << LASER_SW_EXT_CS_PIN));
+    uint32_t PIOA_Output_mask = ((1U << TEC_1_SW_PIN) | (1U << LASER_INT_DAC_CS_PIN) | (1U << LASER_EXT_SW_CS_PIN));
 
-    PIOA_Output_mask |= (1U << SW_PSRAM_SEL_PIN) | (1U << STATUS_LED_PIN) | (1U << LASER_EXT_SPI1_nCS_PIN)
+    PIOA_Output_mask |= (1U << SW_PSRAM_SEL_PIN) | (1U << STATUS_LED_PIN) | (1U << LASER_EXT_SW_CS_PIN)
                      | (1U << LASER_EXT_DAC_CS_PIN);
 
     /* Select Peripheral A for PA */
@@ -106,7 +106,7 @@ void PIO_Initialize(void) {
     ((pio_registers_t*) PIO_PORT_A)->PIO_ODR &= ~PIOA_Output_mask;
     /* Initialize PORTA pin state */
     ((pio_registers_t*) PIO_PORT_A)->PIO_ODSR = 0x0U;
-    ((pio_registers_t*) PIO_PORT_A)->PIO_ODSR |= ((1U << LASER_DAC_CS_PIN) | (1U << LASER_SW_EXT_CS_PIN) | (1U << PHOTO_ADC_CONV_PIN));
+    ((pio_registers_t*) PIO_PORT_A)->PIO_ODSR |= ((1U << LASER_INT_DAC_CS_PIN) | (1U << LASER_EXT_SW_CS_PIN) | (1U << PHOTO_ADC_CONV_PIN) | (1U << LASER_EXT_DAC_CS_PIN));
     /* PORTA drive control */
     ((pio_registers_t*) PIO_PORT_A)->PIO_DRIVER = 0x0U;
 
@@ -164,8 +164,8 @@ void PIO_Initialize(void) {
     ((pio_registers_t*) PIO_PORT_C)->PIO_ABCDSR[1] = 0x0U;
     /* Select PIO_Output for PC18 */
     uint32_t PIOC_Output_mask = ((1U << TEC_1_CS_PIN) | (1U << TEC_2_CS_PIN)
-            | (1U << LASER_DAC_LATCH_PIN) | (1U << LASER_EXT_DAC_LATCH_PIN)
-            | (1U << LASER_SW_INT_CS_PIN) | (1U << PUMP_EN_PIN) | (1U << PSRAM_CS_PIN)
+            | (1U << LASER_INT_DAC_LATCH_PIN) | (1U << LASER_EXT_DAC_LATCH_PIN)
+            | (1U << LASER_INT_SW_CS_PIN) | (1U << PUMP_EN_PIN) | (1U << PSRAM_CS_PIN)
             | (1U << FLOW_1_EN_PIN) | (1U << EXT_SEN_EN_PIN)
             | (1U << MCU_CMD_SOLE_A_PIN));
     
@@ -203,7 +203,7 @@ void PIO_Initialize(void) {
     ((pio_registers_t*) PIO_PORT_C)->PIO_ODR &= ~PIOC_Output_mask;
     /* Initialize PORTC pin state */
     ((pio_registers_t*) PIO_PORT_C)->PIO_ODSR = 0x0U;
-    ((pio_registers_t*) PIO_PORT_C)->PIO_ODSR |= ((1U << TEC_1_CS_PIN) | (1U << TEC_2_CS_PIN) | (1U << LASER_SW_INT_CS_PIN) | (1U << PSRAM_CS_PIN));
+    ((pio_registers_t*) PIO_PORT_C)->PIO_ODSR |= ((1U << TEC_1_CS_PIN) | (1U << TEC_2_CS_PIN) | (1U << LASER_INT_SW_CS_PIN) | (1U << PSRAM_CS_PIN));
     /* PORTC Interrupt Enable */
     ((pio_registers_t*) PIO_PORT_C)->PIO_AIMER |= LSM6_INT1_PIN_MASK;
     ((pio_registers_t*) PIO_PORT_C)->PIO_ESR |= LSM6_INT1_PIN_MASK;
@@ -240,7 +240,7 @@ void PIO_Initialize(void) {
     uint32_t PIOD_periph_C_mask = (1U << UART2_RX_PIN) | (1U << UART2_TX_PIN) | (1U << I2C2_SDA_PIN) | (1U << I2C2_SCL_PIN);
     ((pio_registers_t*) PIO_PORT_D)->PIO_ABCDSR[0] &= ~PIOD_periph_C_mask;
     ((pio_registers_t*) PIO_PORT_D)->PIO_ABCDSR[1] |= PIOD_periph_C_mask;
-    ((pio_registers_t*) PIO_PORT_D)->PIO_PER = 0x0U;
+    ((pio_registers_t*) PIO_PORT_D)->PIO_PER = 0x0U | PIOD_Input_mask;
     /* PORTD PIO Enable and Peripheral Disable*/
     ((pio_registers_t*) PIO_PORT_D)->PIO_PER &= ~(PIOD_periph_B_mask | PIOD_periph_C_mask);
     /* PORTD PIO Disable and Peripheral Enable*/

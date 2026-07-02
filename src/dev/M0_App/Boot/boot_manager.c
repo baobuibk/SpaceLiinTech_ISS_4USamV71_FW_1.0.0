@@ -25,7 +25,8 @@
 
 #include "UART/uart_irq.h"
 #include "BSP_Solenoid/bsp_solenoid.h"
-#include "BSP_Laser/bsp_laser.h"
+#include "BSP_Laser_Int/bsp_laser.h"
+#include "BSP_Laser_Ext/bsp_laser_ext.h"
 #include "BSP_Photo/bsp_photo.h"
 #include "BSP_FRAM/bsp_fram.h"
 #include "BSP_Flow_Sen/bsp_flow_sen.h"
@@ -77,6 +78,7 @@ Std_ReturnType BootManager_SystemInit(void){
     HardwareCSP_Init();
     
     bsp_laser_init();
+    bsp_laser_ext_init();
     bsp_photo_init();
     bsp_watchdog_init();
     ntc_init();

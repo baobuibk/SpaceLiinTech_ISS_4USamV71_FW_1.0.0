@@ -22,14 +22,15 @@ extern qspi_io_t qspi;
 extern is66_dev_t g_psram;
 extern mb85rs2mt_dev_t g_fram;
 
-extern do_t laser_dac_cs ;
-extern do_t laser_dac_latch;
-extern do_t laser_sw_int_cs ;
-extern do_t laser_sw_ext_cs ;
-extern do_t laser_ext_spi1_cs;
+/* ===================== LASER ===================== */
+extern do_t laser_int_dac_cs;
+extern do_t laser_int_dac_latch;
+extern do_t laser_int_sw_cs;
 extern do_t laser_ext_dac_cs;
 extern do_t laser_ext_dac_latch;
+extern do_t laser_ext_sw_cs;
  
+/* ===================== PHOTO ===================== */
 extern do_t photo_sw_cs;
 extern do_t photo_adc_cs;
 extern do_t photo_adc_conv;

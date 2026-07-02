@@ -1,5 +1,5 @@
 #include "cli_laser.h"
-#include "BSP_Laser/bsp_laser.h"
+#include "BSP_Laser_Int/bsp_laser.h"
 
 void CMD_Laser_Int_Set_DAC(EmbeddedCli *cli, char *args, void *context) {
     const char *valStr = embeddedCliGetToken(args, 1);
