@@ -123,6 +123,42 @@ bool di_read(do_t *me)
     return bLevel;
 }
 
+void dio_mode(do_t *me, dio_mode_t mode) {
+    if (!me)
+        return;
+
+    pio_registers_t *port = gpio_ports[me->port];
+    uint32_t mask = (1u << me->pin);
+
+    port->PIO_PER = mask;
+
+    switch (mode) {
+        case OUTPUT:
+            port->PIO_PUDR = mask;
+            port->PIO_PPDDR = mask;
+            port->PIO_OER = mask;
+            break;
+
+        case INPUT:
+            port->PIO_ODR = mask;
+            port->PIO_PUDR = mask;
+            port->PIO_PPDDR = mask;
+            break;
+
+        case INPUT_PULLUP:
+            port->PIO_ODR = mask;
+            port->PIO_PUER = mask;
+            port->PIO_PPDDR = mask;
+            break;
+
+        case INPUT_PULLDOWN:
+            port->PIO_ODR = mask;
+            port->PIO_PUDR = mask;
+            port->PIO_PPDER = mask;
+            break;
+    }
+}
+
 void PIOC_Handler(void)
 {
     uint32_t status = ((pio_registers_t*)PIO_PORT_C)->PIO_ISR;

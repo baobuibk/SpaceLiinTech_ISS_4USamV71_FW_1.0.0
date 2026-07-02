@@ -35,13 +35,9 @@ extern do_t photo_adc_cs;
 extern do_t photo_adc_conv;
 extern do_t photo_adc_eoc;
 
-//extern do_t power_som;
-//extern do_t power_buck_peri;
 extern do_t power_tec;
 extern do_t power_sln_hd;
-//extern do_t power_solenoid;
 extern do_t power_lp_heater;
-//extern do_t power_heater;
 
 extern do_t status_led;
 
@@ -50,21 +46,6 @@ extern do_t tec_1_cs;
 extern do_t tec_1_sw;
 extern do_t tec_2_cs;
 extern do_t tec_2_sw;
-//extern do_t tec_3_cs;
-//extern do_t tec_3_sw;
-//extern do_t tec_4_cs;
-//extern do_t tec_4_sw;
-
-//extern do_t bmp390_ext_sensor5;
-
-//extern do_t sol1_in1;
-//extern do_t sol1_in2;
-//extern do_t sol2_in1;
-//extern do_t sol2_in2;
-//extern do_t sol3_in1;
-//extern do_t sol3_in2;
-//extern do_t sol4_in1;
-//extern do_t sol4_in2;
 
 extern do_t fram_cs;
 
@@ -72,10 +53,9 @@ extern do_t fram_cs;
 extern do_t hd4_en;
 extern do_t psram_cs;
 
-extern do_t flow1_en;
+extern do_t flow_1_en;
+extern do_t flow_1_nIRQ;
 extern do_t ext_sen_en;
-//extern do_t flow3_en;
-//extern do_t flow4_en;
 
 extern do_t lsm6_int1;
 
@@ -91,12 +71,6 @@ extern do_t sole_A_cmd;
 extern do_t sole_A_cs;
 extern do_t sole_B_cmd;
 extern do_t sole_B_cs;
-//extern do_t sole_C_cmd;
-//extern do_t sole_C_cs;
-//extern do_t sole_D_cmd;
-//extern do_t sole_D_cs;
-//extern do_t sole_E_cmd;
-//extern do_t sole_E_cs;
 
 
 

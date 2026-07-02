@@ -29,6 +29,12 @@ typedef enum
     ERROR_SPI
 } Std_ReturnType;
 
+typedef enum {
+    INIT_NONE = 0,       /* Ch?a kh?i t?o */
+    INIT_DONE,           /* Kh?i t?o th?nh c?ng */
+    INIT_FAILED          /* Kh?i t?o th?t b?i */
+} Std_InitType;
+
 #ifndef NULL
 #define NULL ((void *)0)
 #endif
