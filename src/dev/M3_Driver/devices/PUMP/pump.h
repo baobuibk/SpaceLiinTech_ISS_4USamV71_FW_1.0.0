@@ -47,10 +47,9 @@ typedef struct {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Prototype ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 Std_ReturnType Highdriver_init(pump_dev_t* dev);
 Std_ReturnType Highdriver_enable(pump_dev_t* dev, uint8_t is_enable);
-Std_ReturnType Highdriver_setvoltage(pump_dev_t* dev, uint8_t channel, uint8_t _voltage);
+Std_ReturnType Highdriver_setvoltage(pump_dev_t* dev, uint8_t _voltage);
 Std_ReturnType Highdriver_setfrequency(pump_dev_t* dev, uint16_t _frequency);
 
-//Std_ReturnType _mp_i2c_write_block(pump_dev_t* dev, uint8_t reg, uint8_t val);
 Std_ReturnType _mp_i2c_write_block(pump_dev_t* dev, uint8_t reg, uint8_t val);
 Std_ReturnType _mp_i2c_read_block(pump_dev_t* dev, uint8_t reg, uint8_t *buf, uint8_t len);
 

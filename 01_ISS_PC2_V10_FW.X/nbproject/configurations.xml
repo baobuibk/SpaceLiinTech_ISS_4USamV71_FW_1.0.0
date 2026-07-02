@@ -1542,8 +1542,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMV71_DFP" vendor="Microchip" version="4.12.237"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="SAMV71_DFP" vendor="Microchip" version="4.12.237"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -1555,20 +1555,20 @@
         <archiverTool>
         </archiverTool>
         <loading>
-          <makeArtifact PL="../../../08_BOOTLOADER_ISS/08_BOOTLOADER_ISS.X"
+          <makeArtifact PL="../../SpaceLiin_Satellite_SamV71_Bootloader/07_BOOTLOADER.X"
                         CT="1"
                         CN="default"
                         AC="true"
                         BL="true"
-                        WD="../../../08_BOOTLOADER_ISS/08_BOOTLOADER_ISS.X"
+                        WD="../../SpaceLiin_Satellite_SamV71_Bootloader/07_BOOTLOADER.X"
                         BC="${MAKE}  -f Makefile CONF=default"
                         DBC="${MAKE}  -f Makefile CONF=default TYPE_IMAGE=DEBUG_RUN"
                         CC="rm -rf &quot;build/default&quot; &quot;dist/default&quot;"
-                        OP="dist/default/production/08_BOOTLOADER_ISS.X.production.hex"
-                        DOP="dist/default/debug/08_BOOTLOADER_ISS.X.debug.elf"
-                        FL="dist/default/production/08_BOOTLOADER_ISS.X.production.hex"
-                        PD="dist/default/production/08_BOOTLOADER_ISS.X.production.elf"
-                        DD="dist/default/debug/08_BOOTLOADER_ISS.X.debug.elf">
+                        OP="dist/default/production/07_BOOTLOADER.X.production.hex"
+                        DOP="dist/default/debug/07_BOOTLOADER.X.debug.elf"
+                        FL="dist/default/production/07_BOOTLOADER.X.production.hex"
+                        PD="dist/default/production/07_BOOTLOADER.X.production.elf"
+                        DD="dist/default/debug/07_BOOTLOADER.X.debug.elf">
           </makeArtifact>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>

@@ -6,7 +6,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Class ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Private Types ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-extern i2c_io_t i2c2;
 
 pump_dev_t pump = {
     .i2c_bus = &i2c2,
@@ -33,8 +32,8 @@ Std_ReturnType bsp_pump_enable(bool is_enable) {
     return Highdriver_enable(&pump, is_enable);
 }
 
-Std_ReturnType bsp_pump_set_voltage(uint8_t channel, uint8_t volt) {
-    return Highdriver_setvoltage(&pump, channel, volt);
+Std_ReturnType bsp_pump_set_voltage(uint8_t volt) {
+    return Highdriver_setvoltage(&pump, volt);
 }
 
 Std_ReturnType bsp_pump_set_freq(uint16_t freq) {
