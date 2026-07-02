@@ -46,6 +46,26 @@ extern const gs_param_table_row_t data_table1_rows[];
 extern const size_t data_table1_row_count;
 
 /* ============================================================================
+ * Table 4: Telemetry (sensor snapshot, updated periodically by App_CtrlTask)
+ *   sensor_stat: bit0=BME688 bit1=LSM6DSOX bit2=PAC1934 (1=init failed, gave up)
+ * ============================================================================ */
+#define PARAM_T4_SYS_UPTIME                   0  // 0x00  uint32, seconds
+#define PARAM_T4_SENSOR_STAT                  4  // 0x04  uint8
+#define PARAM_T4_BME_TEMP                     5  // 0x05  int16,  x100 degC
+#define PARAM_T4_BME_PRESS                    7  // 0x07  uint32, x10 Pa
+#define PARAM_T4_BME_HUM                     11  // 0x0B  uint16, x100 %RH
+#define PARAM_T4_LSM_ACCEL                   13  // 0x0D  int16[3], mg (X,Y,Z)
+#define PARAM_T4_LSM_GYRO                    19  // 0x13  int16[3], x10 dps (X,Y,Z)
+#define PARAM_T4_LSM_TEMP                    25  // 0x19  int16,  x100 degC
+#define PARAM_T4_NTC_TEMP                    27  // 0x1B  int16[8], x100 degC
+#define PARAM_T4_BOARD_TEMP                  43  // 0x2B  int16,  x100 degC
+#define PARAM_T4_PWR_VOLT                    45  // 0x2D  uint16[4], mV
+#define PARAM_T4_PWR_CURR                    53  // 0x35  uint16[4], mA
+
+extern const gs_param_table_row_t data_table4_rows[];
+extern const size_t data_table4_row_count;
+
+/* ============================================================================
  * Initialization
  * ============================================================================ */
 
@@ -54,6 +74,7 @@ void       data_tables_free_all(gs_param_table_instance_t *tables);
 
 gs_error_t data_table0_init(gs_param_table_instance_t *table);
 gs_error_t data_table1_init(gs_param_table_instance_t *table);
+gs_error_t data_table4_init(gs_param_table_instance_t *table);
 
 const char *data_table_get_name(uint8_t table_id);
 

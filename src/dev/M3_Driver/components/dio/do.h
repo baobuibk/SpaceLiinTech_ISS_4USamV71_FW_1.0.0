@@ -24,5 +24,6 @@ void do_set(do_t *me);
 void do_reset(do_t *me);
 void do_toggle(do_t *me);
 
+bool di_read(do_t *me);
 
 #endif /* DRIVER_COMPONENTS_DIO_DO_H_ */
