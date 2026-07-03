@@ -45,12 +45,6 @@ mcp4902_dev_t laser_ext_dac_dev = {
 static int8_t map_ext_LD_position(int x);
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Public Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-//uint16_t laser_current[32 * 2] = {0};
-//
-//uint32_t laser_adc_set_count;
-//uint32_t laser_adc_count;
-//
-//uint8_t is_laser_tim_run = 0;
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Public Function ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 void bsp_laser_ext_init(void) {
@@ -68,7 +62,8 @@ uint8_t bsp_laser_ext_get_dac(void) {
 }
 
 void bsp_laser_ext_sw_on(uint8_t channel) {
-    adg1414_chain_sw_on(&laser_ext_dev, channel);
+    uint8_t real_channel = map_ext_LD_position(channel);
+    adg1414_chain_sw_on(&laser_ext_dev, real_channel);
 }
 
 void bsp_laser_ext_sw_off(uint8_t channel) {
@@ -79,6 +74,19 @@ void bsp_laser_ext_all_sw_off(void) {
     adg1414_chain_all_sw_off(&laser_ext_dev);
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Function ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+static int8_t map_ext_LD_position(int x) {
+    static const uint8_t map[] = {
+        0,
+        1, 2, 3, 8, 4, 7, 5, 6
+    };
+
+    if (x < 1 || x > 8) {
+        return -1;
+    }
+
+    return map[x];
+}
 /* ============================================================
  * 1) TRIGGER: select channel and start a one-shot conversion
  *    - Channel 0 -> ADC1_IN0

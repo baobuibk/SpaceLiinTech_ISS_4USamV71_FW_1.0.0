@@ -41,6 +41,11 @@ void CMD_Laser_Ext_Turn_On_Channel(EmbeddedCli *cli, char *args, void *context) 
         embeddedCliPrint(cli, "Invalid channel");
         return;
     }
+    
+    if(ch < 1 || ch > 8) {
+        embeddedCliPrint(cli, "Invalid channel (1-8)");
+        return;
+    }
 
     bsp_laser_ext_sw_on((uint8_t) ch);
 
