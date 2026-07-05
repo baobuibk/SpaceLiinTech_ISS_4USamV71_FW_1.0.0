@@ -5,6 +5,6 @@
 #define APP_VERSION_MINOR  0
 #define APP_VERSION_PATCH  0
 #define APP_VERSION_STR    "1.0.0"
-#define APP_BUILD_NUMBER   34
+#define APP_BUILD_NUMBER   36
 
 #endif /* APP_VERSION_H */

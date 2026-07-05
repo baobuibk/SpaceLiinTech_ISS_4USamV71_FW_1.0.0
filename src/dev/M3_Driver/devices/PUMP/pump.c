@@ -21,7 +21,7 @@ Std_ReturnType Highdriver_init(pump_dev_t* dev) {
 
     Std_ReturnType st;
 
-    st = _mp_i2c_write_block(dev, I2C_POWERMODE, 0x01);
+    st = _mp_i2c_write_block(dev, I2C_POWERMODE, 0x00);
     if (st != ERROR_OK) return st;
 
     st = _mp_i2c_write_block(dev, I2C_FREQUENCY, 0x40);
@@ -68,7 +68,7 @@ Std_ReturnType Highdriver_setvoltage(pump_dev_t* dev, uint8_t _voltage) {
 
     Std_ReturnType st;
     
-    st = _mp_i2c_write_block(dev, I2C_PVOLTAGE, PumpVoltage);
+    st = _mp_i2c_write_block(dev, I2C_P4VOLTAGE, PumpVoltage);
     if (st != ERROR_OK) return st;
 
     st = _mp_i2c_write_block(dev, I2C_UPDATEVOLTAGE, 0x01);
