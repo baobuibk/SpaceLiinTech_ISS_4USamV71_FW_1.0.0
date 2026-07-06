@@ -3,16 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/1_WorkSpace/FW/SpaceLiin/SpaceLiin_ISS_4USamV71_FW_1.0.0/src/dev/M3_Driver/devices/ADG1414BR/adg1414.c</file>
-            <file>file:/D:/1_WorkSpace/FW/SpaceLiin/SpaceLiin_ISS_4USamV71_FW_1.0.0/src/dev/M2_BSP/BSP_Laser_Ext/bsp_laser_ext.c</file>
-            <file>file:/D:/1_WorkSpace/FW/SpaceLiin/SpaceLiin_ISS_4USamV71_FW_1.0.0/src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_command.c</file>
-            <file>file:/D:/1_WorkSpace/FW/SpaceLiin/SpaceLiin_ISS_4USamV71_FW_1.0.0/src/dev/M2_BSP/BSP_Board/board_v71_iss.h</file>
-            <file>file:/D:/1_WorkSpace/FW/SpaceLiin/SpaceLiin_ISS_4USamV71_FW_1.0.0/src/dev/M2_BSP/BSP_Board/bsp_core.c</file>
-            <file>file:/D:/1_WorkSpace/FW/SpaceLiin/SpaceLiin_ISS_4USamV71_FW_1.0.0/src/dev/M2_BSP/BSP_Laser_Ext/bsp_laser_ext.h</file>
-            <file>file:/D:/1_WorkSpace/FW/SpaceLiin/SpaceLiin_ISS_4USamV71_FW_1.0.0/src/main.c</file>
-            <file>file:/D:/1_WorkSpace/FW/SpaceLiin/SpaceLiin_ISS_4USamV71_FW_1.0.0/src/dev/M2_BSP/BSP_Board/bsp_core.h</file>
-            <file>file:/D:/1_WorkSpace/FW/SpaceLiin/SpaceLiin_ISS_4USamV71_FW_1.0.0/src/dev/M3_Driver/components/qspi/samv71/samv71_qspi_io.c</file>
-            <file>file:/D:/1_WorkSpace/FW/SpaceLiin/SpaceLiin_ISS_4USamV71_FW_1.0.0/src/config/default/initialization.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_command.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/ATSAMV71cm7_it.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/dev/M2_BSP/BSP_PSRAM/bsp_psram.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/main.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_laser.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/dev/M3_Driver/devices/IS66WVS8M8/is66wvs8m8.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/dev/M2_BSP/BSP_Laser_Int/bsp_laser_int.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/dev/M2_BSP/BSP_Board/board_v71_iss.h</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/config/default/peripheral/xdmac/plib_xdmac.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/dev/M2_BSP/BSP_Board/bsp_core.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/dev/M1_SysApp/EmbeddedCLI/CLI_Command/cli_psram.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/dev/M3_Driver/devices/MCP4902/mcp4902.h</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/config/default/peripheral/spi/spi_master/plib_spi1_master.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/config/default/initialization.c</file>
+            <file>file:/D:/MPLAP_WorkSpace/SpaceLiinTech_ISS_4USamV71_FW_1.0.0/src/dev/M3_Driver/devices/MCP4902/mcp4902.c</file>
         </group>
     </open-files>
 </project-private>

@@ -1,7 +1,7 @@
 #include "../qspi_io.h"
 #include "samv71q21b.h"
 #include <stddef.h>
-#include "M0_App/AppOS/App_Experiment/app_experiment.h"
+#include "M0_App/AppOS/App_dls_exp/app_dls_exp.h"
 #include "define.h"
 
 #define QSPI_MAX_BUS_NUMBER  1U

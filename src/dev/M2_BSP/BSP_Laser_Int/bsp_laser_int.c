@@ -1,10 +1,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Include~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#include "bsp_laser.h"
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Include ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#include "bsp_laser_int.h"
 #include "board.h"
 #include "bsp_board/bsp_core.h"
 
-#include "M0_App/AppOS/App_Experiment/app_experiment.h"
+#include "M0_App/AppOS/App_dls_exp/app_dls_exp.h"
 #include "M3_Driver/components/adc/adc.h"
 #include "M3_Driver/devices/ADG1414BR/adg1414.h"
 #include "M3_Driver/devices/MCP4902/mcp4902.h"
@@ -36,7 +35,7 @@ adg1414_dev_t laser_int_dev = {
     .num_of_sw = 3
 };
 
-mcp4902_dev_t laser_dac_dev = {
+mcp4902_dev_t laser_int_dac_dev = {
     .cs = &laser_ext_dac_cs,
     .latch = &laser_ext_dac_latch,
 };
@@ -52,21 +51,27 @@ uint32_t laser_adc_count;
 
 uint8_t is_laser_tim_run = 0;
 
+void bsp_laser_int_latch(void) {
+    mcp4902_latch_pulse(&laser_int_dac_dev);
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Public Function ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 void bsp_laser_init(void) {
     bsp_power_lp_heater_on();
 //    adg1414_chain_qspi_init(&laser_int_dev, &qspi, laser_int_dev.cs, laser_int_dev.num_of_sw);
-//    mcp4902_dev_qspi_init(&laser_dac_dev, &qspi, laser_dac_dev.cs, laser_dac_dev.latch);
-    adg1414_chain_spi_init(&laser_int_dev, &spi1, laser_int_dev.cs, laser_int_dev.num_of_sw);
-    mcp4902_dev_spi_init(&laser_dac_dev, &spi1, laser_dac_dev.cs, laser_dac_dev.latch);
+//    mcp4902_dev_qspi_init(&laser_int_dac_dev, &qspi, laser_int_dac_dev.cs, laser_int_dac_dev.latch);
+//    adg1414_chain_spi_init(&laser_int_dev, &spi1, laser_int_dev.cs, laser_int_dev.num_of_sw);
+    
+    
+    
+    mcp4902_dev_dma_spi_init(&laser_int_dac_dev, &spi1, laser_int_dac_dev.cs, laser_int_dac_dev.latch);
 }
 
 void bsp_laser_int_set_dac(uint8_t code) {    
-    mcp4902_set_dac(&laser_dac_dev, MCP4902_CHA, code);
+    mcp4902_set_dac(&laser_int_dac_dev, MCP4902_CHA, code);
 }
 
 uint8_t bsp_laser_int_get_dac(void) {
-    return laser_dac_dev.dac_channel[MCP4902_CHA];
+    return laser_int_dac_dev.dac_channel[MCP4902_CHA];
 }
 
 void bsp_laser_int_sw_on(uint8_t channel) {

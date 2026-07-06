@@ -28,6 +28,7 @@
 #include "definitions.h"                // SYS function prototypes
 #include "stdio.h"
 #include "string.h"
+#include "ATSAMV71cm7_it.h"
 
 // *****************************************************************************
 #include "M0_App/Boot/boot_manager.h"

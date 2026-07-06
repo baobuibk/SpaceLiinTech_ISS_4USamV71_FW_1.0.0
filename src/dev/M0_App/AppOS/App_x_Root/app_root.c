@@ -19,7 +19,7 @@
 #include "M0_App/AppOS/App_4_Init/app_init.h"
 #include "M0_App/AppOS/App_6_Temperature_Control/app_temperature.h"
 #include "M0_App/AppOS/App_7_Syslog/app_system_log.h"
-#include "M0_App/AppOS/App_Experiment/app_experiment.h"
+#include "M0_App/AppOS/App_dls_exp/app_dls_exp.h"
 #include "M0_App/AppOS/App_8_DataTranfer/app_data_tranfer.h"
 
 #include "M1_SysApp/xlog/xlog.h"
@@ -74,7 +74,7 @@ void AppRoot_GrowUp(void) {
     osThreadNew_WithMonitor(App_NTCTask, NULL, &ntc_attr, ALIVETASK_TIMEOUT_MS, NULL);
     osThreadNew_WithMonitor(App_TemperatureTask, NULL, &temp_attr, TEMPTASK_TIMEOUT_MS, NULL);
     osThreadNew_WithMonitor(App_EXPTask, NULL, &exp_attr, EXPTASK_TIMEOUT_MS, NULL);
-    osThreadNew_WithMonitor(APP_PSRAMTask, NULL, &psram_attr, PSRAMTASK_TIMEOUT_MS, NULL);
+//    osThreadNew_WithMonitor(APP_PSRAMTask, NULL, &psram_attr, PSRAMTASK_TIMEOUT_MS, NULL);
     osThreadNew_WithMonitor(App_XTPTask, NULL, &xtp_attr, APP_XTP_TIMEOUT_MS, NULL);
     osThreadNew_WithMonitor(App_InitTask, NULL, &init_attr, ALIVETASK_TIMEOUT_MS, NULL);
     osThreadNew_WithMonitor(App_SysLog, NULL, &syslog_attr, ALIVETASK_TIMEOUT_MS, NULL);
