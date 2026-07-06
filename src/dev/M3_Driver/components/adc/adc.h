@@ -36,6 +36,8 @@ typedef enum
 extern uint16_t g_adc_raw[ADC_NTC_COUNT];
 extern uint16_t g_adc_avg[ADC_NTC_COUNT];
 extern uint16_t g_board_temp_raw;
+extern uint16_t g_laser_int_current;
+extern uint16_t g_laser_ext_current;
 
 /* Struct ?? l?u c? TAG v� value */
 typedef struct {

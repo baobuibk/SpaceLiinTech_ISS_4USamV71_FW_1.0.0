@@ -22,7 +22,7 @@ void bsp_laser_ext_all_sw_off(void);
  * 2) READ DATA (assumes conversion already finished)
  *    Reads PCDR[x] that corresponds to the selected channel.
  * ============================================================ */
-uint16_t bsp_laser_ext_current_read_adc_data(void);
+float bsp_laser_ext_get_current(void);
 
 
 /*================================*/

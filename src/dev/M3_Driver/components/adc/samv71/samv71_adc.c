@@ -6,6 +6,8 @@
 uint16_t g_adc_raw[ADC_NTC_COUNT];
 uint16_t g_adc_avg[ADC_NTC_COUNT];
 uint16_t g_board_temp_raw = 0U;
+uint16_t g_laser_int_current = 0U;
+uint16_t g_laser_ext_current = 0U;
 
 static uint16_t g_adc_hist[ADC_NTC_COUNT][ADC_AVG_SAMPLE_COUNT];
 static uint32_t g_adc_sum[ADC_NTC_COUNT];
@@ -109,10 +111,8 @@ void AFEC1_Initialize(void) {
     AFEC1_REGS->AFEC_CSELR = (uint32_t) AFEC_CH9;   //NTC 7
     AFEC1_REGS->AFEC_COCR = 512U;
     
-#if (HW_VERSION == HW_VERSION_V110)
     AFEC1_REGS->AFEC_CSELR = (uint32_t) AFEC_CH10;  //TEMP_BOARD
     AFEC1_REGS->AFEC_COCR = 512U;
-#endif
 
     AFEC1_REGS->AFEC_MR |= AFEC_MR_USEQ_Msk;
     AFEC1_REGS->AFEC_SEQ1R = 
@@ -129,10 +129,11 @@ void AFEC1_Initialize(void) {
 }
 
 uint16_t AFEC0_ReadChannel(uint8_t ch) {
+    (void) AFEC0_REGS->AFEC_ISR;
     /* Start conversion */
     AFEC0_REGS->AFEC_CR = (1U << AFEC_CR_START_Pos);
 
-    while ((((AFEC0_REGS->AFEC_ISR >> (uint32_t) ch) & 0x1U) == 0U));
+    while ((AFEC0_REGS->AFEC_ISR & AFEC_ISR_EOC5_Msk) == 0U);
 
     AFEC0_REGS->AFEC_CSELR = (uint32_t) ch;
     return (uint16_t) (AFEC0_REGS->AFEC_CDR);
@@ -171,6 +172,12 @@ void ADC_Read(void) {
     AFEC0_REGS->AFEC_CSELR = (uint32_t) AFEC_CH9;
     g_adc_raw[1] = (uint16_t) (AFEC0_REGS->AFEC_CDR);
 
+    AFEC0_REGS->AFEC_CSELR = (uint32_t) AFEC_CH10;
+    g_laser_int_current = (uint16_t) (AFEC0_REGS->AFEC_CDR);
+    
+    AFEC0_REGS->AFEC_CSELR = (uint32_t) AFEC_CH5;
+    g_laser_ext_current = (uint16_t) (AFEC0_REGS->AFEC_CDR);
+    
     /* AFEC1: 1 START, ch? EOC channel cu?i (CH10) */
     (void) AFEC1_REGS->AFEC_ISR;
     AFEC1_REGS->AFEC_CR = AFEC_CR_START_Msk;
@@ -194,14 +201,12 @@ void ADC_Read(void) {
     AFEC1_REGS->AFEC_CSELR = (uint32_t) AFEC_CH4;
     g_adc_raw[7] = (uint16_t) (AFEC1_REGS->AFEC_CDR);
 
-#if (HW_VERSION == HW_VERSION_V110)
-    uint32_t to = 100000U;
-    while (((AFEC1_REGS->AFEC_ISR & AFEC_ISR_EOC10_Msk) == 0U) && (--to > 0U));
-    if (to > 0U) {
+//    uint32_t to = 100000U;
+//    while (((AFEC1_REGS->AFEC_ISR & AFEC_ISR_EOC10_Msk) == 0U) && (--to > 0U));
+//    if (to > 0U) {
         AFEC1_REGS->AFEC_CSELR = (uint32_t) AFEC_CH10;
         g_board_temp_raw = (uint16_t) (AFEC1_REGS->AFEC_CDR);
-    }
-#endif
+//    }
 }
 
 void ADC_UpdateAverage(void) {

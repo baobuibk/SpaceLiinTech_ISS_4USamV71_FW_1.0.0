@@ -232,6 +232,7 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
     { "LASER", "laser_ext_set_dac", "Set DAC value for external laser intensity", true, NULL, CMD_Laser_Ext_Set_DAC},
     { "LASER", "laser_ext_sw_on", "Turn ON specific external laser channel", true, NULL, CMD_Laser_Ext_Turn_On_Channel},
     { "LASER", "laser_ext_sw_off", "Turn OFF specific external laser channel", true, NULL, CMD_Laser_Ext_Turn_Off_All},
+    { "LASER", "laser_ext_current", "Get current external laser", true, NULL, CMD_Laser_Ext_Get_Current},
 
     { "PHOTO", "photo_sw_on", "___", true, NULL, CMD_Photo_Turn_On_Channel},
 

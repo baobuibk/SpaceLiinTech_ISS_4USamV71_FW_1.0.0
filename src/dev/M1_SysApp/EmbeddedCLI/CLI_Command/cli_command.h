@@ -123,6 +123,7 @@ void CMD_RTC_Test(EmbeddedCli *cli, char *args, void *context);
 void CMD_Laser_Ext_Set_DAC(EmbeddedCli *cli, char *args, void *context);
 void CMD_Laser_Ext_Turn_On_Channel(EmbeddedCli *cli, char *args, void *context);
 void CMD_Laser_Ext_Turn_Off_All(EmbeddedCli *cli, char *args, void *context);
+void CMD_Laser_Ext_Get_Current(EmbeddedCli *cli, char *args, void *context);
 
 void CMD_CLI_Echo (EmbeddedCli *cli, char *args, void *context);
 
