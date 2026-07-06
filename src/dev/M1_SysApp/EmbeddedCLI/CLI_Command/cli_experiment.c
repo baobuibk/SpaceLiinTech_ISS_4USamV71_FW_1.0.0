@@ -1,5 +1,5 @@
 #include "cli_experiment.h"
-#include "M0_App/AppOS/App_Experiment/app_experiment.h"
+#include "M0_App/AppOS/App_dls_exp/app_dls_exp.h"
 
 void CMD_DLS_setup(EmbeddedCli *cli, char *args, void *context) {
 

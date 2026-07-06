@@ -42,7 +42,7 @@
 #include "plib_spi0_master.h"
 #include "interrupts.h"
 
-#include "M0_App/AppOS/App_Experiment/app_experiment.h"
+#include "M0_App/AppOS/App_dls_exp/app_dls_exp.h"
 
 #define SPI_TDR_8BIT_REG      (*(volatile uint8_t* const)((SPI0_BASE_ADDRESS + SPI_TDR_REG_OFST)))
 

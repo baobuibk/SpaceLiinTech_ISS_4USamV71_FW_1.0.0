@@ -21,23 +21,23 @@
 
 /* ===================== LASER ===================== */
 
-#define LASER_INT_DAC_LATCH_PORT  3   // PC16
-#define LASER_INT_DAC_LATCH_PIN   16
+#define LASER_INT_DAC_LATCH_PORT    3   // PC16
+#define LASER_INT_DAC_LATCH_PIN     16
 
-#define LASER_INT_DAC_CS_PORT     1   // PA31
-#define LASER_INT_DAC_CS_PIN      31
+#define LASER_INT_DAC_CS_PORT       1   // PA31
+#define LASER_INT_DAC_CS_PIN        31
 
-#define LASER_INT_SW_CS_PORT  3   // PC07
-#define LASER_INT_SW_CS_PIN   7
+#define LASER_INT_SW_CS_PORT        3   // PC07
+#define LASER_INT_SW_CS_PIN         7
 
-#define LASER_EXT_DAC_LATCH_PORT  3   // PC01
-#define LASER_EXT_DAC_LATCH_PIN   1
+#define LASER_EXT_DAC_LATCH_PORT    3   // PC01
+#define LASER_EXT_DAC_LATCH_PIN     1
 
-#define LASER_EXT_DAC_CS_PORT  1   // PA22
-#define LASER_EXT_DAC_CS_PIN   22
+#define LASER_EXT_DAC_CS_PORT       1   // PA22
+#define LASER_EXT_DAC_CS_PIN        22
 
-#define LASER_EXT_SW_CS_PORT     1   // PA07
-#define LASER_EXT_SW_CS_PIN      7
+#define LASER_EXT_SW_CS_PORT        1   // PA07
+#define LASER_EXT_SW_CS_PIN         7
 
 /* ===================== PHOTO ===================== */
 

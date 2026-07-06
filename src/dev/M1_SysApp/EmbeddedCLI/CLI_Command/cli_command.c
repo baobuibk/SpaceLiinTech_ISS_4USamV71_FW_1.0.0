@@ -39,7 +39,7 @@
 #include "BSP_TEC/bsp_tec.h"
 #include "BSP_BMP390/bsp_bmp390.h"
 #include "BSP_PAC1934/bsp_pac1934.h"
-#include "BSP_Laser_Int/bsp_laser.h"
+#include "BSP_Laser_Int/bsp_laser_int.h"
 #include "BSP_Laser_Ext/bsp_laser_ext.h"
 #include "BSP_FRAM/bsp_fram.h"
 #include "BSP_System/bsp_system.h"
@@ -86,68 +86,17 @@ static void CMD_LED_Set(EmbeddedCli *cli, char *args, void *context);
 static void CMD_LED_Reset(EmbeddedCli *cli, char *args, void *context);
 static void CMD_HEATER_SetDuty(EmbeddedCli *cli, char *args, void *context);
 
-#include "M3_Driver/devices/MAX22200/max22200.h"
-extern struct max22200_desc * g_max22200_desc[5];
-
 static void CMD_a(EmbeddedCli *cli, char *args, void *context) {
-        const char *regStr = embeddedCliGetToken(args, 1);
-        uint8_t reg = (uint8_t) strtoul(regStr, NULL, 0);
-        
-        const char *valStr = embeddedCliGetToken(args, 2);
-        uint8_t val = (uint8_t) strtoul(valStr, NULL, 0);
-        
-        max22200_reg_write(g_max22200_desc[0], (reg << 1), val);
-    
-        char buf[128];
-        snprintf(buf, sizeof (buf), "REG = 0x%08lX\r\n", val);
-        embeddedCliPrint(cli, buf);
+    return;
 }
 
 static void CMD_b(EmbeddedCli *cli, char *args, void *context) {
-    uint32_t reg;
-
-    const char *valStr = embeddedCliGetToken(args, 1);
-    uint8_t val = (uint8_t) strtoul(valStr, NULL, 0);
-
-    if (max22200_reg_read(g_max22200_desc[0], (uint8_t) ((val << 1) | 0), &reg) != 0) {
-        embeddedCliPrint(cli, "Read failed");
-        return;
-    }
-
-    uint8_t b3 = (reg >> 24) & 0xFF;
-    uint8_t b2 = (reg >> 16) & 0xFF;
-    uint8_t b1 = (reg >> 8) & 0xFF;
-    uint8_t b0 = reg & 0xFF;
-
-    char buf[128];
-    snprintf(buf, sizeof (buf),
-            "REG[0x%02X] = 0x%08lX\r\n"
-            "Byte3 (31:24) = 0x%02X\r\n"
-            "Byte2 (23:16) = 0x%02X\r\n"
-            "Byte1 (15:8 ) = 0x%02X\r\n"
-            "Byte0 (7 :0 ) = 0x%02X",
-            val,
-            (unsigned long) reg,
-            b3, b2, b1, b0);
-
-    embeddedCliPrint(cli, buf);
+    return;
 }
 
 static void CMD_d(EmbeddedCli *cli, char *args, void *context) {
-    const char *channelStr = embeddedCliGetToken(args, 1);
-    uint8_t channel = (uint8_t) strtoul(channelStr, NULL, 0);
-    
-    const char *valStr = embeddedCliGetToken(args, 2);
-    uint8_t val = (uint8_t) strtoul(valStr, NULL, 0);
-    
-    max22200_set_ch_hold(g_max22200_desc[0], channel, val);
-    embeddedCliPrint(cli, "OKKKK");
+    return;
 }
-
-/*************************************************
- * Command Define "Dev"              *
- *************************************************/
-// static void CMD_DevCM4TestConnection(EmbeddedCli *cli, char *args, void *context);
 
 /*************************************************
  *                 Command  Array                *

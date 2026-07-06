@@ -4,7 +4,7 @@
 #include "board.h"
 #include "bsp_board/bsp_core.h"
 
-#include "M0_App/AppOS/App_Experiment/app_experiment.h"
+#include "M0_App/AppOS/App_dls_exp/app_dls_exp.h"
 #include "M3_Driver/components/adc/adc.h"
 #include "M3_Driver/devices/ADG1414BR/adg1414.h"
 #include "M3_Driver/devices/MCP4902/mcp4902.h"

@@ -16,7 +16,7 @@
 #include "hwcsp_cfg.h"
 
 #include "M0_App/AppOS/App_x_Root/app_root.h"
-#include "M0_App/AppOS/App_Experiment/app_experiment.h"
+#include "M0_App/AppOS/App_dls_exp/app_dls_exp.h"
 #include "M0_App/AppOS/App_4_NTC/app_ntc.h"
 #include "M0_App/AppOS/App_6_Temperature_Control/app_temperature.h"
 #include "M0_App/AppOS/App_8_DataTranfer/app_data_tranfer.h"
@@ -25,7 +25,7 @@
 
 #include "UART/uart_irq.h"
 #include "BSP_Solenoid/bsp_solenoid.h"
-#include "BSP_Laser_Int/bsp_laser.h"
+#include "BSP_Laser_Int/bsp_laser_int.h"
 #include "BSP_Laser_Ext/bsp_laser_ext.h"
 #include "BSP_Photo/bsp_photo.h"
 #include "BSP_FRAM/bsp_fram.h"

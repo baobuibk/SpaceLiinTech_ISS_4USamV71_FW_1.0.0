@@ -1,6 +1,8 @@
 #ifndef MCP4902_H_
 #define MCP4902_H_
 
+#include "config/default/peripheral/xdmac/plib_xdmac.h"
+#include "config/default/peripheral/spi/spi_master/plib_spi1_master.h"
 #include <stdint.h>
 #include "M3_Driver/components/dio/do.h"
 #include "M3_Driver/components/spi/spi_io.h"
@@ -21,6 +23,7 @@
 typedef enum {
     MCP_BUS_SPI = 0,
     MCP_BUS_QSPI,
+    MCP_BUS_DMA_SPI,
 } mcp_bus_t;
 
 typedef struct {
@@ -35,13 +38,15 @@ typedef struct {
 uint8_t mcp4902_vol_2_code(uint16_t mv);     /* mV -> 8-bit DAC */
 uint16_t mcp4902_code_2_vol(uint8_t code);   /* 8-bit DAC -> mV */
 
+void mcp4902_latch_pulse(mcp4902_dev_t *dev);
+
 int mcp4902_dev_spi_init(mcp4902_dev_t *dev, spi_io_t *spi, do_t *cs, do_t *latch);
 int mcp4902_dev_qspi_init(mcp4902_dev_t *dev, qspi_io_t *qspi, do_t *cs, do_t *latch);
+int mcp4902_dev_dma_spi_init(mcp4902_dev_t *dev, spi_io_t *spi, do_t *cs, do_t *latch);
 
 int mcp4902_shutdown(mcp4902_dev_t *dev, uint8_t channel);
 int mcp4902_set_dac(mcp4902_dev_t *dev, uint8_t channel, uint8_t code);
 int mcp4902_set_vol(mcp4902_dev_t *dev, uint8_t channel, uint16_t mv);
 
 int mcp4902_flush(mcp4902_dev_t *dev);
-
 #endif /* MCP4902_H_ */
