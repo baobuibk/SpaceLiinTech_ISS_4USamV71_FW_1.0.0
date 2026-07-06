@@ -51,11 +51,6 @@ mb85rs2mt_dev_t g_fram = {
     .cs = &fram_cs,
 };
 
-
-
-
-
-
 ////////////////////////////////////////
 /* IO */
 ////////////////////////////////////////
@@ -239,18 +234,6 @@ do_t mcu_pmu_gpio_b = {
     .bStatus = false,
 };
 
-//do_t ifp_enable = {
-//    .port = IFP_ENABLE_PORT,
-//    .pin = IFP_ENABLE_PIN,
-//    .bStatus = false,
-//};
-
-//do_t power_ai = {
-//    .port = POWER_AI_PORT,
-//    .pin  = POWER_AI_PIN,
-//    .bStatus = false,
-//};
-
 do_t sole_A_cmd = {
     .port = MCU_CMD_SOLE_A_PORT,
     .pin  = MCU_CMD_SOLE_A_PIN,
@@ -274,39 +257,3 @@ do_t sole_B_cs = {
     .pin  = MCU_SPI0_nCS_SOLE_B_PIN,
     .bStatus = true,
 };
-
-//do_t sole_C_cmd = {
-//    .port = MCU_CMD_SOLE_C_PORT,
-//    .pin  = MCU_CMD_SOLE_C_PIN,
-//    .bStatus = false,
-//};
-//
-//do_t sole_C_cs = {
-//    .port = MCU_SPI0_nCS_SOLE_C_PORT,
-//    .pin  = MCU_SPI0_nCS_SOLE_C_PIN,
-//    .bStatus = true,
-//};
-//
-//do_t sole_D_cmd = {
-//    .port = MCU_CMD_SOLE_D_PORT,
-//    .pin  = MCU_CMD_SOLE_D_PIN,
-//    .bStatus = false,
-//};
-//
-//do_t sole_D_cs = {
-//    .port = MCU_SPI0_nCS_SOLE_D_PORT,
-//    .pin  = MCU_SPI0_nCS_SOLE_D_PIN,
-//    .bStatus = true,
-//};
-//
-//do_t sole_E_cmd = {
-//    .port = MCU_CMD_SOLE_E_PORT,
-//    .pin  = MCU_CMD_SOLE_E_PIN,
-//    .bStatus = false,
-//};
-//
-//do_t sole_E_cs = {
-//    .port = MCU_SPI0_nCS_SOLE_E_PORT,
-//    .pin  = MCU_SPI0_nCS_SOLE_E_PIN,
-//    .bStatus = true,
-//};

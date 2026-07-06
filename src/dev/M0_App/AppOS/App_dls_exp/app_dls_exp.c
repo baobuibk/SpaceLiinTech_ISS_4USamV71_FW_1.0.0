@@ -1,4 +1,4 @@
-#include "app_experiment.h"
+#include "app_dls_exp.h"
 #include "board.h"
 #include "samv71q21b.h"
 #include "task.h"
@@ -338,6 +338,7 @@ const osThreadAttr_t psram_attr = {
 };
 
 void APP_PSRAMTask(void *param) {
+    (void) param;
     photo_data_t *recv_photo;
     laser_data_t *recv_laser;
     log_data_t *recv_log;

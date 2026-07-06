@@ -282,10 +282,8 @@
                              projectFiles="true">
                 <itemPath>../src/dev/M0_App/AppOS/App_8_DataTranfer/app_data_tranfer.h</itemPath>
               </logicalFolder>
-              <logicalFolder name="App_Experiment"
-                             displayName="App_Experiment"
-                             projectFiles="true">
-                <itemPath>../src/dev/M0_App/AppOS/App_Experiment/app_experiment.h</itemPath>
+              <logicalFolder name="App_dls_exp" displayName="App_dls_exp" projectFiles="true">
+                <itemPath>../src/dev/M0_App/AppOS/App_dls_exp/app_dls_exp.h</itemPath>
               </logicalFolder>
               <logicalFolder name="App_x_Root" displayName="App_x_Root" projectFiles="true">
                 <itemPath>../src/dev/M0_App/AppOS/App_x_Root/app_root.h</itemPath>
@@ -444,7 +442,7 @@
             <logicalFolder name="BSP_Laser_Int"
                            displayName="BSP_Laser_Int"
                            projectFiles="true">
-              <itemPath>../src/dev/M2_BSP/BSP_Laser_Int/bsp_laser.h</itemPath>
+              <itemPath>../src/dev/M2_BSP/BSP_Laser_Int/bsp_laser_int.h</itemPath>
             </logicalFolder>
             <logicalFolder name="BSP_Led" displayName="BSP_Led" projectFiles="true">
               <itemPath>../src/dev/M2_BSP/BSP_Led/bsp_led.h</itemPath>
@@ -1034,10 +1032,8 @@
                              projectFiles="true">
                 <itemPath>../src/dev/M0_App/AppOS/App_8_DataTranfer/app_data_tranfer.c</itemPath>
               </logicalFolder>
-              <logicalFolder name="App_Experiment"
-                             displayName="App_Experiment"
-                             projectFiles="true">
-                <itemPath>../src/dev/M0_App/AppOS/App_Experiment/app_experiment.c</itemPath>
+              <logicalFolder name="App_dls_exp" displayName="App_dls_exp" projectFiles="true">
+                <itemPath>../src/dev/M0_App/AppOS/App_dls_exp/app_dls_exp.c</itemPath>
               </logicalFolder>
               <logicalFolder name="App_x_Root" displayName="App_x_Root" projectFiles="true">
                 <itemPath>../src/dev/M0_App/AppOS/App_x_Root/app_root.c</itemPath>
@@ -1189,7 +1185,7 @@
             <logicalFolder name="BSP_Laser_Int"
                            displayName="BSP_Laser_Int"
                            projectFiles="true">
-              <itemPath>../src/dev/M2_BSP/BSP_Laser_Int/bsp_laser.c</itemPath>
+              <itemPath>../src/dev/M2_BSP/BSP_Laser_Int/bsp_laser_int.c</itemPath>
             </logicalFolder>
             <logicalFolder name="BSP_Led" displayName="BSP_Led" projectFiles="true">
               <itemPath>../src/dev/M2_BSP/BSP_Led/bsp_led.c</itemPath>
@@ -1596,7 +1592,7 @@
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
-        <makeCustomizationPostStepEnabled>true</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep>python "../tools/xbld_sign.py" "${ImagePath}"</makeCustomizationPostStep>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>

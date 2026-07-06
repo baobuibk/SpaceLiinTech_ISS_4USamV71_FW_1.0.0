@@ -32,9 +32,5 @@ Std_ReturnType is66_read_id(is66_dev_t *dev);
 
 Std_ReturnType is66_dma_read_id(is66_dev_t *dev);
 
-void SPI1_DMA_TX_Callback(XDMAC_TRANSFER_EVENT event, uintptr_t context);
-
-void SPI1_DMA_RX_Callback(XDMAC_TRANSFER_EVENT event, uintptr_t context);
-
 #endif	/* IS66WVS4M8_H */
 
