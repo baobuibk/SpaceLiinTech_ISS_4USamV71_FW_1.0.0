@@ -127,10 +127,9 @@ void PIO_Initialize(void) {
     uint32_t PIOB_ADC_mask = (1U << ADC_TEMP4_PIN) | (1U << LASER_INT_ADC_PIN) | (1U << LASER_EXT_ADC_PIN);
     ((pio_registers_t*) PIO_PORT_B)->PIO_PER = 0xFFFFFFFFU;
     /* PORTB PIO Disable and Peripheral Enable*/
-    ((pio_registers_t*) PIO_PORT_B)->PIO_PDR |= (PIOB_periph_A_mask);
+    ((pio_registers_t*) PIO_PORT_B)->PIO_PDR |= (PIOB_periph_A_mask | PIOB_ADC_mask);
     /* PORTB PIO Enable and Peripheral Disable*/
     ((pio_registers_t*) PIO_PORT_B)->PIO_PER &= ~(PIOB_periph_A_mask);
-    ((pio_registers_t*) PIO_PORT_B)->PIO_PDR |= PIOB_ADC_mask;
     /* PORTA PIO Disable Interrupt */
     ((pio_registers_t*) PIO_PORT_B)->PIO_IDR |= PIOB_ADC_mask;
     ((pio_registers_t*) PIO_PORT_B)->PIO_MDDR = 0xFFFFFFFFU;

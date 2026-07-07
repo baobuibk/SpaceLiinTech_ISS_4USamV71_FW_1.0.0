@@ -1,6 +1,8 @@
 #include "cli_laser.h"
 #include "BSP_Laser_Ext/bsp_laser_ext.h"
 
+#include "M3_Driver/components/adc/adc.h"
+
 void CMD_Laser_Ext_Set_DAC(EmbeddedCli *cli, char *args, void *context) {
     const char *valStr = embeddedCliGetToken(args, 1);
     char *endptr;
@@ -13,7 +15,7 @@ void CMD_Laser_Ext_Set_DAC(EmbeddedCli *cli, char *args, void *context) {
 
     uint32_t val = strtoul(valStr, &endptr, 0);
     if (*endptr != '\0' || val > 150) {
-        embeddedCliPrint(cli, "Invalid DAC value (0-150)");
+        embeddedCliPrint(cli, "Invalid DAC value (0-255)");
         return;
     }
 
@@ -58,4 +60,13 @@ void CMD_Laser_Ext_Turn_On_Channel(EmbeddedCli *cli, char *args, void *context) 
 
 void CMD_Laser_Ext_Turn_Off_All(EmbeddedCli *cli, char *args, void *context) {
     bsp_laser_ext_all_sw_off();
+}
+
+void CMD_Laser_Ext_Get_Current(EmbeddedCli *cli, char *args, void *context) {
+    char buf[120];
+
+    float i_ext_ma = bsp_laser_ext_get_current();
+    
+    snprintf(buf, sizeof(buf), "External Laser Current: %.3f A", i_ext_ma / 1000.0f);
+    embeddedCliPrint(cli, buf);
 }

@@ -22,8 +22,8 @@
 /* i.MX93 SAR ADC precision data are 12-bit right aligned in PCDR[x] */
 #define SAR_ADC_PCDR_MASK_12B        (0x0FFFu)
 
-
-#define LASER_INT_ADC                     AFEC_CH6  // Laser internal current monitor ADC channel
+#define RS_OHM                       10.0f
+#define RL_OHM                       5100.0f
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Prototype ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Enum ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -87,37 +87,19 @@ static int8_t map_ext_LD_position(int x) {
 
     return map[x];
 }
-/* ============================================================
- * 1) TRIGGER: select channel and start a one-shot conversion
- *    - Channel 0 -> ADC1_IN0
- *    - Channel 1 -> ADC1_IN1
- * ============================================================ */
-//void bsp_laser_int_current_trigger_adc(void) {
-//
-//}
-//
-//void bsp_laser_ext_current_trigger_adc(void) {
-//    
-//}
 
 /* ============================================================
  * 2) READ DATA (assumes conversion already finished)
  *    Reads PCDR[x] that corresponds to the selected channel.
  * ============================================================ */
-//uint16_t bsp_laser_ext_current_read_adc_data(void) {
-//    return 0;
-//}
 
-//uint16_t bsp_laser_int_read_adc(void) {
-//    return AFEC1_ReadChannel(LASER_INT_ADC) + 10;
-//}
+float bsp_laser_ext_get_current(void) {
+    float v_mv = ((float) g_laser_ext_current / 4095.0f) * 3300.0f;
+    float i_ma = v_mv / (RL_OHM * RS_OHM / 1000.0f);
+    return i_ma;
+}
 
-//float bsp_laser_int_current_get(void) {
-//    float voltage = (float) bsp_laser_int_read_adc() * 3.3000f / 4095.0000f;
-//    return voltage / 280.0f;
-//}
-//
-//int16_t bsp_laser_int_current_100mA_get(void) {
+//int16_t bsp_laser_ext_current_100mA_get(void) {
 //    float voltage = (float) bsp_laser_int_read_adc() * 3.3000f / 4095.0000f;
 //    float current_100mA = voltage * 10000 / 280.00f;
 //    return (int16_t)current_100mA;

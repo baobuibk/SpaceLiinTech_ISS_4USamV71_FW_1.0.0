@@ -226,10 +226,10 @@
 #define MCU_MPU_GPIO_B_PIN      10
 
 /* ============== ADC LASER CURRENT MONITOR ============*/
-#define LASER_INT_ADC_PORT      2   // PB0
+#define LASER_INT_ADC_PORT      2   // PB00
 #define LASER_INT_ADC_PIN       0
 
-#define LASER_EXT_ADC_PORT      2   // PB2
+#define LASER_EXT_ADC_PORT      2   // PB02
 #define LASER_EXT_ADC_PIN       2
 
 /* ============== QSPI ============*/
