@@ -91,8 +91,8 @@ typedef struct
 {
     i2c_io_t* i2c_bus;
     uint8_t slaveAdd;
-    bool init_status;
     bme688_calib_t calib;
+    Std_InitType init_status;
 } bme688_dev_t;
 
 typedef struct

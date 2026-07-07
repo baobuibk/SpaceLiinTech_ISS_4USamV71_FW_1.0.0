@@ -104,7 +104,7 @@ Std_ReturnType bme688_init(bme688_dev_t* dev)
         return ERROR_FAIL;
     }
 
-    dev->init_status = false;
+    dev->init_status = INIT_NONE;
     memset(&dev->calib, 0, sizeof(bme688_calib_t));
 
     /* ---- Step 1: Soft reset ---- */
@@ -171,7 +171,7 @@ Std_ReturnType bme688_init(bme688_dev_t* dev)
      *   BMP688_Write(dev, 0x71u, 0x00u);
      */
 
-    dev->init_status = true;
+    dev->init_status = INIT_DONE;
     return ERROR_OK;
 }
 

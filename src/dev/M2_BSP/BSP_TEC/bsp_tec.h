@@ -16,13 +16,13 @@
 
 extern tec_dev_t* p_tec[2];
 
-uint32_t bsp_tec_init(tec_dev_t* dev);
-uint32_t bsp_tec_clear_status(tec_dev_t* dev);
-uint32_t bsp_tec_get_status(tec_dev_t* dev, uint16_t *status);
-uint32_t bsp_tec_set_output_voltage_channel(tec_dev_t* dev, int64_t nVol);
-uint32_t bsp_tec_set_enable_req(tec_dev_t* dev);
-uint32_t bsp_tec_set_swen_req(tec_dev_t* dev);
-uint32_t bsp_tec_clear_swen_req(tec_dev_t* dev);
+Std_ReturnType bsp_tec_init(tec_dev_t* dev);
+Std_ReturnType bsp_tec_clear_status(tec_dev_t* dev);
+Std_ReturnType bsp_tec_get_status(tec_dev_t* dev, uint16_t *status);
+Std_ReturnType bsp_tec_set_output_voltage_channel(tec_dev_t* dev, int64_t nVol);
+Std_ReturnType bsp_tec_set_enable_req(tec_dev_t* dev);
+Std_ReturnType bsp_tec_set_swen_req(tec_dev_t* dev);
+Std_ReturnType bsp_tec_clear_swen_req(tec_dev_t* dev);
 
 
 #endif	/* BSP_TEC_H */

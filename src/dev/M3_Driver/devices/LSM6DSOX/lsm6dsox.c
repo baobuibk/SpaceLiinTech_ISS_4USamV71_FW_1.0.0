@@ -137,7 +137,7 @@ Std_ReturnType lsm6d_init(lsm6d_dev_t *dev)
 {
     if(dev == NULL) return ERROR_INVALID_PARAM;
     
-    dev->init_status = false;
+    dev->init_status = INIT_NONE;
 
     uint8_t id = 0;
     lsm6d_read_id(dev, &id);
@@ -146,7 +146,7 @@ Std_ReturnType lsm6d_init(lsm6d_dev_t *dev)
     lsm6d_write(dev, LSM6D_CTRL1_XL, xl_odr | xl_fs);
     lsm6d_write(dev, LSM6D_CTRL2_G, gy_odr | gy_fs);
     
-    dev->init_status = true;
+    dev->init_status = INIT_DONE;
     return ERROR_OK;
 }
 

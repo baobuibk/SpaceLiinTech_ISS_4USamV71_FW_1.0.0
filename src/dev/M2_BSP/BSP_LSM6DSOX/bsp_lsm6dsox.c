@@ -141,6 +141,8 @@ Std_ReturnType bsp_lsm6dsox_read_temp(void) {
 }
 
 Std_ReturnType bsp_lsm6dsox_read_all(void) {
+    if (lsm6dsox.init_status != INIT_DONE)
+        bsp_lsm6dsox_init();
     return lsm6d_read_all(&lsm6dsox, &lsm6d_all_data);
 }
 

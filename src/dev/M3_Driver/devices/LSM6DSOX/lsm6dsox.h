@@ -155,7 +155,7 @@ typedef struct lsm6d_dev {
     uint8_t slaveAdd;
     lsm6d_xl_fs_t xl_fs;    /* L?u FS ?? tính sensitivity */
     lsm6d_gy_fs_t gy_fs;
-    bool init_status;
+    Std_InitType init_status;
 } lsm6d_dev_t;
 
 typedef struct lsm6d_rawData {

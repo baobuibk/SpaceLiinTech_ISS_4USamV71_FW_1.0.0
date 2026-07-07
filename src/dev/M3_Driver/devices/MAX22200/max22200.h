@@ -128,7 +128,7 @@ struct max22200_init_param {
 	enum max22200_ch_op_mode ch_config[MAX22200_CHANNELS_CONFIG];
 };
 
-struct max22200_desc {
+typedef struct max22200_desc {
 	spi_io_t *spi;
     do_t *cs;
 	do_t *cmd;
@@ -136,7 +136,8 @@ struct max22200_desc {
 	enum max22200_ch_op_mode ch_config[MAX22200_CHANNELS_CONFIG];
 	enum max22200_ch_side chan_side;
 	enum max22200_ch_drive chan_drive;
-};
+    Std_InitType init_state;
+} max22200_dev_t;
 
 /** Read data from desired register for MAX22200. */
 int max22200_reg_read(struct max22200_desc *, uint32_t, uint32_t *);

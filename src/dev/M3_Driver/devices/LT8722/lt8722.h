@@ -343,6 +343,7 @@ typedef struct lt8722_dev {
 	do_t     *sw_pin;
 	uint8_t status; //							FAULT | DIR | SWITCH_ENABLED | ENABLED | INIT
 	int64_t  voltage;
+    Std_InitType init_state;
 } lt8722_dev_t;
 
 int32_t lt8722_voltage_to_dac(int64_t voltage);
