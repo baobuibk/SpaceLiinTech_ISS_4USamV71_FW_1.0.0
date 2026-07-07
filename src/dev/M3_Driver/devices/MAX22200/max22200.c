@@ -695,6 +695,10 @@ int max22200_init(struct max22200_desc **desc_ptr, const struct max22200_init_pa
 
     /* Step 4: Verify Status Register */
     ret = max22200_reg_read(desc, MAX22200_STATUS_REG, &reg_val);
+    if (ret == ERROR_OK)
+        desc->init_state = INIT_DONE;
+    else
+        desc->init_state = INIT_FAILED;
     return ret;
 }
 

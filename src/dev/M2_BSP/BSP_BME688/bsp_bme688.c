@@ -13,7 +13,13 @@ Std_ReturnType bsp_bme688_init(bme688_dev_t* dev)
 {
     if(dev == NULL) return ERROR_INVALID_PARAM;
 
-    return bme688_init(dev);
+    if (bme688_init(dev) == ERROR_OK) {
+        dev->init_status = INIT_DONE;
+        return ERROR_OK;
+    } else {
+        dev->init_status = INIT_FAILED;
+        return ERROR_FAIL;
+    }
 }
 
 Std_ReturnType bsp_bme688_read_temperature(bme688_dev_t* dev, float* temperature)
@@ -40,6 +46,7 @@ Std_ReturnType bsp_bme688_read_humidity(bme688_dev_t* dev, float* humidity)
 Std_ReturnType bsp_bme688_read_all(bme688_dev_t* dev, bme688_data_t* p_data)
 {
     if(dev == NULL) return ERROR_INVALID_PARAM;
-   
+    if (dev->init_status != INIT_DONE) 
+       bsp_bme688_init(dev);
     return bme688_read_forced(dev, p_data);
 }

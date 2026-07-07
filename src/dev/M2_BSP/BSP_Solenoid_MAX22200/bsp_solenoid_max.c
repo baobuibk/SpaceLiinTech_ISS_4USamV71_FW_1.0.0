@@ -3,22 +3,16 @@
 #include "M3_Driver/devices/MAX22200/max22200.h"
 #include "define.h"
 
-struct max22200_desc *g_max22200_desc[MAX22200_NUM_DEVICES] = {0};
+max22200_dev_t* g_max22200_dev[MAX22200_NUM_DEVICES] = {0};
 
 static do_t *g_cs[MAX22200_NUM_DEVICES] = {
     &sole_A_cs,
     &sole_B_cs,
-//    &sole_C_cs,
-//    &sole_D_cs,
-//    &sole_E_cs
 };
 
 static do_t *g_cmd[MAX22200_NUM_DEVICES] = {
     &sole_A_cmd,
     &sole_B_cmd,
-//    &sole_C_cmd,
-//    &sole_D_cmd,
-//    &sole_E_cmd
 };
 
 /* ------------------------------------------------------------------ */
@@ -62,13 +56,13 @@ int bsp_solenoid_max_init(void)
         init_param.cs  = g_cs[dev];
         init_param.cmd = g_cmd[dev];
 
-        status = max22200_init(&g_max22200_desc[dev], &init_param);
+        status = max22200_init(&g_max22200_dev[dev], &init_param);
         if (status)
             return status;
 
         for (uint8_t ch = 0; ch < MAX22200_CHANNELS; ch++) {
             status = max22200_set_ch_mode(
-                    g_max22200_desc[dev],
+                    g_max22200_dev[dev],
                     ch,
                     MAX22200_VOLTAGE_DRIVE,
                     MAX22200_HIGH_SIDE,
@@ -77,7 +71,7 @@ int bsp_solenoid_max_init(void)
                 return status;
 
             status = max22200_set_ch_hit(
-                    g_max22200_desc[dev],
+                    g_max22200_dev[dev],
                     ch,
                     127,
                     MAX22200_HIT_NO_TIME);
@@ -85,21 +79,21 @@ int bsp_solenoid_max_init(void)
                 return status;
 
             status = max22200_set_ch_hold(
-                    g_max22200_desc[dev],
+                    g_max22200_dev[dev],
                     ch,
                     127);
             if (status)
                 return status;
 
             status = max22200_set_ch_scale(
-                    g_max22200_desc[dev],
+                    g_max22200_dev[dev],
                     ch,
                     MAX22200_FULLSCALE);
             if (status)
                 return status;
 
             status = max22200_set_ch_trig(
-                    g_max22200_desc[dev],
+                    g_max22200_dev[dev],
                     ch,
                     MAX22200_ONCH_SPI);
             if (status)
@@ -119,29 +113,34 @@ int bsp_solenoid_set(uint8_t pair, sol_direction_t dir)
     if (pair >= MAX22200_TOTAL_PAIRS)
         return ERROR_INVALID_PARAM;
 
-    uint8_t dev, high_ch, low_ch;
-    pair_decode(pair, &dev, &high_ch, &low_ch);
+    uint8_t dev_ind, high_ch, low_ch;
+    pair_decode(pair, &dev_ind, &high_ch, &low_ch);
 
     int ret;
+    
+    if (g_max22200_dev[dev_ind]->init_state != INIT_DONE) {
+        bsp_solenoid_max_init();
+        xlog("SLN_INIT");
+    }
 
     switch (dir) {
     case SOL_DIR_FORWARD:
-        ret = max22200_set_ch_state(g_max22200_desc[dev], low_ch,  false);
+        ret = max22200_set_ch_state(g_max22200_dev[dev_ind], low_ch,  false);
         if (ret) return ret;
-        ret = max22200_set_ch_state(g_max22200_desc[dev], high_ch, true);
+        ret = max22200_set_ch_state(g_max22200_dev[dev_ind], high_ch, true);
         break;
 
     case SOL_DIR_REVERSE:
-        ret = max22200_set_ch_state(g_max22200_desc[dev], high_ch, false);
+        ret = max22200_set_ch_state(g_max22200_dev[dev_ind], high_ch, false);
         if (ret) return ret;
-        ret = max22200_set_ch_state(g_max22200_desc[dev], low_ch,  true);
+        ret = max22200_set_ch_state(g_max22200_dev[dev_ind], low_ch,  true);
         break;
 
     case SOL_DIR_OFF:
     default:
-        ret = max22200_set_ch_state(g_max22200_desc[dev], high_ch, false);
+        ret = max22200_set_ch_state(g_max22200_dev[dev_ind], high_ch, false);
         if (ret) return ret;
-        ret = max22200_set_ch_state(g_max22200_desc[dev], low_ch,  false);
+        ret = max22200_set_ch_state(g_max22200_dev[dev_ind], low_ch,  false);
         break;
     }
 

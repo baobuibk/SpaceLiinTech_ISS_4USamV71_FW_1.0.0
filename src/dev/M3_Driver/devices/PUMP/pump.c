@@ -15,7 +15,7 @@ Std_ReturnType _mp_i2c_read_block(pump_dev_t* dev, uint8_t reg, uint8_t *buf, ui
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Public Function ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 Std_ReturnType Highdriver_init(pump_dev_t* dev) {
     if (dev == NULL) {
-        dev->init_status = false;
+        dev->init_status = INIT_NONE;
         return ERROR_INVALID_PARAM;
     }
 
@@ -51,7 +51,7 @@ Std_ReturnType Highdriver_init(pump_dev_t* dev) {
     st = _mp_i2c_write_block(dev, I2C_UPDATEVOLTAGE, 0x01);
     if (st != ERROR_OK) return st;
 
-    dev->init_status = true;
+    dev->init_status = INIT_DONE;
     return ERROR_OK;
 }
 
