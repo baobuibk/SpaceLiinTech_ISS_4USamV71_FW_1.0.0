@@ -2,6 +2,7 @@
 #include "BSP_Board/bsp_core.h"
 #include "M3_Driver/devices/MAX22200/max22200.h"
 #include "define.h"
+#include "M1_SysApp/xlog/xlog.h"
 
 max22200_dev_t* g_max22200_dev[MAX22200_NUM_DEVICES] = {0};
 

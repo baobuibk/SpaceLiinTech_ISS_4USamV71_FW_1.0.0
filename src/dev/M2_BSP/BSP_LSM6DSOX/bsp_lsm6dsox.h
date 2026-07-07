@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include "M3_Driver/components/i2c/i2c_io.h"
 #include "M3_Driver/devices/LSM6DSOX/lsm6dsox.h"
+
+extern lsm6d_dev_t lsm6dsox;
     
 Std_ReturnType bsp_lsm6dsox_init(void);
 Std_ReturnType bsp_lsm6dsox_disable_int(void);

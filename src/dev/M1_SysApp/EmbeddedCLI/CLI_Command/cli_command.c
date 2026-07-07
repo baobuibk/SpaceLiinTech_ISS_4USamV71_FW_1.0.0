@@ -42,6 +42,9 @@
 #include "BSP_Laser_Int/bsp_laser_int.h"
 #include "BSP_Laser_Ext/bsp_laser_ext.h"
 #include "BSP_FRAM/bsp_fram.h"
+#include "BSP_BME688/bsp_bme688.h"
+#include "BSP_LSM6DSOX/bsp_lsm6dsox.h"
+#include "BSP_Solenoid_MAX22200/bsp_solenoid_max.h"
 #include "BSP_System/bsp_system.h"
 
 #include "cli_rtc.h"
@@ -85,6 +88,8 @@ static void CMD_ParamSet(EmbeddedCli *cli, char *args, void *context);
 static void CMD_LED_Set(EmbeddedCli *cli, char *args, void *context);
 static void CMD_LED_Reset(EmbeddedCli *cli, char *args, void *context);
 static void CMD_HEATER_SetDuty(EmbeddedCli *cli, char *args, void *context);
+
+static void CMD_State_monitor(EmbeddedCli *cli, char *args, void *context);
 
 static void CMD_a(EmbeddedCli *cli, char *args, void *context) {
     return;
@@ -246,6 +251,8 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
     { "LSM6", "lsm6d_read_gyro", "Read current Gyroscope data", true, NULL, CMD_LSM6DSOX_Read_Gyro},
     { "LSM6", "lsm6d_read_temp", "Read IMU internal temperature", true, NULL, CMD_LSM6DSOX_Read_Temp},
     { "LSM6", "lsm6d_read_all", "Read all IMU sensor data (Accel + Gyro + Temp)", true, NULL, CMD_LSM6DSOX_Read_All},
+    
+    { "STATE", "state_monitor", "Show initialization status of all devices", false, NULL, CMD_State_monitor },
 
     { NULL, "a", "Test command A", true, NULL, CMD_a},
     { NULL, "b", "Test command B", true, NULL, CMD_b},
@@ -984,6 +991,29 @@ static void CMD_HEATER_SetDuty(EmbeddedCli *cli, char *args, void *context) {
 
     embeddedCliPrint(cli, buf);
     embeddedCliPrint(cli, "");
+}
+
+static void CMD_State_monitor(EmbeddedCli *cli, char *args, void *context) {
+    char buf[256];
+
+    sprintf(buf,
+            "TEC      : %d %d\r\n"
+            "BME688   : %d\r\n"
+            "LSM6DSOX : %d\r\n"
+            "MAX22200 : %d %d",
+            
+            (p_tec[0]->init_state == INIT_DONE) ? 1 : 0,
+            (p_tec[1]->init_state == INIT_DONE) ? 1 : 0,
+
+            (bme688_int.init_status == INIT_DONE) ? 1 : 0,
+
+            (lsm6dsox.init_status == INIT_DONE) ? 1 : 0,
+            
+            (g_max22200_dev[0]->init_state == INIT_DONE) ? 1 : 0,
+            (g_max22200_dev[1]->init_state == INIT_DONE) ? 1 : 0
+            );
+
+    embeddedCliPrint(cli, buf);
 }
 
 static void CMD_Reset(EmbeddedCli *cli, char *args, void *context) {
